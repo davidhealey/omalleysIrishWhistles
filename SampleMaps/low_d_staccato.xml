@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<samplemap ID="empty" SaveMode="1" RRGroupAmount="4" MicPositions=";">
+  <sample Root="62" LoKey="62" HiKey="62" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_62_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="0" SampleEnd="15740"/>
+  <sample Root="62" LoKey="62" HiKey="62" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_62_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="286" SampleEnd="14978"/>
+  <sample Root="62" LoKey="62" HiKey="62" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_62_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="77" SampleEnd="13011"/>
+  <sample Root="62" LoKey="62" HiKey="62" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_62_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="81" SampleEnd="14142"/>
+  <sample Root="63" LoKey="63" HiKey="63" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_63_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="77" SampleEnd="14145"/>
+  <sample Root="63" LoKey="63" HiKey="63" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_63_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="12020"/>
+  <sample Root="63" LoKey="63" HiKey="63" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_63_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="212" SampleEnd="12971"/>
+  <sample Root="63" LoKey="63" HiKey="63" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_63_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="169" SampleEnd="14010"/>
+  <sample Root="64" LoKey="64" HiKey="64" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_64_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="65" SampleEnd="15481"/>
+  <sample Root="64" LoKey="64" HiKey="64" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_64_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="45" SampleEnd="16540"/>
+  <sample Root="64" LoKey="64" HiKey="64" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_64_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="151" SampleEnd="14811"/>
+  <sample Root="64" LoKey="64" HiKey="64" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_64_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="99" SampleEnd="14531"/>
+  <sample Root="65" LoKey="65" HiKey="65" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_65_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="210" SampleEnd="15494"/>
+  <sample Root="65" LoKey="65" HiKey="65" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_65_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="13739"/>
+  <sample Root="65" LoKey="65" HiKey="65" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_65_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="15078"/>
+  <sample Root="65" LoKey="65" HiKey="65" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_65_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="165" SampleEnd="19430"/>
+  <sample Root="66" LoKey="66" HiKey="66" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_66_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="16317"/>
+  <sample Root="66" LoKey="66" HiKey="66" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_66_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="11866"/>
+  <sample Root="66" LoKey="66" HiKey="66" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_66_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="250" SampleEnd="13337"/>
+  <sample Root="66" LoKey="66" HiKey="66" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_66_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="12734"/>
+  <sample Root="67" LoKey="67" HiKey="67" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_67_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="139" SampleEnd="9985"/>
+  <sample Root="67" LoKey="67" HiKey="67" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_67_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="11556"/>
+  <sample Root="67" LoKey="67" HiKey="67" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_67_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="80" SampleEnd="12311"/>
+  <sample Root="67" LoKey="67" HiKey="67" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_67_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="78" SampleEnd="11358"/>
+  <sample Root="68" LoKey="68" HiKey="68" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_68_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="206" SampleEnd="13498"/>
+  <sample Root="68" LoKey="68" HiKey="68" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_68_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="11036"/>
+  <sample Root="68" LoKey="68" HiKey="68" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_68_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="72" SampleEnd="11483"/>
+  <sample Root="68" LoKey="68" HiKey="68" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_68_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="75" SampleEnd="9844"/>
+  <sample Root="69" LoKey="69" HiKey="69" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_69_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="175" SampleEnd="9958"/>
+  <sample Root="69" LoKey="69" HiKey="69" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_69_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10462"/>
+  <sample Root="69" LoKey="69" HiKey="69" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_69_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="66" SampleEnd="10614"/>
+  <sample Root="69" LoKey="69" HiKey="69" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_69_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10012"/>
+  <sample Root="70" LoKey="70" HiKey="70" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_70_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="231" SampleEnd="7414"/>
+  <sample Root="70" LoKey="70" HiKey="70" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_70_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="119" SampleEnd="7832"/>
+  <sample Root="70" LoKey="70" HiKey="70" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_70_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="127" SampleEnd="10274"/>
+  <sample Root="70" LoKey="70" HiKey="70" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_70_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="73" SampleEnd="11245"/>
+  <sample Root="71" LoKey="71" HiKey="71" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_71_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="788" SampleEnd="8687"/>
+  <sample Root="71" LoKey="71" HiKey="71" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_71_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="782" SampleEnd="9284"/>
+  <sample Root="71" LoKey="71" HiKey="71" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_71_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9359"/>
+  <sample Root="71" LoKey="71" HiKey="71" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_71_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="8722"/>
+  <sample Root="72" LoKey="72" HiKey="72" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_72_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="413" SampleEnd="8913"/>
+  <sample Root="72" LoKey="72" HiKey="72" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_72_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="288" SampleEnd="12291"/>
+  <sample Root="72" LoKey="72" HiKey="72" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_72_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10901"/>
+  <sample Root="72" LoKey="72" HiKey="72" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_72_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9105"/>
+  <sample Root="73" LoKey="73" HiKey="73" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_73_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="69" SampleEnd="9138"/>
+  <sample Root="73" LoKey="73" HiKey="73" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_73_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9559"/>
+  <sample Root="73" LoKey="73" HiKey="73" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_73_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="155" SampleEnd="9378"/>
+  <sample Root="73" LoKey="73" HiKey="73" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_73_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="135" SampleEnd="9351"/>
+  <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_74_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10625"/>
+  <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_74_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10095"/>
+  <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_74_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="12224"/>
+  <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_74_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="25" SampleEnd="9623"/>
+  <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_75_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10364"/>
+  <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_75_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="840" SampleEnd="12492"/>
+  <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_75_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="238" SampleEnd="12864"/>
+  <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_75_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="222" SampleEnd="10477"/>
+  <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_76_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="60" SampleEnd="10234"/>
+  <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_76_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10623"/>
+  <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_76_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="174" SampleEnd="9932"/>
+  <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_76_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10212"/>
+  <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_77_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="426" SampleEnd="11201"/>
+  <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_77_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="12810"/>
+  <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_77_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="11773"/>
+  <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_77_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="495" SampleEnd="11454"/>
+  <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_78_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10901"/>
+  <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_78_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10792"/>
+  <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_78_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10914"/>
+  <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_78_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9739"/>
+  <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_79_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10439"/>
+  <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_79_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9472"/>
+  <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_79_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="12162"/>
+  <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_79_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="11183"/>
+  <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_80_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10693"/>
+  <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_80_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9895"/>
+  <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_80_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="12438"/>
+  <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_80_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9096"/>
+  <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_81_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9928"/>
+  <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_81_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10408"/>
+  <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_81_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="83" SampleEnd="10804"/>
+  <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_81_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9913"/>
+  <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_82_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10081"/>
+  <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_82_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9956"/>
+  <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_82_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9027"/>
+  <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_82_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="11033"/>
+  <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_83_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="459" SampleEnd="9504"/>
+  <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_83_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="8491"/>
+  <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_83_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="8758"/>
+  <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_83_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="8786"/>
+  <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_84_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="151" SampleEnd="11440"/>
+  <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_84_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10510"/>
+  <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_84_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="12445"/>
+  <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_84_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="11485"/>
+  <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_85_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="117" SampleEnd="11108"/>
+  <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_85_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10323"/>
+  <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_85_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="107" SampleEnd="10869"/>
+  <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_85_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10145"/>
+  <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="1"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_86_rr1.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="350" SampleEnd="10131"/>
+  <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="2"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_86_rr2.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="9733"/>
+  <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="3"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_86_rr3.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="10796"/>
+  <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="4"
+          FileName="{PROJECT_FOLDER}Low D/staccato/low_whistle_cardioid_staccato_86_rr4.wav"
+          Duplicate="0" UpperVelocityXFade="0" SampleStart="322" SampleEnd="11218"/>
+</samplemap>
