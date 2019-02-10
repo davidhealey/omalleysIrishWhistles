@@ -1,6 +1,4 @@
-const var ks = [24, 25];
-const var programs = [1, 40];
-const var UACC = 32;
+include("manifest.js");
 
 reg i;
 
@@ -8,9 +6,9 @@ reg i;
 const var muterIds = Synth.getIdList("MidiMuter");
 const var muters = [];
 
-for (i  = 0; i < muterIds.length; i++)
+for (m in muterIds)
 {
-    muters[i] = Synth.getMidiProcessor(muterIds[i]);
+    muters.push(Synth.getMidiProcessor(m));
 }
 
 inline function changeArticulation(idx)
@@ -21,11 +19,15 @@ inline function changeArticulation(idx)
     }
     
     muters[idx].setAttribute(0, 0);
-}function onNoteOn()
+    
+    Manifest.currentArticulation = idx;
+}
+
+changeArticulation(0); //Default articulationfunction onNoteOn()
 {
-	if (ks.indexOf(Message.getNoteNumber()) != -1)
+	if (Manifest.ks.indexOf(Message.getNoteNumber()) != -1)
     {
-        changeArticulation(ks.indexOf(Message.getNoteNumber()));
+        changeArticulation(Manifest.ks.indexOf(Message.getNoteNumber()));
     }
 }
 function onNoteOff()
@@ -34,7 +36,20 @@ function onNoteOff()
 }
 function onController()
 {
-	
+	if (Message.getControllerNumber() == Manifest.UACC || Message.isProgramChange())
+    {
+        local ccIdx = Manifest.programs.indexOf(Message.getControllerValue());
+        local programIdx = Manifest.programs.indexOf(Message.getProgramChangeNumber());
+        
+        if (ccIdx != -1) //UACC
+        {
+            changeArticulation(ccIdx);
+        }
+        else if (programIdx != -1) //Program change
+        {
+            changeArticulation(programIdx);
+        }
+    }
 }
 function onTimer()
 {

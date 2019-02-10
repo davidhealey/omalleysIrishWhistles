@@ -216,7 +216,7 @@
                 <Processor Type="MidiMuter" ID="sustainMidiMuter" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptButton" id="ignoreButton" value="0"/>
+                    <Control type="ScriptButton" id="ignoreButton" value="1"/>
                     <Control type="ScriptButton" id="fixStuckNotes" value="0"/>
                   </Content>
                 </Processor>
@@ -447,7 +447,7 @@
                 <Processor Type="MidiMuter" ID="staccatoMidiMuter" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptButton" id="ignoreButton" value="1"/>
+                    <Control type="ScriptButton" id="ignoreButton" value="0"/>
                     <Control type="ScriptButton" id="fixStuckNotes" value="0"/>
                   </Content>
                 </Processor>

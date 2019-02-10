@@ -22,9 +22,9 @@ include("manifest.js");
 Synth.deferCallbacks(true);
 
 reg i;
+reg lastArticulation = 0;
 
 //Preset handling
-
 const var samplerIds = Synth.getIdList("Sampler");
 const var childSynths = {};
 
@@ -43,6 +43,7 @@ inline function oncmbPatchesControl(control, value)
     
     colourKeys(patch);
     loadSampleMaps(patch);
+    colourKeySwitches();
 }
 
 //Populate patch selection drop down
@@ -61,11 +62,7 @@ inline function colourKeys(patch)
     
     for (i = 0; i < 127; i++)
     {
-        if (Manifest.ks.indexOf(i) != -1)
-        {
-            Engine.setKeyColour(i, Colours.withAlpha(Colours.red, 0.3)); //Clear key colour
-        }
-        else if (i >= range[0] && i <= range[1])
+        if (i >= range[0] && i <= range[1])
         {
             Engine.setKeyColour(i, Colours.withAlpha(Colours.white, 0.0)); //Light key colour
         }
@@ -73,7 +70,22 @@ inline function colourKeys(patch)
         {
             Engine.setKeyColour(i, Colours.withAlpha(Colours.black, 0.5)); //Dark key colour
         }
-    }    
+    }
+}
+
+inline function colourKeySwitches()
+{
+    for (i = 0; i < Manifest.ks.length; i++)
+    {
+        if (i == Manifest.currentArticulation)
+        {
+            Engine.setKeyColour(Manifest.ks[i], Colours.withAlpha(Colours.red, 0.6)); //Set key colour
+        }
+        else
+        {
+            Engine.setKeyColour(Manifest.ks[i], Colours.withAlpha(Colours.red, 0.3)); //Set key colour
+        }  
+    }
 }
 
 inline function loadSampleMaps(patch)
@@ -104,7 +116,12 @@ inline function loadSampleMaps(patch)
     }
 }function onNoteOn()
 {
-	
+    //If the articulation has been changed by the articulation handler update the UI
+	if (Manifest.currentArticulation != lastArticulation)
+    {
+        colourKeySwitches();
+        lastArticulation = Manifest.currentArticulation;
+    }
 }
 function onNoteOff()
 {
@@ -112,7 +129,12 @@ function onNoteOff()
 }
 function onController()
 {
-	
+    //If the articulation has been changed by the articulation handler update the UI
+	if (Manifest.currentArticulation != lastArticulation)
+    {
+        colourKeySwitches();
+        lastArticulation = Manifest.currentArticulation;
+    }
 }
 function onTimer()
 {

@@ -17,10 +17,12 @@
 
 namespace Manifest
 {
+    global currentArticulation = 0; //ID of the currently selected articulation
+    
     const var UACC = 32;
     const var ks = [36, 37];
     const var programs = [1, 40];
-        
+    
     const var patches = {
         "Bb": {
             range:[70, 94]
