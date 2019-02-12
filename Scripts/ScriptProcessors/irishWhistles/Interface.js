@@ -24,6 +24,34 @@ Synth.deferCallbacks(true);
 reg i;
 reg lastArticulation = 0;
 
+//Controllers
+const var cmbCC = [];
+const var knbCC = [];
+
+for (i = 0; i < 3; i++)
+{
+    cmbCC[i] = Content.getComponent("cmbCC"+i);
+    knbCC[i] = Content.getComponent("knbCC"+i);
+    knbCC[i].setControlCallback(onknbCCControl);
+}
+
+inline function onknbCCControl(control, value)
+{
+    local idx = knbCC.indexOf(control);
+    
+    //Link knobs for parameters that share the same CC number
+    for (i = 0; i < cmbCC.length; i++)
+    {
+        if (i != idx && cmbCC[i].getItemText() == cmbCC[idx].getItemText())
+        {
+            knbCC[i].setValue(value);
+        }
+    }
+    
+    //Send CC
+    Synth.sendController(cmbCC[idx].getItemText(), value);
+}
+
 //Preset handling
 const var samplerIds = Synth.getIdList("Sampler");
 const var childSynths = {};
@@ -79,11 +107,11 @@ inline function colourKeySwitches()
     {
         if (i == Manifest.currentArticulation)
         {
-            Engine.setKeyColour(Manifest.ks[i], Colours.withAlpha(Colours.red, 0.6)); //Set key colour
+            Engine.setKeyColour(Manifest.ks[i], Colours.withAlpha(Colours.red, 0.3)); //Set selected KS
         }
         else
         {
-            Engine.setKeyColour(Manifest.ks[i], Colours.withAlpha(Colours.red, 0.3)); //Set key colour
+            Engine.setKeyColour(Manifest.ks[i], Colours.withAlpha(Colours.darkred, 0.3)); //Set key colour
         }  
     }
 }
@@ -134,6 +162,12 @@ function onController()
     {
         colourKeySwitches();
         lastArticulation = Manifest.currentArticulation;
+    }
+    
+    for (i = 0; i < cmbCC.length; i++)
+    {
+        if (Message.getControllerNumber() == cmbCC[i].getItemText())
+            knbCC[i].setValue(Message.getControllerValue());
     }
 }
 function onTimer()

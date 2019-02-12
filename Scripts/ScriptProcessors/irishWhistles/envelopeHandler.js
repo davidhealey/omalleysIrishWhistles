@@ -1,13 +1,10 @@
 reg i;
 
 //Get envelopes
-const var envelopeIds = Synth.getIdList("Simple Envelope");
 const var envelopes = [];
+envelopes[0] = Synth.getModulator("sustainEnvelope");
+envelopes[1] = Synth.getModulator("staccatoEnvelope");
 
-for (i = 0; i < envelopeIds.length; i++)
-{
-    envelopes[i] = Synth.getModulator(envelopeIds[i]);
-}
 
 //GUI
 const var knobs = [];

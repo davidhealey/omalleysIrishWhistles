@@ -1,9 +1,7 @@
-//Helper script to set the CC Number of global LFO intensity CC modulators
-
+//Helper script to set the LFO intensity CC modulators
 const var mods = [];
 mods[0] = Synth.getModulator("vibratoLFOIntensity");
-mods[1] = Synth.getModulator("vibratoLFORate");
-mods[2] = Synth.getModulator("vibratoPitchCounterIntensity");
+mods[1] = Synth.getModulator("vibratoPitchCounterIntensity");
 
 const var knbCC = Content.addKnob("knbCC", 0, 0);
 knbCC.set("text", "Intensity CC");
