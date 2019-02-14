@@ -36,19 +36,6 @@ inline function onknbDynamicsControl(control, value)
     legato.setAttribute(legato.knbBreath, value);
 }
 
-//Vibrato Depth
-const var vibratoLFOIntensity = Synth.getModulator("vibratoLFOIntensity");
-const var vibratoPitchCounterIntensity = Synth.getModulator("vibratoPitchCounterIntensity");
-const var knbVibIntensity = Content.getComponent("knbVibIntensity");
-knbVibIntensity.setControlCallback(onknbIntensityControl);
-
-inline function onknbIntensityControl(control, value)
-{
-    vibratoLFOIntensity.setAttribute(vibratoLFOIntensity.DefaultValue, value);
-    vibratoPitchCounterIntensity.setAttribute(vibratoPitchCounterIntensity.DefaultValue, value);    
-}
-
-
 //Preset handling
 const var samplerIds = Synth.getIdList("Sampler");
 const var childSynths = {};
@@ -132,13 +119,10 @@ function onNoteOff()
 	
 }
 function onController()
-{    
-    /*for (i = 0; i < cmbCC.length; i++)
-    {
-        if (Message.getControllerNumber() == cmbCC[i].getItemText())
-            knbCC[i].setValue(Message.getControllerValue());
-    }*/
-}function onTimer()
+{
+	
+}
+function onTimer()
 {
 	
 }

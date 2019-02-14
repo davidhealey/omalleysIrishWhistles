@@ -54,7 +54,8 @@
                  max="127" text="Dynamics" stepSize="1"/>
       <Component type="ScriptSlider" id="knbVibIntensity" x="247" y="30" parentComponent="pnlControllers"
                  max="127" text="Vibrato Intensity" stepSize="1" isPluginParameter="1"
-                 pluginParameterName="Vibrato Intensity"/>
+                 pluginParameterName="Vibrato Intensity" processorId="vibratoLFOIntensity"
+                 parameterId="DefaultValue"/>
       <Component type="ScriptSlider" id="knbCC3" x="0" y="94" parentComponent="pnlControllers"
                  max="127" text="Vibrato Rate" stepSize="1" processorId="vibratoLFORate"
                  parameterId="DefaultValue"/>
