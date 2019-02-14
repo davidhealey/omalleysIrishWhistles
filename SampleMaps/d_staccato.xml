@@ -1,304 +1,404 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<samplemap ID="empty" SaveMode="1" RRGroupAmount="4" MicPositions=";">
+<samplemap ID="d_staccato" SaveMode="2" RRGroupAmount="4" MicPositions=";">
   <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_74_rr1.wav"
-          Duplicate="0" SampleStart="948" SampleEnd="13715"/>
+          Duplicate="1" SampleStart="948" SampleEnd="13715" SampleRate="48000"
+          MonolithOffset="0" MonolithLength="16384"/>
   <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_74_rr2.wav"
-          Duplicate="0" SampleStart="1000" SampleEnd="13942"/>
+          Duplicate="1" SampleStart="1000" SampleEnd="13942" SampleRate="48000"
+          MonolithOffset="16384" MonolithLength="16384"/>
   <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_74_rr3.wav"
-          Duplicate="0" SampleStart="541" SampleEnd="14597"/>
+          Duplicate="1" SampleStart="541" SampleEnd="14597" SampleRate="48000"
+          MonolithOffset="32768" MonolithLength="16384"/>
   <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_74_rr4.wav"
-          Duplicate="0" SampleStart="586" SampleEnd="15186"/>
+          Duplicate="1" SampleStart="586" SampleEnd="15186" SampleRate="48000"
+          MonolithOffset="49152" MonolithLength="16384"/>
   <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_75_rr1.wav"
-          Duplicate="0" SampleStart="441" SampleEnd="17167"/>
+          Duplicate="1" SampleStart="441" SampleEnd="17167" SampleRate="48000"
+          MonolithOffset="65536" MonolithLength="20480"/>
   <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_75_rr2.wav"
-          Duplicate="0" SampleStart="378" SampleEnd="16123"/>
+          Duplicate="1" SampleStart="378" SampleEnd="16123" SampleRate="48000"
+          MonolithOffset="86016" MonolithLength="16384"/>
   <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_75_rr3.wav"
-          Duplicate="0" SampleStart="534" SampleEnd="18471"/>
+          Duplicate="1" SampleStart="534" SampleEnd="18471" SampleRate="48000"
+          MonolithOffset="102400" MonolithLength="20480"/>
   <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_75_rr4.wav"
-          Duplicate="0" SampleStart="454" SampleEnd="16728"/>
+          Duplicate="1" SampleStart="454" SampleEnd="16728" SampleRate="48000"
+          MonolithOffset="122880" MonolithLength="20480"/>
   <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_76_rr1.wav"
-          Duplicate="0" SampleStart="513" SampleEnd="15931"/>
+          Duplicate="1" SampleStart="513" SampleEnd="15931" SampleRate="48000"
+          MonolithOffset="143360" MonolithLength="16384"/>
   <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_76_rr2.wav"
-          Duplicate="0" SampleStart="978" SampleEnd="16373"/>
+          Duplicate="1" SampleStart="978" SampleEnd="16373" SampleRate="48000"
+          MonolithOffset="159744" MonolithLength="16384"/>
   <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_76_rr3.wav"
-          Duplicate="0" SampleStart="903" SampleEnd="16694"/>
+          Duplicate="1" SampleStart="903" SampleEnd="16694" SampleRate="48000"
+          MonolithOffset="176128" MonolithLength="20480"/>
   <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_76_rr4.wav"
-          Duplicate="0" SampleStart="422" SampleEnd="16229"/>
+          Duplicate="1" SampleStart="422" SampleEnd="16229" SampleRate="48000"
+          MonolithOffset="196608" MonolithLength="16384"/>
   <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_77_rr1.wav"
-          Duplicate="0" SampleStart="927" SampleEnd="14760"/>
+          Duplicate="1" SampleStart="927" SampleEnd="14760" SampleRate="48000"
+          MonolithOffset="212992" MonolithLength="16384"/>
   <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_77_rr2.wav"
-          Duplicate="0" SampleStart="412" SampleEnd="13346"/>
+          Duplicate="1" SampleStart="412" SampleEnd="13346" SampleRate="48000"
+          MonolithOffset="229376" MonolithLength="16384"/>
   <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_77_rr3.wav"
-          Duplicate="0" SampleStart="988" SampleEnd="13963"/>
+          Duplicate="1" SampleStart="988" SampleEnd="13963" SampleRate="48000"
+          MonolithOffset="245760" MonolithLength="16384"/>
   <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_77_rr4.wav"
-          Duplicate="0" SampleStart="959" SampleEnd="15037"/>
+          Duplicate="1" SampleStart="959" SampleEnd="15037" SampleRate="48000"
+          MonolithOffset="262144" MonolithLength="16384"/>
   <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_78_rr1.wav"
-          Duplicate="0" SampleStart="501" SampleEnd="16709"/>
+          Duplicate="1" SampleStart="501" SampleEnd="16709" SampleRate="48000"
+          MonolithOffset="278528" MonolithLength="20480"/>
   <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_78_rr2.wav"
-          Duplicate="0" SampleStart="535" SampleEnd="17676"/>
+          Duplicate="1" SampleStart="535" SampleEnd="17676" SampleRate="48000"
+          MonolithOffset="299008" MonolithLength="20480"/>
   <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_78_rr3.wav"
-          Duplicate="0" SampleStart="940" SampleEnd="15791"/>
+          Duplicate="1" SampleStart="940" SampleEnd="15791" SampleRate="48000"
+          MonolithOffset="319488" MonolithLength="16384"/>
   <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_78_rr4.wav"
-          Duplicate="0" SampleStart="516" SampleEnd="13417"/>
+          Duplicate="1" SampleStart="516" SampleEnd="13417" SampleRate="48000"
+          MonolithOffset="335872" MonolithLength="16384"/>
   <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_79_rr1.wav"
-          Duplicate="0" SampleStart="459" SampleEnd="11472"/>
+          Duplicate="1" SampleStart="459" SampleEnd="11472" SampleRate="48000"
+          MonolithOffset="352256" MonolithLength="12288"/>
   <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_79_rr2.wav"
-          Duplicate="0" SampleStart="463" SampleEnd="11275"/>
+          Duplicate="1" SampleStart="463" SampleEnd="11275" SampleRate="48000"
+          MonolithOffset="364544" MonolithLength="12288"/>
   <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_79_rr3.wav"
-          Duplicate="0" SampleStart="501" SampleEnd="11248"/>
+          Duplicate="1" SampleStart="501" SampleEnd="11248" SampleRate="48000"
+          MonolithOffset="376832" MonolithLength="12288"/>
   <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_79_rr4.wav"
-          Duplicate="0" SampleStart="440" SampleEnd="9991"/>
+          Duplicate="1" SampleStart="440" SampleEnd="9991" SampleRate="48000"
+          MonolithOffset="389120" MonolithLength="12288"/>
   <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_80_rr1.wav"
-          Duplicate="0" SampleStart="439" SampleEnd="13645"/>
+          Duplicate="1" SampleStart="439" SampleEnd="13645" SampleRate="48000"
+          MonolithOffset="401408" MonolithLength="16384"/>
   <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_80_rr2.wav"
-          Duplicate="0" SampleStart="394" SampleEnd="12775"/>
+          Duplicate="1" SampleStart="394" SampleEnd="12775" SampleRate="48000"
+          MonolithOffset="417792" MonolithLength="16384"/>
   <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_80_rr3.wav"
-          Duplicate="0" SampleStart="459" SampleEnd="14940"/>
+          Duplicate="1" SampleStart="459" SampleEnd="14940" SampleRate="48000"
+          MonolithOffset="434176" MonolithLength="16384"/>
   <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_80_rr4.wav"
-          Duplicate="0" SampleStart="496" SampleEnd="10810"/>
+          Duplicate="1" SampleStart="496" SampleEnd="10810" SampleRate="48000"
+          MonolithOffset="450560" MonolithLength="12288"/>
   <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_81_rr1.wav"
-          Duplicate="0" SampleStart="382" SampleEnd="12406"/>
+          Duplicate="1" SampleStart="382" SampleEnd="12406" SampleRate="48000"
+          MonolithOffset="462848" MonolithLength="16384"/>
   <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_81_rr2.wav"
-          Duplicate="0" SampleStart="460" SampleEnd="15338"/>
+          Duplicate="1" SampleStart="460" SampleEnd="15338" SampleRate="48000"
+          MonolithOffset="479232" MonolithLength="16384"/>
   <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_81_rr3.wav"
-          Duplicate="0" SampleStart="463" SampleEnd="14318"/>
+          Duplicate="1" SampleStart="463" SampleEnd="14318" SampleRate="48000"
+          MonolithOffset="495616" MonolithLength="16384"/>
   <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_81_rr4.wav"
-          Duplicate="0" SampleStart="389" SampleEnd="11864"/>
+          Duplicate="1" SampleStart="389" SampleEnd="11864" SampleRate="48000"
+          MonolithOffset="512000" MonolithLength="12288"/>
   <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_82_rr1.wav"
-          Duplicate="0" SampleStart="500" SampleEnd="14133"/>
+          Duplicate="1" SampleStart="500" SampleEnd="14133" SampleRate="48000"
+          MonolithOffset="524288" MonolithLength="16384"/>
   <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_82_rr2.wav"
-          Duplicate="0" SampleStart="422" SampleEnd="14409"/>
+          Duplicate="1" SampleStart="422" SampleEnd="14409" SampleRate="48000"
+          MonolithOffset="540672" MonolithLength="16384"/>
   <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_82_rr3.wav"
-          Duplicate="0" SampleStart="345" SampleEnd="12967"/>
+          Duplicate="1" SampleStart="345" SampleEnd="12967" SampleRate="48000"
+          MonolithOffset="557056" MonolithLength="16384"/>
   <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_82_rr4.wav"
-          Duplicate="0" SampleStart="362" SampleEnd="10714"/>
+          Duplicate="1" SampleStart="362" SampleEnd="10714" SampleRate="48000"
+          MonolithOffset="573440" MonolithLength="12288"/>
   <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_83_rr1.wav"
-          Duplicate="0" SampleStart="366" SampleEnd="15195"/>
+          Duplicate="1" SampleStart="366" SampleEnd="15195" SampleRate="48000"
+          MonolithOffset="585728" MonolithLength="16384"/>
   <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_83_rr2.wav"
-          Duplicate="0" SampleStart="379" SampleEnd="13693"/>
+          Duplicate="1" SampleStart="379" SampleEnd="13693" SampleRate="48000"
+          MonolithOffset="602112" MonolithLength="16384"/>
   <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_83_rr3.wav"
-          Duplicate="0" SampleStart="399" SampleEnd="12625"/>
+          Duplicate="1" SampleStart="399" SampleEnd="12625" SampleRate="48000"
+          MonolithOffset="618496" MonolithLength="16384"/>
   <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_83_rr4.wav"
-          Duplicate="0" SampleStart="343" SampleEnd="16768"/>
+          Duplicate="1" SampleStart="343" SampleEnd="16768" SampleRate="48000"
+          MonolithOffset="634880" MonolithLength="20480"/>
   <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_84_rr1.wav"
-          Duplicate="0" SampleStart="138" SampleEnd="12918"/>
+          Duplicate="1" SampleStart="138" SampleEnd="12918" SampleRate="48000"
+          MonolithOffset="655360" MonolithLength="16384"/>
   <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_84_rr2.wav"
-          Duplicate="0" SampleStart="407" SampleEnd="14394"/>
+          Duplicate="1" SampleStart="407" SampleEnd="14394" SampleRate="48000"
+          MonolithOffset="671744" MonolithLength="16384"/>
   <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_84_rr3.wav"
-          Duplicate="0" SampleStart="369" SampleEnd="16384"/>
+          Duplicate="1" SampleStart="369" SampleEnd="16384" SampleRate="48000"
+          MonolithOffset="688128" MonolithLength="20480"/>
   <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_84_rr4.wav"
-          Duplicate="0" SampleStart="343" SampleEnd="12671"/>
+          Duplicate="1" SampleStart="343" SampleEnd="12671" SampleRate="48000"
+          MonolithOffset="708608" MonolithLength="16384"/>
   <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_85_rr1.wav"
-          Duplicate="0" SampleStart="292" SampleEnd="12081"/>
+          Duplicate="1" SampleStart="292" SampleEnd="12081" SampleRate="48000"
+          MonolithOffset="724992" MonolithLength="12288"/>
   <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_85_rr2.wav"
-          Duplicate="0" SampleStart="331" SampleEnd="15289"/>
+          Duplicate="1" SampleStart="331" SampleEnd="15289" SampleRate="48000"
+          MonolithOffset="737280" MonolithLength="16384"/>
   <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_85_rr3.wav"
-          Duplicate="0" SampleStart="322" SampleEnd="14227"/>
+          Duplicate="1" SampleStart="322" SampleEnd="14227" SampleRate="48000"
+          MonolithOffset="753664" MonolithLength="16384"/>
   <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_85_rr4.wav"
-          Duplicate="0" SampleStart="326" SampleEnd="12644"/>
+          Duplicate="1" SampleStart="326" SampleEnd="12644" SampleRate="48000"
+          MonolithOffset="770048" MonolithLength="16384"/>
   <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_86_rr1.wav"
-          Duplicate="0" SampleStart="527" SampleEnd="15811"/>
+          Duplicate="1" SampleStart="527" SampleEnd="15811" SampleRate="48000"
+          MonolithOffset="786432" MonolithLength="16384"/>
   <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_86_rr2.wav"
-          Duplicate="0" SampleStart="457" SampleEnd="13198"/>
+          Duplicate="1" SampleStart="457" SampleEnd="13198" SampleRate="48000"
+          MonolithOffset="802816" MonolithLength="16384"/>
   <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_86_rr3.wav"
-          Duplicate="0" SampleStart="464" SampleEnd="14713"/>
+          Duplicate="1" SampleStart="464" SampleEnd="14713" SampleRate="48000"
+          MonolithOffset="819200" MonolithLength="16384"/>
   <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_86_rr4.wav"
-          Duplicate="0" SampleStart="544" SampleEnd="14465"/>
+          Duplicate="1" SampleStart="544" SampleEnd="14465" SampleRate="48000"
+          MonolithOffset="835584" MonolithLength="16384"/>
   <sample Root="87" LoKey="87" HiKey="87" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_87_rr1.wav"
-          Duplicate="0" SampleStart="449" SampleEnd="20612"/>
+          Duplicate="1" SampleStart="449" SampleEnd="20612" SampleRate="48000"
+          MonolithOffset="851968" MonolithLength="24576"/>
   <sample Root="87" LoKey="87" HiKey="87" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_87_rr2.wav"
-          Duplicate="0" SampleStart="381" SampleEnd="19554"/>
+          Duplicate="1" SampleStart="381" SampleEnd="19554" SampleRate="48000"
+          MonolithOffset="876544" MonolithLength="20480"/>
   <sample Root="87" LoKey="87" HiKey="87" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_87_rr3.wav"
-          Duplicate="0" SampleStart="381" SampleEnd="16988"/>
+          Duplicate="1" SampleStart="381" SampleEnd="16988" SampleRate="48000"
+          MonolithOffset="897024" MonolithLength="20480"/>
   <sample Root="87" LoKey="87" HiKey="87" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_87_rr4.wav"
-          Duplicate="0" SampleStart="507" SampleEnd="16980"/>
+          Duplicate="1" SampleStart="507" SampleEnd="16980" SampleRate="48000"
+          MonolithOffset="917504" MonolithLength="20480"/>
   <sample Root="88" LoKey="88" HiKey="88" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_88_rr1.wav"
-          Duplicate="0" SampleStart="263" SampleEnd="14846"/>
+          Duplicate="1" SampleStart="263" SampleEnd="14846" SampleRate="48000"
+          MonolithOffset="937984" MonolithLength="16384"/>
   <sample Root="88" LoKey="88" HiKey="88" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_88_rr2.wav"
-          Duplicate="0" SampleStart="230" SampleEnd="17538"/>
+          Duplicate="1" SampleStart="230" SampleEnd="17538" SampleRate="48000"
+          MonolithOffset="954368" MonolithLength="20480"/>
   <sample Root="88" LoKey="88" HiKey="88" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_88_rr3.wav"
-          Duplicate="0" SampleStart="455" SampleEnd="16689"/>
+          Duplicate="1" SampleStart="455" SampleEnd="16689" SampleRate="48000"
+          MonolithOffset="974848" MonolithLength="20480"/>
   <sample Root="88" LoKey="88" HiKey="88" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_88_rr4.wav"
-          Duplicate="0" SampleStart="412" SampleEnd="15736"/>
+          Duplicate="1" SampleStart="412" SampleEnd="15736" SampleRate="48000"
+          MonolithOffset="995328" MonolithLength="16384"/>
   <sample Root="89" LoKey="89" HiKey="89" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_89_rr1.wav"
-          Duplicate="0" SampleStart="434" SampleEnd="15884"/>
+          Duplicate="1" SampleStart="434" SampleEnd="15884" SampleRate="48000"
+          MonolithOffset="1011712" MonolithLength="16384"/>
   <sample Root="89" LoKey="89" HiKey="89" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_89_rr2.wav"
-          Duplicate="0" SampleStart="949" SampleEnd="16581"/>
+          Duplicate="1" SampleStart="949" SampleEnd="16581" SampleRate="48000"
+          MonolithOffset="1028096" MonolithLength="20480"/>
   <sample Root="89" LoKey="89" HiKey="89" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_89_rr3.wav"
-          Duplicate="0" SampleStart="405" SampleEnd="15343"/>
+          Duplicate="1" SampleStart="405" SampleEnd="15343" SampleRate="48000"
+          MonolithOffset="1048576" MonolithLength="16384"/>
   <sample Root="89" LoKey="89" HiKey="89" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_89_rr4.wav"
-          Duplicate="0" SampleStart="243" SampleEnd="19099"/>
+          Duplicate="1" SampleStart="243" SampleEnd="19099" SampleRate="48000"
+          MonolithOffset="1064960" MonolithLength="20480"/>
   <sample Root="90" LoKey="90" HiKey="90" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_90_rr1.wav"
-          Duplicate="0" SampleStart="395" SampleEnd="17125"/>
+          Duplicate="1" SampleStart="395" SampleEnd="17125" SampleRate="48000"
+          MonolithOffset="1085440" MonolithLength="20480"/>
   <sample Root="90" LoKey="90" HiKey="90" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_90_rr2.wav"
-          Duplicate="0" SampleStart="546" SampleEnd="16506"/>
+          Duplicate="1" SampleStart="546" SampleEnd="16506" SampleRate="48000"
+          MonolithOffset="1105920" MonolithLength="20480"/>
   <sample Root="90" LoKey="90" HiKey="90" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_90_rr3.wav"
-          Duplicate="0" SampleStart="401" SampleEnd="15822"/>
+          Duplicate="1" SampleStart="401" SampleEnd="15822" SampleRate="48000"
+          MonolithOffset="1126400" MonolithLength="16384"/>
   <sample Root="90" LoKey="90" HiKey="90" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_90_rr4.wav"
-          Duplicate="0" SampleStart="367" SampleEnd="16243"/>
+          Duplicate="1" SampleStart="367" SampleEnd="16243" SampleRate="48000"
+          MonolithOffset="1142784" MonolithLength="16384"/>
   <sample Root="91" LoKey="91" HiKey="91" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_91_rr1.wav"
-          Duplicate="0" SampleStart="172" SampleEnd="19034"/>
+          Duplicate="1" SampleStart="172" SampleEnd="19034" SampleRate="48000"
+          MonolithOffset="1159168" MonolithLength="20480"/>
   <sample Root="91" LoKey="91" HiKey="91" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_91_rr2.wav"
-          Duplicate="0" SampleStart="386" SampleEnd="18279"/>
+          Duplicate="1" SampleStart="386" SampleEnd="18279" SampleRate="48000"
+          MonolithOffset="1179648" MonolithLength="20480"/>
   <sample Root="91" LoKey="91" HiKey="91" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_91_rr3.wav"
-          Duplicate="0" SampleStart="380" SampleEnd="19160"/>
+          Duplicate="1" SampleStart="380" SampleEnd="19160" SampleRate="48000"
+          MonolithOffset="1200128" MonolithLength="20480"/>
   <sample Root="91" LoKey="91" HiKey="91" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_91_rr4.wav"
-          Duplicate="0" SampleStart="603" SampleEnd="15698"/>
+          Duplicate="1" SampleStart="603" SampleEnd="15698" SampleRate="48000"
+          MonolithOffset="1220608" MonolithLength="16384"/>
   <sample Root="92" LoKey="92" HiKey="92" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_92_rr1.wav"
-          Duplicate="0" SampleStart="354" SampleEnd="18803"/>
+          Duplicate="1" SampleStart="354" SampleEnd="18803" SampleRate="48000"
+          MonolithOffset="1236992" MonolithLength="20480"/>
   <sample Root="92" LoKey="92" HiKey="92" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_92_rr2.wav"
-          Duplicate="0" SampleStart="450" SampleEnd="18430"/>
+          Duplicate="1" SampleStart="450" SampleEnd="18430" SampleRate="48000"
+          MonolithOffset="1257472" MonolithLength="20480"/>
   <sample Root="92" LoKey="92" HiKey="92" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_92_rr3.wav"
-          Duplicate="0" SampleStart="175" SampleEnd="19067"/>
+          Duplicate="1" SampleStart="175" SampleEnd="19067" SampleRate="48000"
+          MonolithOffset="1277952" MonolithLength="20480"/>
   <sample Root="92" LoKey="92" HiKey="92" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_92_rr4.wav"
-          Duplicate="0" SampleStart="45" SampleEnd="19173"/>
+          Duplicate="1" SampleStart="45" SampleEnd="19173" SampleRate="48000"
+          MonolithOffset="1298432" MonolithLength="20480"/>
   <sample Root="93" LoKey="93" HiKey="93" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_93_rr1.wav"
-          Duplicate="0" SampleStart="430" SampleEnd="18571"/>
+          Duplicate="1" SampleStart="430" SampleEnd="18571" SampleRate="48000"
+          MonolithOffset="1318912" MonolithLength="20480"/>
   <sample Root="93" LoKey="93" HiKey="93" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_93_rr2.wav"
-          Duplicate="0" SampleStart="490" SampleEnd="20703"/>
+          Duplicate="1" SampleStart="490" SampleEnd="20703" SampleRate="48000"
+          MonolithOffset="1339392" MonolithLength="24576"/>
   <sample Root="93" LoKey="93" HiKey="93" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_93_rr3.wav"
-          Duplicate="0" SampleStart="471" SampleEnd="18098"/>
+          Duplicate="1" SampleStart="471" SampleEnd="18098" SampleRate="48000"
+          MonolithOffset="1363968" MonolithLength="20480"/>
   <sample Root="93" LoKey="93" HiKey="93" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_93_rr4.wav"
-          Duplicate="0" SampleStart="486" SampleEnd="20284"/>
+          Duplicate="1" SampleStart="486" SampleEnd="20284" SampleRate="48000"
+          MonolithOffset="1384448" MonolithLength="20480"/>
   <sample Root="94" LoKey="94" HiKey="94" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_94_rr1.wav"
-          Duplicate="0" SampleStart="508" SampleEnd="20479"/>
+          Duplicate="1" SampleStart="508" SampleEnd="20479" SampleRate="48000"
+          MonolithOffset="1404928" MonolithLength="20480"/>
   <sample Root="94" LoKey="94" HiKey="94" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_94_rr2.wav"
-          Duplicate="0" SampleStart="459" SampleEnd="20055"/>
+          Duplicate="1" SampleStart="459" SampleEnd="20055" SampleRate="48000"
+          MonolithOffset="1425408" MonolithLength="20480"/>
   <sample Root="94" LoKey="94" HiKey="94" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_94_rr3.wav"
-          Duplicate="0" SampleStart="479" SampleEnd="21450"/>
+          Duplicate="1" SampleStart="479" SampleEnd="21450" SampleRate="48000"
+          MonolithOffset="1445888" MonolithLength="24576"/>
   <sample Root="94" LoKey="94" HiKey="94" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_94_rr4.wav"
-          Duplicate="0" SampleStart="517" SampleEnd="20738"/>
+          Duplicate="1" SampleStart="517" SampleEnd="20738" SampleRate="48000"
+          MonolithOffset="1470464" MonolithLength="24576"/>
   <sample Root="95" LoKey="95" HiKey="95" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_95_rr1.wav"
-          Duplicate="0" SampleStart="398" SampleEnd="18529"/>
+          Duplicate="1" SampleStart="398" SampleEnd="18529" SampleRate="48000"
+          MonolithOffset="1495040" MonolithLength="20480"/>
   <sample Root="95" LoKey="95" HiKey="95" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_95_rr2.wav"
-          Duplicate="0" SampleStart="495" SampleEnd="17904"/>
+          Duplicate="1" SampleStart="495" SampleEnd="17904" SampleRate="48000"
+          MonolithOffset="1515520" MonolithLength="20480"/>
   <sample Root="95" LoKey="95" HiKey="95" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_95_rr3.wav"
-          Duplicate="0" SampleStart="475" SampleEnd="18694"/>
+          Duplicate="1" SampleStart="475" SampleEnd="18694" SampleRate="48000"
+          MonolithOffset="1536000" MonolithLength="20480"/>
   <sample Root="95" LoKey="95" HiKey="95" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_95_rr4.wav"
-          Duplicate="0" SampleStart="512" SampleEnd="18894"/>
+          Duplicate="1" SampleStart="512" SampleEnd="18894" SampleRate="48000"
+          MonolithOffset="1556480" MonolithLength="20480"/>
   <sample Root="96" LoKey="96" HiKey="96" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_96_rr1.wav"
-          Duplicate="0" SampleStart="394" SampleEnd="19693"/>
+          Duplicate="1" SampleStart="394" SampleEnd="19693" SampleRate="48000"
+          MonolithOffset="1576960" MonolithLength="20480"/>
   <sample Root="96" LoKey="96" HiKey="96" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_96_rr2.wav"
-          Duplicate="0" SampleStart="394" SampleEnd="19038"/>
+          Duplicate="1" SampleStart="394" SampleEnd="19038" SampleRate="48000"
+          MonolithOffset="1597440" MonolithLength="20480"/>
   <sample Root="96" LoKey="96" HiKey="96" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_96_rr3.wav"
-          Duplicate="0" SampleStart="248" SampleEnd="17804"/>
+          Duplicate="1" SampleStart="248" SampleEnd="17804" SampleRate="48000"
+          MonolithOffset="1617920" MonolithLength="20480"/>
   <sample Root="96" LoKey="96" HiKey="96" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_96_rr4.wav"
-          Duplicate="0" SampleStart="431" SampleEnd="16349"/>
+          Duplicate="1" SampleStart="431" SampleEnd="16349" SampleRate="48000"
+          MonolithOffset="1638400" MonolithLength="16384"/>
   <sample Root="97" LoKey="97" HiKey="97" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_97_rr1.wav"
-          Duplicate="0" SampleStart="370" SampleEnd="14859"/>
+          Duplicate="1" SampleStart="370" SampleEnd="14859" SampleRate="48000"
+          MonolithOffset="1654784" MonolithLength="16384"/>
   <sample Root="97" LoKey="97" HiKey="97" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_97_rr2.wav"
-          Duplicate="0" SampleStart="452" SampleEnd="14208"/>
+          Duplicate="1" SampleStart="452" SampleEnd="14208" SampleRate="48000"
+          MonolithOffset="1671168" MonolithLength="16384"/>
   <sample Root="97" LoKey="97" HiKey="97" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_97_rr3.wav"
-          Duplicate="0" SampleStart="391" SampleEnd="16621"/>
+          Duplicate="1" SampleStart="391" SampleEnd="16621" SampleRate="48000"
+          MonolithOffset="1687552" MonolithLength="20480"/>
   <sample Root="97" LoKey="97" HiKey="97" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_97_rr4.wav"
-          Duplicate="0" SampleStart="421" SampleEnd="18631"/>
+          Duplicate="1" SampleStart="421" SampleEnd="18631" SampleRate="48000"
+          MonolithOffset="1708032" MonolithLength="20480"/>
   <sample Root="98" LoKey="98" HiKey="98" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_98_rr1.wav"
-          Duplicate="0" SampleStart="905" SampleEnd="16883"/>
+          Duplicate="1" SampleStart="905" SampleEnd="16883" SampleRate="48000"
+          MonolithOffset="1728512" MonolithLength="20480"/>
   <sample Root="98" LoKey="98" HiKey="98" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_98_rr2.wav"
-          Duplicate="0" SampleStart="871" SampleEnd="18571"/>
+          Duplicate="1" SampleStart="871" SampleEnd="18571" SampleRate="48000"
+          MonolithOffset="1748992" MonolithLength="20480"/>
   <sample Root="98" LoKey="98" HiKey="98" LoVel="0" HiVel="127" RRGroup="3"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_98_rr3.wav"
-          Duplicate="0" SampleStart="530" SampleEnd="17560"/>
+          Duplicate="1" SampleStart="530" SampleEnd="17560" SampleRate="48000"
+          MonolithOffset="1769472" MonolithLength="20480"/>
   <sample Root="98" LoKey="98" HiKey="98" LoVel="0" HiVel="127" RRGroup="4"
           FileName="{PROJECT_FOLDER}D/staccato/d_whistle_cardioid_staccato_98_rr4.wav"
-          Duplicate="0" SampleStart="621" SampleEnd="18273"/>
+          Duplicate="1" SampleStart="621" SampleEnd="18273" SampleRate="48000"
+          MonolithOffset="1789952" MonolithLength="20480"/>
 </samplemap>

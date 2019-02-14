@@ -1,154 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<samplemap ID="" RRGroupAmount="2" MicPositions=";">
+<samplemap ID="d_sustain" RRGroupAmount="2" MicPositions=";" SaveMode="2">
   <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_74_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="0"
+          MonolithLength="552960"/>
   <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_74_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="552960"
+          MonolithLength="487424"/>
   <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_75_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="1040384"
+          MonolithLength="401408"/>
   <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_75_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="1441792"
+          MonolithLength="450560"/>
   <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_76_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="1892352"
+          MonolithLength="446464"/>
   <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_76_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="2338816"
+          MonolithLength="413696"/>
   <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_77_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="2752512"
+          MonolithLength="499712"/>
   <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_77_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="3252224"
+          MonolithLength="454656"/>
   <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_78_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="3706880"
+          MonolithLength="434176"/>
   <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_78_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="4141056"
+          MonolithLength="430080"/>
   <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_79_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="4571136"
+          MonolithLength="475136"/>
   <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_79_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="5046272"
+          MonolithLength="552960"/>
   <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_80_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="5599232"
+          MonolithLength="450560"/>
   <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_80_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="6049792"
+          MonolithLength="417792"/>
   <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_81_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="6467584"
+          MonolithLength="380928"/>
   <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_81_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="6848512"
+          MonolithLength="413696"/>
   <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_82_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="7262208"
+          MonolithLength="319488"/>
   <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_82_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="7581696"
+          MonolithLength="385024"/>
   <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_83_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="7966720"
+          MonolithLength="425984"/>
   <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_83_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="8392704"
+          MonolithLength="389120"/>
   <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_84_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="8781824"
+          MonolithLength="413696"/>
   <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_84_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="9195520"
+          MonolithLength="413696"/>
   <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_85_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="9609216"
+          MonolithLength="417792"/>
   <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_85_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="10027008"
+          MonolithLength="372736"/>
   <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_86_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="10399744"
+          MonolithLength="360448"/>
   <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_86_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="10760192"
+          MonolithLength="348160"/>
   <sample Root="87" LoKey="87" HiKey="87" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_87_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="11108352"
+          MonolithLength="368640"/>
   <sample Root="87" LoKey="87" HiKey="87" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_87_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="11476992"
+          MonolithLength="397312"/>
   <sample Root="88" LoKey="88" HiKey="88" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_88_rr1.wav"
-          Duplicate="0" SampleStartMod="12513"/>
+          Duplicate="0" SampleStartMod="12513" SampleRate="48000" MonolithOffset="11874304"
+          MonolithLength="356352"/>
   <sample Root="88" LoKey="88" HiKey="88" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_88_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="12230656"
+          MonolithLength="376832"/>
   <sample Root="89" LoKey="89" HiKey="89" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_89_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="12607488"
+          MonolithLength="294912"/>
   <sample Root="89" LoKey="89" HiKey="89" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_89_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="12902400"
+          MonolithLength="368640"/>
   <sample Root="90" LoKey="90" HiKey="90" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_90_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="13271040"
+          MonolithLength="385024"/>
   <sample Root="90" LoKey="90" HiKey="90" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_90_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="13656064"
+          MonolithLength="262144"/>
   <sample Root="91" LoKey="91" HiKey="91" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_91_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="13918208"
+          MonolithLength="282624"/>
   <sample Root="91" LoKey="91" HiKey="91" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_91_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="14200832"
+          MonolithLength="282624"/>
   <sample Root="92" LoKey="92" HiKey="92" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_92_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="14483456"
+          MonolithLength="319488"/>
   <sample Root="92" LoKey="92" HiKey="92" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_92_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="14802944"
+          MonolithLength="290816"/>
   <sample Root="93" LoKey="93" HiKey="93" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_93_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="15093760"
+          MonolithLength="266240"/>
   <sample Root="93" LoKey="93" HiKey="93" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_93_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="15360000"
+          MonolithLength="270336"/>
   <sample Root="94" LoKey="94" HiKey="94" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_94_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="15630336"
+          MonolithLength="327680"/>
   <sample Root="94" LoKey="94" HiKey="94" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_94_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="15958016"
+          MonolithLength="315392"/>
   <sample Root="95" LoKey="95" HiKey="95" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_95_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="16273408"
+          MonolithLength="253952"/>
   <sample Root="95" LoKey="95" HiKey="95" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_95_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="16527360"
+          MonolithLength="290816"/>
   <sample Root="96" LoKey="96" HiKey="96" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_96_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="16818176"
+          MonolithLength="274432"/>
   <sample Root="96" LoKey="96" HiKey="96" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_96_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="17092608"
+          MonolithLength="286720"/>
   <sample Root="97" LoKey="97" HiKey="97" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_97_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="17379328"
+          MonolithLength="290816"/>
   <sample Root="97" LoKey="97" HiKey="97" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_97_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="17670144"
+          MonolithLength="278528"/>
   <sample Root="98" LoKey="98" HiKey="98" LoVel="0" HiVel="127" RRGroup="1"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_98_rr1.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="17948672"
+          MonolithLength="274432"/>
   <sample Root="98" LoKey="98" HiKey="98" LoVel="0" HiVel="127" RRGroup="2"
           FileName="{PROJECT_FOLDER}D/sustain/D_whistle_cardioid_sustain_98_rr2.wav"
-          Duplicate="0" SampleStartMod="4601"/>
+          Duplicate="0" SampleStartMod="4601" SampleRate="48000" MonolithOffset="18223104"
+          MonolithLength="278528"/>
 </samplemap>
