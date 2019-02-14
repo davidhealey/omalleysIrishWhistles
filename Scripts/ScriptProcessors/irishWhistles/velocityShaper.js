@@ -2,6 +2,7 @@ Content.setWidth(600);
 Content.setHeight(100);
 
 const var dynamicsCC = Synth.getModulator("dynamicsCC");
+const var legato = Synth.getMidiProcessor("legato");
 
 const var btnDynamics = Content.addButton("btnDynamics", 0, 10);
 btnDynamics.set("text", "Vel = Dynamics");
@@ -19,6 +20,7 @@ tblVel.connectToOtherTable("Velocity Modulator", 0);
 inline function knbCCCB(control, value)
 {
     dynamicsCC.setAttribute(dynamicsCC.ControllerNumber, value);
+    legato.setAttribute(13, value); //Legato breath control CC is same as dynamics
 }function onNoteOn()
 {
 	Message.setVelocity(Math.max(1, 127 * tblVel.getTableValue(Message.getVelocity()))); //Scale velocity using table

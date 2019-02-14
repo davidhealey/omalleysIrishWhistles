@@ -10,7 +10,7 @@
           <ChildProcessors/>
           <Content>
             <Control type="ScriptSlider" id="knbAtk" value="5"/>
-            <Control type="ScriptSlider" id="knbRel" value="250"/>
+            <Control type="ScriptSlider" id="knbRel" value="223"/>
             <Control type="ScriptButton" id="btnBreath" value="0"/>
             <Control type="ScriptSlider" id="knbStacc" value="0"/>
             <Control type="ScriptButton" id="btnRetrigger" value="1"/>
@@ -19,30 +19,23 @@
             <Control type="ScriptSlider" id="knbPan" value="0"/>
             <Control type="ScriptSlider" id="knbCoarse" value="0"/>
             <Control type="ScriptSlider" id="knbFine" value="0"/>
-            <Control type="ScriptComboBox" id="cmbCC0" value="1"/>
-            <Control type="ScriptComboBox" id="cmbCC1" value="20"/>
-            <Control type="ScriptComboBox" id="cmbCC2" value="21"/>
-            <Control type="ScriptSlider" id="knbCC0" value="122"/>
-            <Control type="ScriptTable" id="tblCC0" value="0" data="24...............vO...f+....9C...vO"/>
-            <Control type="ScriptSlider" id="knbCC1" value="53.34"/>
-            <Control type="ScriptSlider" id="knbCC2" value="93.470001"/>
-            <Control type="ScriptComboBox" id="cmbPatches" value="4"/>
+            <Control type="ScriptSlider" id="knbCC0" value="127"/>
+            <Control type="ScriptSlider" id="knbDynamics" value="23"/>
+            <Control type="ScriptSlider" id="knbVibIntensity" value="0"/>
+            <Control type="ScriptSlider" id="knbCC3" value="84"/>
+            <Control type="ScriptTable" id="tblCC0" value="127" data="24...............vO...f+....9C...vO"/>
+            <Control type="ScriptTable" id="tblCC1" value="23" data="24...............vO...f+....9C...vO"/>
+            <Control type="ScriptTable" id="tblCC2" value="0" data="24...............vO...f+....9C...vO"/>
+            <Control type="ScriptComboBox" id="cmbPatches" value="2"/>
             <Control type="ScriptSlider" id="knbTransition" value="-14.399999"/>
           </Content>
           <UIData Source="irishWhistlesUIData"/>
-        </Processor>
-        <Processor Type="ScriptProcessor" ID="articulationHandler" Bypassed="0">
-          <ChildProcessors/>
-          <Content/>
-          <UIData>
-            <ContentProperties DeviceType="Desktop"/>
-          </UIData>
         </Processor>
         <Processor Type="ScriptProcessor" ID="envelopeHandler" Bypassed="0">
           <ChildProcessors/>
           <Content>
             <Control type="ScriptSlider" id="knbAtk" value="5"/>
-            <Control type="ScriptSlider" id="knbRel" value="250"/>
+            <Control type="ScriptSlider" id="knbRel" value="223"/>
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">
@@ -70,7 +63,7 @@
           <Content>
             <Control type="ScriptButton" id="btnDynamics" value="0"/>
             <Control type="ScriptSlider" id="knbCC" value="1"/>
-            <Control type="ScriptTable" id="tblVel" value="79" data="24...............vO...f+....9C...vO"/>
+            <Control type="ScriptTable" id="tblVel" value="65" data="24...............vO...f+....9C...vO"/>
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">
@@ -78,6 +71,18 @@
               <Component type="ScriptSlider" id="knbCC" x="0" y="50" stepSize="1" min="1"
                          max="127" text="Dynamics CC"/>
               <Component type="ScriptTable" id="tblVel" x="150" y="0" height="95" width="200"/>
+            </ContentProperties>
+          </UIData>
+        </Processor>
+        <Processor Type="ScriptProcessor" ID="overlayControl" Bypassed="0">
+          <ChildProcessors/>
+          <Content>
+            <Control type="ScriptSlider" id="knbTheshold" value="70"/>
+          </Content>
+          <UIData>
+            <ContentProperties DeviceType="Desktop">
+              <Component type="ScriptSlider" id="knbTheshold" x="0" y="0" stepSize="1"
+                         min="25" max="127"/>
             </ContentProperties>
           </UIData>
         </Processor>
@@ -99,7 +104,13 @@
       </ChildProcessors>
     </Processor>
     <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
-      <ChildProcessors/>
+      <ChildProcessors>
+        <Processor Type="MidiController" ID="expressionCC" Bypassed="0" Intensity="1"
+                   UseTable="1" Inverted="0" ControllerNumber="94" SmoothTime="200"
+                   DefaultValue="127" ControllerTableData="24...............vO...f+....9C...vO">
+          <ChildProcessors/>
+        </Processor>
+      </ChildProcessors>
     </Processor>
     <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="1" Intensity="0">
       <ChildProcessors/>
@@ -141,8 +152,8 @@
               <ChildProcessors/>
             </Processor>
             <Processor Type="MidiController" ID="dynamicsCC" Bypassed="0" Intensity="1"
-                       UseTable="1" Inverted="0" ControllerNumber="1" SmoothTime="250"
-                       DefaultValue="0" ControllerTableData="24...............vO...f+....9C...vO">
+                       UseTable="1" Inverted="0" ControllerNumber="94" SmoothTime="500"
+                       DefaultValue="23" ControllerTableData="24...............vO...f+....9C...vO">
               <ChildProcessors/>
             </Processor>
             <Processor Type="Velocity" ID="Velocity Modulator" Bypassed="0" Intensity="1"
@@ -151,14 +162,14 @@
             </Processor>
             <Processor Type="LFO" ID="vibratoLFO" Bypassed="0" Intensity="1" Frequency="6.5"
                        FadeIn="250" WaveformType="2" Legato="1" TempoSync="0" SmoothingTime="5"
-                       LoopEnabled="1" CustomWaveform="24...............vO...f+....9C...vO"
+                       LoopEnabled="1" CustomWaveform="36...............vOWJz+9....9C...vO...f+.........vO"
                        StepData="64....f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+....9C...3O...f+.">
               <ChildProcessors>
                 <Processor Type="ModulatorChain" ID="LFO Intensity Mod" Bypassed="0" Intensity="1">
                   <ChildProcessors>
                     <Processor Type="MidiController" ID="vibratoLFOIntensity" Bypassed="0" Intensity="1"
-                               UseTable="1" Inverted="0" ControllerNumber="20" SmoothTime="500"
-                               DefaultValue="127" ControllerTableData="24...............vO...f+....9C..fxO">
+                               UseTable="1" Inverted="0" ControllerNumber="94" SmoothTime="500"
+                               DefaultValue="0" ControllerTableData="24...............vO...f+....9C..jwO">
                       <ChildProcessors/>
                     </Processor>
                   </ChildProcessors>
@@ -166,8 +177,8 @@
                 <Processor Type="ModulatorChain" ID="LFO Frequency Mod" Bypassed="0" Intensity="1">
                   <ChildProcessors>
                     <Processor Type="MidiController" ID="vibratoLFORate" Bypassed="0" Intensity="0.5"
-                               UseTable="1" Inverted="0" ControllerNumber="21" SmoothTime="500"
-                               DefaultValue="0" ControllerTableData="24...............vO...f+....9C..voO">
+                               UseTable="1" Inverted="0" ControllerNumber="94" SmoothTime="500"
+                               DefaultValue="84" ControllerTableData="24...............vO...f+....9C..voO">
                       <ChildProcessors/>
                     </Processor>
                   </ChildProcessors>
@@ -185,7 +196,7 @@
       </ChildProcessors>
       <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
     </Processor>
-    <Processor Type="SynthChain" ID="main" Bypassed="0" Gain="0.25118864" Balance="0"
+    <Processor Type="SynthChain" ID="main" Bypassed="0" Gain="0.35481337" Balance="0"
                VoiceLimit="256" KillFadeTime="20" IconColour="0">
       <ChildProcessors>
         <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
@@ -210,15 +221,7 @@
                    Balance="0" VoiceLimit="256" KillFadeTime="20" IconColour="0">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
-              <ChildProcessors>
-                <Processor Type="MidiMuter" ID="sustainMidiMuter" Bypassed="0">
-                  <ChildProcessors/>
-                  <Content>
-                    <Control type="ScriptButton" id="ignoreButton" value="0"/>
-                    <Control type="ScriptButton" id="fixStuckNotes" value="1"/>
-                  </Content>
-                </Processor>
-              </ChildProcessors>
+              <ChildProcessors/>
             </Processor>
             <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
               <ChildProcessors/>
@@ -229,15 +232,15 @@
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
               <ChildProcessors/>
             </Processor>
-            <Processor Type="StreamingSampler" ID="sustain" Bypassed="0" Gain="1" Balance="2.0816682e-17"
-                       VoiceLimit="96" KillFadeTime="20" IconColour="0" PreloadSize="4096"
-                       BufferSize="2048" VoiceAmount="128" SamplerRepeatMode="3" RRGroupAmount="2"
-                       PitchTracking="1" OneShot="0" CrossfadeGroups="0" Purged="0"
-                       Reversed="0" NumChannels="1" UseStaticMatrix="0" Group0Table="24...............vO...f+....9C...vO"
+            <Processor Type="StreamingSampler" ID="sustain" Bypassed="0" Gain="0.70794576"
+                       Balance="2.0816682e-17" VoiceLimit="96" KillFadeTime="20" IconColour="0"
+                       PreloadSize="4096" BufferSize="2048" VoiceAmount="128" SamplerRepeatMode="3"
+                       RRGroupAmount="2" PitchTracking="1" OneShot="0" CrossfadeGroups="0"
+                       Purged="0" Reversed="0" NumChannels="1" UseStaticMatrix="0" Group0Table="24...............vO...f+....9C...vO"
                        Group1Table="24...............vO...f+....9C...vO" Group2Table="24...............vO...f+....9C...vO"
                        Group3Table="24...............vO...f+....9C...vO" Group4Table="24...............vO...f+....9C...vO"
                        Group5Table="24...............vO...f+....9C...vO" Group6Table="24...............vO...f+....9C...vO"
-                       Group7Table="24...............vO...f+....9C...vO" SampleMapID="low_d_sustain">
+                       Group7Table="24...............vO...f+....9C...vO">
               <ChildProcessors>
                 <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
                   <ChildProcessors>
@@ -245,7 +248,7 @@
                       <ChildProcessors/>
                       <Content>
                         <Control type="ScriptButton" id="btnMute" value="0"/>
-                        <Control type="ScriptSlider" id="knbOffset" value="250"/>
+                        <Control type="ScriptSlider" id="knbOffset" value="1000"/>
                         <Control type="ScriptButton" id="btnRetrigger" value="1"/>
                         <Control type="ScriptSlider" id="knbFadeMin" value="20"/>
                         <Control type="ScriptSlider" id="knbFadeMax" value="60"/>
@@ -253,13 +256,13 @@
                         <Control type="ScriptSlider" id="knbBendTm" value="0"/>
                         <Control type="ScriptSlider" id="knbBendMin" value="10"/>
                         <Control type="ScriptSlider" id="knbBendMax" value="24"/>
-                        <Control type="ScriptSlider" id="knbRate" value="8.3622046"/>
+                        <Control type="ScriptSlider" id="knbRate" value="9.0708661"/>
                         <Control type="ScriptButton" id="btnGlideVel" value="1"/>
                         <Control type="ScriptButton" id="btnWholeStep" value="0"/>
                         <Control type="ScriptButton" id="btnBc" value="0"/>
-                        <Control type="ScriptSlider" id="knbCC" value="11"/>
-                        <Control type="ScriptSlider" id="knbThreshold" value="10"/>
+                        <Control type="ScriptSlider" id="knbThreshold" value="1"/>
                         <Control type="ScriptSlider" id="knbMaxGlide" value="2"/>
+                        <Control type="ScriptSlider" id="knbBreath" value="23"/>
                       </Content>
                       <UIData>
                         <ContentProperties DeviceType="Desktop">
@@ -288,12 +291,12 @@
                                      tooltip="When enabled glides will be per whole step rather than each semi-tone."/>
                           <Component type="ScriptButton" id="btnBc" x="600" y="10" text="Breath Control"
                                      tooltip="Toggles breath controller mode."/>
-                          <Component type="ScriptSlider" id="knbCC" x="600" y="50" stepSize="1" min="1"
-                                     max="127" text="Breath CC" tooltip="Select the CC used in breath controller mode."/>
                           <Component type="ScriptSlider" id="knbThreshold" x="600" y="100" stepSize="1"
                                      min="10" max="127" text="Trigger Level" tooltip="Breath controller trigger threshold."/>
                           <Component type="ScriptSlider" id="knbMaxGlide" x="450" y="150" stepSize="1"
                                      max="11" text="Max Glide" tooltip="Limits the maximum glide interval. A value of 0 means no limit"/>
+                          <Component type="ScriptSlider" id="knbBreath" x="600" y="50" stepSize="1"
+                                     max="127" text="Breath" tooltip="Breath controller knob, value should be set by CC."/>
                         </ContentProperties>
                       </UIData>
                     </Processor>
@@ -301,10 +304,20 @@
                 </Processor>
                 <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
                   <ChildProcessors>
-                    <Processor Type="SimpleEnvelope" ID="sustainEnvelope" Bypassed="0" Monophonic="0"
-                               Retrigger="1" Intensity="1" Attack="5" Release="250" LinearMode="1">
+                    <Processor Type="TableEnvelope" ID="sustainEnvelope" Bypassed="0" Monophonic="0"
+                               Retrigger="1" Intensity="1" Attack="100" Release="223" AttackTableData="24...............vO...f+....9C...pO"
+                               ReleaseTableData="24..........9C...vO...f+........LxO">
                       <ChildProcessors>
-                        <Processor Type="ModulatorChain" ID="Attack Time Modulation" Bypassed="0"
+                        <Processor Type="ModulatorChain" ID="AttackTime Modulation" Bypassed="0"
+                                   Intensity="1">
+                          <ChildProcessors>
+                            <Processor Type="Velocity" ID="sustainEnvelopeVelocity" Bypassed="0" Intensity="1"
+                                       UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="60......TUU08C.....JQuG9.HhHxC..3qOrXwB+nv0ivC.....znQC+....9C........f+....9C...vO">
+                              <ChildProcessors/>
+                            </Processor>
+                          </ChildProcessors>
+                        </Processor>
+                        <Processor Type="ModulatorChain" ID="ReleaseTime Modulation" Bypassed="0"
                                    Intensity="1">
                           <ChildProcessors/>
                         </Processor>
@@ -334,8 +347,8 @@
                       <ChildProcessors/>
                     </Processor>
                     <Processor Type="MidiController" ID="vibratoPitchCounterIntensity" Bypassed="0"
-                               Intensity="-0.0125" Bipolar="0" UseTable="1" Inverted="1" ControllerNumber="20"
-                               SmoothTime="200" DefaultValue="0" ControllerTableData="24...............vO...f+....9C...vO">
+                               Intensity="-0.0125" Bipolar="0" UseTable="1" Inverted="1" ControllerNumber="94"
+                               SmoothTime="200" DefaultValue="0" ControllerTableData="24...............vO...f+....9C..jwO">
                       <ChildProcessors/>
                     </Processor>
                   </ChildProcessors>
@@ -343,7 +356,7 @@
                 <Processor Type="EffectChain" ID="FX" Bypassed="0">
                   <ChildProcessors>
                     <Processor Type="PolyphonicFilter" ID="Filter2" Bypassed="0" Gain="0" Frequency="20000"
-                               Q="1" Mode="9" Quality="1.0608312e+09" BipolarIntensity="0">
+                               Q="1" Mode="9" Quality="1.7021943e+09" BipolarIntensity="0">
                       <ChildProcessors>
                         <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                                    Intensity="1">
@@ -395,6 +408,208 @@
               <channels>
                 <channelData enabled="1" level="0" suffix=""/>
               </channels>
+              <samplemap ID="c_sustain" RRGroupAmount="2" MicPositions=";" SaveMode="2">
+                <sample Root="72" LoKey="72" HiKey="72" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_72_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="0"
+                        MonolithLength="507904"/>
+                <sample Root="72" LoKey="72" HiKey="72" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_72_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="507904"
+                        MonolithLength="385024"/>
+                <sample Root="73" LoKey="73" HiKey="73" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_73_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" Volume="-3" SampleRate="48000"
+                        MonolithOffset="892928" MonolithLength="487424"/>
+                <sample Root="73" LoKey="73" HiKey="73" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_73_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" Volume="-6" SampleRate="48000"
+                        MonolithOffset="1380352" MonolithLength="372736"/>
+                <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_74_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="1753088"
+                        MonolithLength="512000"/>
+                <sample Root="74" LoKey="74" HiKey="74" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_74_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="2265088"
+                        MonolithLength="413696"/>
+                <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_75_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="2678784"
+                        MonolithLength="503808"/>
+                <sample Root="75" LoKey="75" HiKey="75" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_75_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="3182592"
+                        MonolithLength="360448"/>
+                <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_76_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="3543040"
+                        MonolithLength="499712"/>
+                <sample Root="76" LoKey="76" HiKey="76" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_76_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="4042752"
+                        MonolithLength="434176"/>
+                <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_77_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="4476928"
+                        MonolithLength="512000"/>
+                <sample Root="77" LoKey="77" HiKey="77" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_77_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="4988928"
+                        MonolithLength="409600"/>
+                <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_78_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="5398528"
+                        MonolithLength="487424"/>
+                <sample Root="78" LoKey="78" HiKey="78" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_78_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="5885952"
+                        MonolithLength="368640"/>
+                <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_79_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="6254592"
+                        MonolithLength="491520"/>
+                <sample Root="79" LoKey="79" HiKey="79" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_79_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="6746112"
+                        MonolithLength="331776"/>
+                <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_80_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="7077888"
+                        MonolithLength="430080"/>
+                <sample Root="80" LoKey="80" HiKey="80" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_80_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="7507968"
+                        MonolithLength="360448"/>
+                <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_81_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="7868416"
+                        MonolithLength="446464"/>
+                <sample Root="81" LoKey="81" HiKey="81" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_81_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="8314880"
+                        MonolithLength="327680"/>
+                <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_82_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="8642560"
+                        MonolithLength="454656"/>
+                <sample Root="82" LoKey="82" HiKey="82" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_82_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="9097216"
+                        MonolithLength="339968"/>
+                <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_83_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="9437184"
+                        MonolithLength="466944"/>
+                <sample Root="83" LoKey="83" HiKey="83" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_83_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="9904128"
+                        MonolithLength="323584"/>
+                <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_84_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="10227712"
+                        MonolithLength="548864"/>
+                <sample Root="84" LoKey="84" HiKey="84" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_84_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="10776576"
+                        MonolithLength="344064"/>
+                <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_85_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="11120640"
+                        MonolithLength="577536"/>
+                <sample Root="85" LoKey="85" HiKey="85" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_85_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="11698176"
+                        MonolithLength="352256"/>
+                <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_86_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="12050432"
+                        MonolithLength="475136"/>
+                <sample Root="86" LoKey="86" HiKey="86" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_86_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="12525568"
+                        MonolithLength="344064"/>
+                <sample Root="87" LoKey="87" HiKey="87" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_87_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="12869632"
+                        MonolithLength="507904"/>
+                <sample Root="87" LoKey="87" HiKey="87" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_87_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="13377536"
+                        MonolithLength="364544"/>
+                <sample Root="88" LoKey="88" HiKey="88" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_88_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="13742080"
+                        MonolithLength="499712"/>
+                <sample Root="88" LoKey="88" HiKey="88" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_88_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="14241792"
+                        MonolithLength="335872"/>
+                <sample Root="89" LoKey="89" HiKey="89" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_89_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="14577664"
+                        MonolithLength="446464"/>
+                <sample Root="89" LoKey="89" HiKey="89" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_89_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="15024128"
+                        MonolithLength="344064"/>
+                <sample Root="90" LoKey="90" HiKey="90" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_90_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="15368192"
+                        MonolithLength="479232"/>
+                <sample Root="90" LoKey="90" HiKey="90" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_90_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="15847424"
+                        MonolithLength="356352"/>
+                <sample Root="91" LoKey="91" HiKey="91" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_91_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="16203776"
+                        MonolithLength="557056"/>
+                <sample Root="91" LoKey="91" HiKey="91" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_91_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="16760832"
+                        MonolithLength="339968"/>
+                <sample Root="92" LoKey="92" HiKey="92" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_92_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="17100800"
+                        MonolithLength="442368"/>
+                <sample Root="92" LoKey="92" HiKey="92" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_92_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="17543168"
+                        MonolithLength="335872"/>
+                <sample Root="93" LoKey="93" HiKey="93" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_93_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="17879040"
+                        MonolithLength="401408"/>
+                <sample Root="93" LoKey="93" HiKey="93" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_93_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="18280448"
+                        MonolithLength="315392"/>
+                <sample Root="94" LoKey="94" HiKey="94" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_94_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="18595840"
+                        MonolithLength="450560"/>
+                <sample Root="94" LoKey="94" HiKey="94" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_94_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="19046400"
+                        MonolithLength="335872"/>
+                <sample Root="95" LoKey="95" HiKey="95" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_95_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="19382272"
+                        MonolithLength="421888"/>
+                <sample Root="95" LoKey="95" HiKey="95" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_95_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="19804160"
+                        MonolithLength="319488"/>
+                <sample Root="96" LoKey="96" HiKey="96" LoVel="0" HiVel="127" RRGroup="1"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_96_rr1.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="20123648"
+                        MonolithLength="385024"/>
+                <sample Root="96" LoKey="96" HiKey="96" LoVel="0" HiVel="127" RRGroup="2"
+                        FileName="{PROJECT_FOLDER}C/sustain/c_whistle_cardioid_sustain_96_rr2.wav"
+                        Duplicate="0" SampleStartMod="3000" SampleRate="48000" MonolithOffset="20508672"
+                        MonolithLength="389120"/>
+              </samplemap>
             </Processor>
             <Processor Type="StreamingSampler" ID="transitions" Bypassed="0" Gain="0.1905461"
                        Balance="0" VoiceLimit="96" KillFadeTime="20" IconColour="0"
@@ -404,7 +619,7 @@
                        Group1Table="24...............vO...f+....9C...vO" Group2Table="24...............vO...f+....9C...vO"
                        Group3Table="24...............vO...f+....9C...vO" Group4Table="24...............vO...f+....9C...vO"
                        Group5Table="24...............vO...f+....9C...vO" Group6Table="24...............vO...f+....9C...vO"
-                       Group7Table="24...............vO...f+....9C...vO" SampleMapID="low_d_staccato">
+                       Group7Table="24...............vO...f+....9C...vO" SampleMapID="c_staccato">
               <ChildProcessors>
                 <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
                   <ChildProcessors>
@@ -478,16 +693,21 @@
                    Group1Table="24...............vO...f+....9C...vO" Group2Table="24...............vO...f+....9C...vO"
                    Group3Table="24...............vO...f+....9C...vO" Group4Table="24...............vO...f+....9C...vO"
                    Group5Table="24...............vO...f+....9C...vO" Group6Table="24...............vO...f+....9C...vO"
-                   Group7Table="24...............vO...f+....9C...vO" SampleMapID="low_d_staccato">
+                   Group7Table="24...............vO...f+....9C...vO" SampleMapID="c_staccato">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
               <ChildProcessors>
-                <Processor Type="MidiMuter" ID="staccatoMidiMuter" Bypassed="0">
+                <Processor Type="ScriptProcessor" ID="staccatoVelocityFilter" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptButton" id="ignoreButton" value="1"/>
-                    <Control type="ScriptButton" id="fixStuckNotes" value="1"/>
+                    <Control type="ScriptSlider" id="knbTheshold" value="70"/>
                   </Content>
+                  <UIData>
+                    <ContentProperties DeviceType="Desktop">
+                      <Component type="ScriptSlider" id="knbTheshold" x="0" y="0" stepSize="1"
+                                 min="1" max="127"/>
+                    </ContentProperties>
+                  </UIData>
                 </Processor>
                 <Processor Type="ScriptProcessor" ID="staccatoGainHandler" Bypassed="0">
                   <ChildProcessors/>
@@ -505,10 +725,15 @@
             </Processor>
             <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
               <ChildProcessors>
-                <Processor Type="SimpleEnvelope" ID="staccatoEnvelope" Bypassed="0" Monophonic="0"
-                           Retrigger="1" Intensity="1" Attack="5" Release="250" LinearMode="1">
+                <Processor Type="TableEnvelope" ID="staccatoEnvelope2" Bypassed="0" Monophonic="0"
+                           Retrigger="1" Intensity="1" Attack="200" Release="500" AttackTableData="36...............vON12C8....9C...vO...f+.........vO"
+                           ReleaseTableData="24..........9C...vO...f+....9C...vO">
                   <ChildProcessors>
-                    <Processor Type="ModulatorChain" ID="Attack Time Modulation" Bypassed="0"
+                    <Processor Type="ModulatorChain" ID="AttackTime Modulation" Bypassed="0"
+                               Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="ReleaseTime Modulation" Bypassed="0"
                                Intensity="1">
                       <ChildProcessors/>
                     </Processor>
@@ -550,7 +775,7 @@
   </ChildProcessors>
   <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
   <macro_controls>
-    <macro name="Macro 1" value="0" midi_cc="-1"/>
+    <macro name="Macro 1" value="127" midi_cc="-1"/>
     <macro name="Macro 2" value="0" midi_cc="-1"/>
     <macro name="Macro 3" value="0" midi_cc="-1"/>
     <macro name="Macro 4" value="0" midi_cc="-1"/>
@@ -559,6 +784,22 @@
     <macro name="Macro 7" value="0" midi_cc="-1"/>
     <macro name="Macro 8" value="0" midi_cc="-1"/>
   </macro_controls>
-  <MidiAutomation/>
+  <MidiAutomation>
+    <Controller Controller="1" Processor="Interface" MacroIndex="-1" Start="0"
+                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
+                Attribute="tblCC1" Inverted="0"/>
+    <Controller Controller="1" Processor="Interface" MacroIndex="-1" Start="0"
+                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
+                Attribute="knbDynamics" Inverted="0"/>
+    <Controller Controller="11" Processor="Interface" MacroIndex="-1" Start="0"
+                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
+                Attribute="pnlInstrument" Inverted="0"/>
+    <Controller Controller="11" Processor="Interface" MacroIndex="-1" Start="0"
+                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
+                Attribute="tblCC0" Inverted="0"/>
+    <Controller Controller="11" Processor="Interface" MacroIndex="-1" Start="0"
+                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
+                Attribute="knbCC0" Inverted="0"/>
+  </MidiAutomation>
   <MPEData Enabled="0"/>
 </Processor>

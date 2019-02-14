@@ -44,32 +44,27 @@
                  max="100" min="-100" stepSize="1" middlePosition="0" showValuePopup="Below"
                  suffix=" ct" parentComponent="pnlMaster"/>
     </Component>
-    <Component type="ScriptPanel" id="pnlControllers" x="17" y="12" width="370"
-               height="272" borderSize="0" borderRadius="0" itemColour="0" bgColour="0"
+    <Component type="ScriptPanel" id="pnlControllers" x="17" y="12" width="380"
+               height="288" borderSize="0" borderRadius="0" itemColour="0" bgColour="0"
                itemColour2="0" textColour="0" parentComponent="pnlInstrument">
-      <Component type="ScriptComboBox" id="cmbCC0" x="14" y="1" width="50" height="30"
-                 parentComponent="pnlControllers" bgColour="0" itemColour="0"
-                 itemColour2="0" processorId="velocityShaper" parameterId="knbCC"
-                 items="1&#10;2&#10;3&#10;4&#10;5&#10;6&#10;7&#10;8&#10;9&#10;10&#10;11&#10;12&#10;13&#10;14&#10;15&#10;16&#10;17&#10;18&#10;19&#10;20&#10;21&#10;22&#10;23&#10;24&#10;25&#10;26&#10;27&#10;28&#10;29&#10;30&#10;31&#10;32&#10;33&#10;34&#10;35&#10;36&#10;37&#10;38&#10;39&#10;40&#10;41&#10;42&#10;43&#10;44&#10;45&#10;46&#10;47&#10;48&#10;49&#10;50&#10;51&#10;52&#10;53&#10;54&#10;55&#10;56&#10;57&#10;58&#10;59&#10;60&#10;61&#10;62&#10;63&#10;64&#10;65&#10;66&#10;67&#10;68&#10;69&#10;70&#10;71&#10;72&#10;73&#10;74&#10;75&#10;76&#10;77&#10;78&#10;79&#10;80&#10;81&#10;82&#10;83&#10;84&#10;85&#10;86&#10;87&#10;88&#10;89&#10;90&#10;91&#10;92&#10;93&#10;94&#10;95&#10;96&#10;97&#10;98&#10;99&#10;100"
-                 max="100"/>
-      <Component type="ScriptComboBox" id="cmbCC1" x="104" y="1" width="50" height="30"
-                 parentComponent="pnlControllers" bgColour="0" itemColour="0"
-                 itemColour2="0" processorId="vibratoIntensityCC" parameterId="knbCC"
-                 defaultValue="20" items="1&#10;2&#10;3&#10;4&#10;5&#10;6&#10;7&#10;8&#10;9&#10;10&#10;11&#10;12&#10;13&#10;14&#10;15&#10;16&#10;17&#10;18&#10;19&#10;20&#10;21&#10;22&#10;23&#10;24&#10;25&#10;26&#10;27&#10;28&#10;29&#10;30&#10;31&#10;32&#10;33&#10;34&#10;35&#10;36&#10;37&#10;38&#10;39&#10;40&#10;41&#10;42&#10;43&#10;44&#10;45&#10;46&#10;47&#10;48&#10;49&#10;50&#10;51&#10;52&#10;53&#10;54&#10;55&#10;56&#10;57&#10;58&#10;59&#10;60&#10;61&#10;62&#10;63&#10;64&#10;65&#10;66&#10;67&#10;68&#10;69&#10;70&#10;71&#10;72&#10;73&#10;74&#10;75&#10;76&#10;77&#10;78&#10;79&#10;80&#10;81&#10;82&#10;83&#10;84&#10;85&#10;86&#10;87&#10;88&#10;89&#10;90&#10;91&#10;92&#10;93&#10;94&#10;95&#10;96&#10;97&#10;98&#10;99&#10;100"
-                 max="100"/>
-      <Component type="ScriptComboBox" id="cmbCC2" x="214" y="3" width="50" height="30"
-                 parentComponent="pnlControllers" bgColour="0" itemColour="0"
-                 itemColour2="0" processorId="vibratoLFORate" parameterId="ControllerNumber"
-                 defaultValue="21" items="1&#10;2&#10;3&#10;4&#10;5&#10;6&#10;7&#10;8&#10;9&#10;10&#10;11&#10;12&#10;13&#10;14&#10;15&#10;16&#10;17&#10;18&#10;19&#10;20&#10;21&#10;22&#10;23&#10;24&#10;25&#10;26&#10;27&#10;28&#10;29&#10;30&#10;31&#10;32&#10;33&#10;34&#10;35&#10;36&#10;37&#10;38&#10;39&#10;40&#10;41&#10;42&#10;43&#10;44&#10;45&#10;46&#10;47&#10;48&#10;49&#10;50&#10;51&#10;52&#10;53&#10;54&#10;55&#10;56&#10;57&#10;58&#10;59&#10;60&#10;61&#10;62&#10;63&#10;64&#10;65&#10;66&#10;67&#10;68&#10;69&#10;70&#10;71&#10;72&#10;73&#10;74&#10;75&#10;76&#10;77&#10;78&#10;79&#10;80&#10;81&#10;82&#10;83&#10;84&#10;85&#10;86&#10;87&#10;88&#10;89&#10;90&#10;91&#10;92&#10;93&#10;94&#10;95&#10;96&#10;97&#10;98&#10;99&#10;100"
-                 max="100"/>
       <Component type="ScriptSlider" id="knbCC0" x="-8" y="31" parentComponent="pnlControllers"
-                 max="127"/>
-      <Component type="ScriptTable" id="tblCC0" x="119" y="86" width="200" height="150"
-                 parentComponent="pnlControllers" processorId="Velocity Modulator"/>
-      <Component type="ScriptSlider" id="knbCC1" x="119" y="31" parentComponent="pnlControllers"
-                 max="127"/>
-      <Component type="ScriptSlider" id="knbCC2" x="247" y="30" parentComponent="pnlControllers"
-                 max="127"/>
+                 max="127" text="Expression" stepSize="1" processorId="expressionCC"
+                 parameterId="DefaultValue"/>
+      <Component type="ScriptSlider" id="knbDynamics" x="119" y="31" parentComponent="pnlControllers"
+                 max="127" text="Dynamics" stepSize="1"/>
+      <Component type="ScriptSlider" id="knbVibIntensity" x="247" y="30" parentComponent="pnlControllers"
+                 max="127" text="Vibrato Intensity" stepSize="1" isPluginParameter="1"
+                 pluginParameterName="Vibrato Intensity"/>
+      <Component type="ScriptSlider" id="knbCC3" x="0" y="94" parentComponent="pnlControllers"
+                 max="127" text="Vibrato Rate" stepSize="1" processorId="vibratoLFORate"
+                 parameterId="DefaultValue"/>
+      <Component type="ScriptTable" id="tblCC0" x="191" y="155" width="150" height="100"
+                 parentComponent="pnlControllers" processorId="Velocity Modulator"
+                 visible="0"/>
+      <Component type="ScriptTable" id="tblCC1" x="191" y="155" width="150" height="100"
+                 parentComponent="pnlControllers" processorId="expressionCC" visible="0"/>
+      <Component type="ScriptTable" id="tblCC2" x="191" y="155" width="150" height="100"
+                 parentComponent="pnlControllers" processorId="dynamicsCC"/>
     </Component>
   </Component>
   <Component type="ScriptFloatingTile" id="fltPreset" x="0" y="74" width="600"

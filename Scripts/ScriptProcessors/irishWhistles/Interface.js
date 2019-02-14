@@ -24,33 +24,30 @@ Synth.deferCallbacks(true);
 reg i;
 reg lastArticulation = 0;
 
-//Controllers
-const var cmbCC = [];
-const var knbCC = [];
+//Dynamics\breath control
+const var dynamicsCC = Synth.getModulator("dynamicsCC");
+const var legato = Synth.getMidiProcessor("legato");
+const var knbDynamics = Content.getComponent("knbDynamics");
+knbDynamics.setControlCallback(onknbDynamicsControl);
 
-for (i = 0; i < 3; i++)
+inline function onknbDynamicsControl(control, value)
 {
-    cmbCC[i] = Content.getComponent("cmbCC"+i);
-    knbCC[i] = Content.getComponent("knbCC"+i);
-    knbCC[i].setControlCallback(onknbCCControl);
+    dynamicsCC.setAttribute(dynamicsCC.DefaultValue, value);
+    legato.setAttribute(legato.knbBreath, value);
 }
 
-inline function onknbCCControl(control, value)
+//Vibrato Depth
+const var vibratoLFOIntensity = Synth.getModulator("vibratoLFOIntensity");
+const var vibratoPitchCounterIntensity = Synth.getModulator("vibratoPitchCounterIntensity");
+const var knbVibIntensity = Content.getComponent("knbVibIntensity");
+knbVibIntensity.setControlCallback(onknbIntensityControl);
+
+inline function onknbIntensityControl(control, value)
 {
-    local idx = knbCC.indexOf(control);
-    
-    //Link knobs for parameters that share the same CC number
-    for (i = 0; i < cmbCC.length; i++)
-    {
-        if (i != idx && cmbCC[i].getItemText() == cmbCC[idx].getItemText())
-        {
-            knbCC[i].setValue(value);
-        }
-    }
-    
-    //Send CC
-    Synth.sendController(cmbCC[idx].getItemText(), value);
+    vibratoLFOIntensity.setAttribute(vibratoLFOIntensity.DefaultValue, value);
+    vibratoPitchCounterIntensity.setAttribute(vibratoPitchCounterIntensity.DefaultValue, value);    
 }
+
 
 //Preset handling
 const var samplerIds = Synth.getIdList("Sampler");
@@ -71,7 +68,6 @@ inline function oncmbPatchesControl(control, value)
     
     colourKeys(patch);
     loadSampleMaps(patch);
-    colourKeySwitches();
 }
 
 //Populate patch selection drop down
@@ -98,21 +94,6 @@ inline function colourKeys(patch)
         {
             Engine.setKeyColour(i, Colours.withAlpha(Colours.black, 0.5)); //Dark key colour
         }
-    }
-}
-
-inline function colourKeySwitches()
-{
-    for (i = 0; i < Manifest.ks.length; i++)
-    {
-        if (i == Manifest.currentArticulation)
-        {
-            Engine.setKeyColour(Manifest.ks[i], Colours.withAlpha(Colours.red, 0.3)); //Set selected KS
-        }
-        else
-        {
-            Engine.setKeyColour(Manifest.ks[i], Colours.withAlpha(Colours.darkred, 0.3)); //Set key colour
-        }  
     }
 }
 
@@ -144,33 +125,20 @@ inline function loadSampleMaps(patch)
     }
 }function onNoteOn()
 {
-    //If the articulation has been changed by the articulation handler update the UI
-	if (Manifest.currentArticulation != lastArticulation)
-    {
-        colourKeySwitches();
-        lastArticulation = Manifest.currentArticulation;
-    }
+	
 }
 function onNoteOff()
 {
 	
 }
 function onController()
-{
-    //If the articulation has been changed by the articulation handler update the UI
-	if (Manifest.currentArticulation != lastArticulation)
-    {
-        colourKeySwitches();
-        lastArticulation = Manifest.currentArticulation;
-    }
-    
-    for (i = 0; i < cmbCC.length; i++)
+{    
+    /*for (i = 0; i < cmbCC.length; i++)
     {
         if (Message.getControllerNumber() == cmbCC[i].getItemText())
             knbCC[i].setValue(Message.getControllerValue());
-    }
-}
-function onTimer()
+    }*/
+}function onTimer()
 {
 	
 }

@@ -3,7 +3,7 @@ reg i;
 //Get envelopes
 const var envelopes = [];
 envelopes[0] = Synth.getModulator("sustainEnvelope");
-envelopes[1] = Synth.getModulator("staccatoEnvelope");
+//envelopes[0] = Synth.getModulator("staccatoEnvelope");
 
 
 //GUI
@@ -25,9 +25,9 @@ inline function onKnobControl(control, value)
     
     for (i = 0; i < envelopes.length; i++)
     {
-        if (idx == 0) //Attack
-            envelopes[i].setAttribute(envelopes[i].Attack, value);
-        else //Release
+        if (idx == 1) //Attack
+            //envelopes[i].setAttribute(envelopes[i].Attack, value);
+        //else //Release
             envelopes[i].setAttribute(envelopes[i].Release, value);
     }
 }function onNoteOn()
