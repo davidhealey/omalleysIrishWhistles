@@ -18,6 +18,7 @@
 Content.makeFrontInterface(600, 500);
 
 include("manifest.js");
+include("settings.js");
 
 Synth.deferCallbacks(true);
 
@@ -34,6 +35,31 @@ inline function onknbDynamicsControl(control, value)
 {
     dynamicsCC.setAttribute(dynamicsCC.DefaultValue, value);
     legato.setAttribute(legato.knbBreath, value);
+}
+
+//Expression and Dynamics curve editors
+const var btnCC = [];
+const var tblCC = [];
+
+for (i = 0; i < 4; i++)
+{
+    btnCC[i] = Content.getComponent("btnCC"+(i+1));
+    btnCC[i].setControlCallback(onbtnCCControl);
+    tblCC[i] = Content.getComponent("tblCC"+(i+1));
+}
+
+inline function onbtnCCControl(control, value)
+{
+    local idx = btnCC.indexOf(control);
+    
+    for (i = 0; i < tblCC.length; i++)
+    {
+        tblCC[i].showControl(false);
+        btnCC[i].setValue(false);
+    }
+ 
+    tblCC[idx].showControl(value);
+    btnCC[idx].setValue(value);
 }
 
 //Preset handling
