@@ -9,25 +9,30 @@
         <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
           <ChildProcessors/>
           <Content>
-            <Control type="ScriptSlider" id="knbAtk" value="5"/>
-            <Control type="ScriptSlider" id="knbRel" value="223"/>
+            <Control type="ScriptSlider" id="knbRel" value="250"/>
             <Control type="ScriptButton" id="btnBreath" value="0"/>
-            <Control type="ScriptSlider" id="knbStacc" value="0"/>
+            <Control type="ScriptSlider" id="knbStacc" value="1.4901161e-06"/>
             <Control type="ScriptButton" id="btnRetrigger" value="1"/>
             <Control type="ScriptButton" id="btnVelDynamics" value="0"/>
             <Control type="ScriptSlider" id="knbGain" value="-2.9999986"/>
             <Control type="ScriptSlider" id="knbPan" value="0"/>
             <Control type="ScriptSlider" id="knbCoarse" value="0"/>
             <Control type="ScriptSlider" id="knbFine" value="0"/>
-            <Control type="ScriptSlider" id="knbCC0" value="127"/>
+            <Control type="ScriptSlider" id="knbExpression" value="127"/>
             <Control type="ScriptSlider" id="knbDynamics" value="127"/>
             <Control type="ScriptSlider" id="knbVibIntensity" value="0"/>
-            <Control type="ScriptSlider" id="knbCC3" value="99"/>
+            <Control type="ScriptSlider" id="knbVibratoRate" value="81"/>
+            <Control type="ScriptButton" id="btnCC1" value="0"/>
+            <Control type="ScriptButton" id="btnCC2" value="0"/>
+            <Control type="ScriptButton" id="btnCC3" value="0"/>
+            <Control type="ScriptButton" id="btnCC4" value="0"/>
             <Control type="ScriptTable" id="tblCC0" value="127" data="24...............vO...f+....9C...vO"/>
             <Control type="ScriptTable" id="tblCC1" value="23" data="24...............vO...f+....9C...vO"/>
             <Control type="ScriptTable" id="tblCC2" value="0" data="24...............vO...f+....9C...vO"/>
-            <Control type="ScriptComboBox" id="cmbPatches" value="3"/>
-            <Control type="ScriptSlider" id="knbTransition" value="-15.999999"/>
+            <Control type="ScriptTable" id="tblCC3" value="0" data="24...............vO...f+....9C...0O"/>
+            <Control type="ScriptTable" id="tblCC4" value="0" data="24...............vO...f+....9C...vO"/>
+            <Control type="ScriptComboBox" id="cmbPatches" value="1"/>
+            <Control type="ScriptSlider" id="knbTransition" value="-11.999999"/>
           </Content>
           <UIData Source="irishWhistlesUIData"/>
         </Processor>
@@ -35,7 +40,7 @@
           <ChildProcessors/>
           <Content>
             <Control type="ScriptSlider" id="knbAtk" value="5"/>
-            <Control type="ScriptSlider" id="knbRel" value="223"/>
+            <Control type="ScriptSlider" id="knbRel" value="250"/>
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">
@@ -46,24 +51,12 @@
             </ContentProperties>
           </UIData>
         </Processor>
-        <Processor Type="ScriptProcessor" ID="vibratoIntensityCC" Bypassed="0">
-          <ChildProcessors/>
-          <Content>
-            <Control type="ScriptSlider" id="knbCC" value="20"/>
-          </Content>
-          <UIData>
-            <ContentProperties DeviceType="Desktop">
-              <Component type="ScriptSlider" id="knbCC" x="0" y="0" stepSize="1" min="1"
-                         max="127" text="Intensity CC"/>
-            </ContentProperties>
-          </UIData>
-        </Processor>
         <Processor Type="ScriptProcessor" ID="velocityShaper" Bypassed="0">
           <ChildProcessors/>
           <Content>
             <Control type="ScriptButton" id="btnDynamics" value="0"/>
             <Control type="ScriptSlider" id="knbCC" value="1"/>
-            <Control type="ScriptTable" id="tblVel" value="12" data="24...............vO...f+....9C...vO"/>
+            <Control type="ScriptTable" id="tblVel" value="35" data="24...............vO...f+....9C...vO"/>
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">
@@ -152,7 +145,7 @@
               <ChildProcessors/>
             </Processor>
             <Processor Type="MidiController" ID="dynamicsCC" Bypassed="0" Intensity="1"
-                       UseTable="1" Inverted="0" ControllerNumber="94" SmoothTime="500"
+                       UseTable="1" Inverted="0" ControllerNumber="1" SmoothTime="500"
                        DefaultValue="127" ControllerTableData="24...............vO...f+....9C...vO">
               <ChildProcessors/>
             </Processor>
@@ -177,8 +170,8 @@
                 <Processor Type="ModulatorChain" ID="LFO Frequency Mod" Bypassed="0" Intensity="1">
                   <ChildProcessors>
                     <Processor Type="MidiController" ID="vibratoLFORate" Bypassed="0" Intensity="0.5"
-                               UseTable="0" Inverted="0" ControllerNumber="94" SmoothTime="500"
-                               DefaultValue="99">
+                               UseTable="1" Inverted="0" ControllerNumber="94" SmoothTime="500"
+                               DefaultValue="81" ControllerTableData="24...............vO...f+....9C...vO">
                       <ChildProcessors/>
                     </Processor>
                   </ChildProcessors>
@@ -232,15 +225,15 @@
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
               <ChildProcessors/>
             </Processor>
-            <Processor Type="StreamingSampler" ID="sustain" Bypassed="0" Gain="0.70794576"
-                       Balance="2.0816682e-17" VoiceLimit="96" KillFadeTime="20" IconColour="0"
-                       PreloadSize="4096" BufferSize="2048" VoiceAmount="128" SamplerRepeatMode="3"
-                       RRGroupAmount="2" PitchTracking="1" OneShot="0" CrossfadeGroups="0"
-                       Purged="0" Reversed="0" NumChannels="1" UseStaticMatrix="0" Group0Table="24...............vO...f+....9C...vO"
+            <Processor Type="StreamingSampler" ID="sustain" Bypassed="0" Gain="1" Balance="2.0816682e-17"
+                       VoiceLimit="96" KillFadeTime="20" IconColour="0" PreloadSize="4096"
+                       BufferSize="2048" VoiceAmount="128" SamplerRepeatMode="3" RRGroupAmount="2"
+                       PitchTracking="1" OneShot="0" CrossfadeGroups="0" Purged="0"
+                       Reversed="0" NumChannels="1" UseStaticMatrix="0" Group0Table="24...............vO...f+....9C...vO"
                        Group1Table="24...............vO...f+....9C...vO" Group2Table="24...............vO...f+....9C...vO"
                        Group3Table="24...............vO...f+....9C...vO" Group4Table="24...............vO...f+....9C...vO"
                        Group5Table="24...............vO...f+....9C...vO" Group6Table="24...............vO...f+....9C...vO"
-                       Group7Table="24...............vO...f+....9C...vO" SampleMapID="d_sustain">
+                       Group7Table="24...............vO...f+....9C...vO" SampleMapID="Bb_sustain">
               <ChildProcessors>
                 <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
                   <ChildProcessors>
@@ -256,7 +249,7 @@
                         <Control type="ScriptSlider" id="knbBendTm" value="0"/>
                         <Control type="ScriptSlider" id="knbBendMin" value="10"/>
                         <Control type="ScriptSlider" id="knbBendMax" value="24"/>
-                        <Control type="ScriptSlider" id="knbRate" value="5.8110236"/>
+                        <Control type="ScriptSlider" id="knbRate" value="9.354331"/>
                         <Control type="ScriptButton" id="btnGlideVel" value="1"/>
                         <Control type="ScriptButton" id="btnWholeStep" value="0"/>
                         <Control type="ScriptButton" id="btnBc" value="0"/>
@@ -305,7 +298,7 @@
                 <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
                   <ChildProcessors>
                     <Processor Type="TableEnvelope" ID="sustainEnvelope" Bypassed="0" Monophonic="0"
-                               Retrigger="1" Intensity="1" Attack="100" Release="223" AttackTableData="24...............vO...f+....9C...pO"
+                               Retrigger="1" Intensity="1" Attack="100" Release="250" AttackTableData="24...............vO...f+....9C...pO"
                                ReleaseTableData="24..........9C...vO...f+........LxO">
                       <ChildProcessors>
                         <Processor Type="ModulatorChain" ID="AttackTime Modulation" Bypassed="0"
@@ -329,7 +322,7 @@
                       <ChildProcessors/>
                     </Processor>
                     <Processor Type="GlobalTimeVariantModulator" ID="Global Time Variant Modulator3"
-                               Bypassed="0" Intensity="0.40000001" UseTable="0" Inverted="0"
+                               Bypassed="0" Intensity="0.55000001" UseTable="0" Inverted="0"
                                TableData="24...............vO...f+....9C...vO" Connection="Global Modulator Container1:vibratoLFO">
                       <ChildProcessors/>
                     </Processor>
@@ -342,12 +335,12 @@
                       <ChildProcessors/>
                     </Processor>
                     <Processor Type="GlobalTimeVariantModulator" ID="Global Time Variant Modulator4"
-                               Bypassed="0" Intensity="0.016666668" Bipolar="0" UseTable="0"
-                               Inverted="0" TableData="24...............vO...f+....9C...vO"
+                               Bypassed="0" Intensity="0.033333335" Bipolar="1" UseTable="1"
+                               Inverted="0" TableData="24..........6C...vO...f+....9C...vO"
                                Connection="Global Modulator Container1:vibratoLFO">
                       <ChildProcessors/>
                     </Processor>
-                    <Processor Type="Constant" ID="Constant1" Bypassed="0" Intensity="-0.016666668"
+                    <Processor Type="Constant" ID="Constant1" Bypassed="0" Intensity="-0.033333335"
                                Bipolar="0">
                       <ChildProcessors/>
                     </Processor>
@@ -409,7 +402,7 @@
                 <channelData enabled="1" level="0" suffix=""/>
               </channels>
             </Processor>
-            <Processor Type="StreamingSampler" ID="transitions" Bypassed="0" Gain="0.15848933"
+            <Processor Type="StreamingSampler" ID="transitions" Bypassed="0" Gain="0.25118867"
                        Balance="0" VoiceLimit="96" KillFadeTime="20" IconColour="0"
                        PreloadSize="4096" BufferSize="2048" VoiceAmount="96" SamplerRepeatMode="3"
                        RRGroupAmount="4" PitchTracking="1" OneShot="0" CrossfadeGroups="0"
@@ -417,14 +410,14 @@
                        Group1Table="24...............vO...f+....9C...vO" Group2Table="24...............vO...f+....9C...vO"
                        Group3Table="24...............vO...f+....9C...vO" Group4Table="24...............vO...f+....9C...vO"
                        Group5Table="24...............vO...f+....9C...vO" Group6Table="24...............vO...f+....9C...vO"
-                       Group7Table="24...............vO...f+....9C...vO" SampleMapID="d_staccato">
+                       Group7Table="24...............vO...f+....9C...vO" SampleMapID="Bb_staccato">
               <ChildProcessors>
                 <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
                   <ChildProcessors>
                     <Processor Type="ScriptProcessor" ID="transitionHandler" Bypassed="0">
                       <ChildProcessors/>
                       <Content>
-                        <Control type="ScriptSlider" id="knbGain" value="-15.999999"/>
+                        <Control type="ScriptSlider" id="knbGain" value="-11.999999"/>
                       </Content>
                       <UIData>
                         <ContentProperties DeviceType="Desktop">
@@ -491,7 +484,7 @@
                    Group1Table="24...............vO...f+....9C...vO" Group2Table="24...............vO...f+....9C...vO"
                    Group3Table="24...............vO...f+....9C...vO" Group4Table="24...............vO...f+....9C...vO"
                    Group5Table="24...............vO...f+....9C...vO" Group6Table="24...............vO...f+....9C...vO"
-                   Group7Table="24...............vO...f+....9C...vO" SampleMapID="d_staccato">
+                   Group7Table="24...............vO...f+....9C...vO" SampleMapID="Bb_staccato">
           <ChildProcessors>
             <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
               <ChildProcessors>
@@ -504,18 +497,6 @@
                     <ContentProperties DeviceType="Desktop">
                       <Component type="ScriptSlider" id="knbTheshold" x="0" y="0" stepSize="1"
                                  min="1" max="127"/>
-                    </ContentProperties>
-                  </UIData>
-                </Processor>
-                <Processor Type="ScriptProcessor" ID="staccatoGainHandler" Bypassed="0">
-                  <ChildProcessors/>
-                  <Content>
-                    <Control type="ScriptSlider" id="knbGain" value="0"/>
-                  </Content>
-                  <UIData>
-                    <ContentProperties DeviceType="Desktop">
-                      <Component type="ScriptSlider" id="knbGain" x="0" y="0" middlePosition="-18"
-                                 stepSize="0.1" min="-100" max="0" suffix=" dB" text="Gain" mode="Decibel"/>
                     </ContentProperties>
                   </UIData>
                 </Processor>
@@ -553,7 +534,26 @@
               </ChildProcessors>
             </Processor>
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
-              <ChildProcessors/>
+              <ChildProcessors>
+                <Processor Type="SimpleGain" ID="staccatoGain" Bypassed="0" Gain="1.0354387e-06"
+                           Delay="0" Width="100" Balance="0">
+                  <ChildProcessors>
+                    <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Delay Modulation" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Width Modulation" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                    <Processor Type="ModulatorChain" ID="Pan Modulation" Bypassed="0" Intensity="1">
+                      <ChildProcessors/>
+                    </Processor>
+                  </ChildProcessors>
+                  <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+                </Processor>
+              </ChildProcessors>
             </Processor>
             <Processor Type="ModulatorChain" ID="Sample Start" Bypassed="0" Intensity="1">
               <ChildProcessors/>
@@ -589,15 +589,6 @@
     <Controller Controller="1" Processor="Interface" MacroIndex="-1" Start="0"
                 End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
                 Attribute="knbVibIntensity" Inverted="0"/>
-    <Controller Controller="11" Processor="Interface" MacroIndex="-1" Start="0"
-                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
-                Attribute="pnlInstrument" Inverted="0"/>
-    <Controller Controller="11" Processor="Interface" MacroIndex="-1" Start="0"
-                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
-                Attribute="knbCC0" Inverted="0"/>
-    <Controller Controller="11" Processor="Interface" MacroIndex="-1" Start="0"
-                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
-                Attribute="knbDynamics" Inverted="0"/>
   </MidiAutomation>
   <MPEData Enabled="0"/>
 </Processor>
