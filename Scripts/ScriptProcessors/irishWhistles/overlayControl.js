@@ -1,6 +1,6 @@
 //Modulators
 const var staccatoVelocityFilter = Synth.getMidiProcessor("staccatoVelocityFilter");
-const var sustainEnvelopeVelocity = Synth.getModulator("sustainEnvelopeVelocity");
+const var sustainEnvelopeVelocity = Synth.getModulator("sustainAttackVelocity");
 
 const var knbThreshold = Content.addKnob("knbTheshold", 0, 0);
 knbThreshold.setRange(25, 127, 1);
