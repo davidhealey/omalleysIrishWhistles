@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ProjectSettings>
-  <Name value="Test"/>
+  <Name value="Omalleys Irish Whistles"/>
   <Version value="1.0.0"/>
   <Description value=""/>
-  <BundleIdentifier value="com.myCompany.product"/>
+  <BundleIdentifier value="com.librewave.omalleys-irish-whistles"/>
   <PluginCode value="Abcd"/>
   <EmbedAudioFiles value="Yes"/>
   <SupportFullDynamicsHLAC value="1"/>
