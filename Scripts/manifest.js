@@ -17,6 +17,9 @@
 
 namespace Manifest
 {        
+    const var ks = [36, 37, 38];
+    const var programs = [1, 2, 40];
+    
     const var patches = {
         "Bb": {
             range:[70, 94]

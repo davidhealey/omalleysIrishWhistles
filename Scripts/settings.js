@@ -1,5 +1,5 @@
 /*
-    Copyright 2018 David Healey
+    Copyright 2018, 2019 David Healey
 
     This file is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,23 +19,16 @@ namespace Settings
 {
     const var isPlugin = Engine.isPlugin();
 
-    // Use this function to get the Height for the popup
-    inline function getHeight()
-    {
-        return isPlugin ? 360 : 520;
-    };
-
-    // Pass this object to the floating tile
     const var tileData = {
     "Type": "Tabs",
-    "Font": Theme.REGULAR,
-    "FontSize": 22,
+    "Font": "",
+    "FontSize": 20,
     "Dynamic": false,
     "ColourData":
         {
-            "bgColour": 0xFFD32222,
-            "itemColour1":0xFF877559,
-            "textColour":0xFFFFF4CA
+            "bgColour": 0xFF035C09,
+            "itemColour1":0xFD001D0E,
+            "textColour":0xFFF8F800
         },
     "Content": [],
     "CurrentTab": 0
@@ -48,11 +41,11 @@ namespace Settings
         },
         "ColourData":
             {
-                "bgColour":0xFF877559,
-                "textColour":0xFFFFF3DD
+                "bgColour": 0xFD001D0E,
+                "textColour":0xFFFFFDD1
             },
-        "Font": Theme.BOLD,
-        "FontSize": 18,
+        "Font": "",
+        "FontSize": 14,
         "Driver": !isPlugin,
         "Device": !isPlugin,
         "Output": !isPlugin,
@@ -82,11 +75,11 @@ namespace Settings
             "Title": "MIDI Input",
             "StyleData": {
             },
-            "Font": Theme.REGULAR,
-            "FontSize": 18,
+            "Font": "",
+            "FontSize": 14,
             "ColourData": {
-                "bgColour":0xFF877559,
-                "textColour":0xFFFFF3DD
+                "bgColour": 0xFD001D0E,
+                "textColour":0xFFFFFDD1
             }
         });
     }
@@ -96,27 +89,26 @@ namespace Settings
         "Title": "MIDI Channel",
         "StyleData": {
         },
-        "Font": Theme.REGULAR,
-        "FontSize": 18,
+        "Font": "",
+        "FontSize": 14,
         "ColourData": {
-            "bgColour":0xFF877559,
-            "textColour":0xFFFFF3DD
+            "bgColour": 0xFD001D0E,
+            "textColour":0xFFFFFDD1
         }
     });
 
     tileData["Content"].push({
         "Type": "MidiLearnPanel",
         "Title": "MIDI Automation",
-        "Font": Theme.REGULAR,
-        "FontSize": 18,
+        "Font": "",
+        "FontSize": 14,
         "ColourData":
         {
-            "bgColour":0xFF877559,
-            "textColour":0xFFFFF3DD,
-            "itemColour1":0xFF877559
+            "bgColour": 0xFD001D0E,
+            "textColour":0xFFFFFDD1,
+            "itemColour1":0xFF00714E
         }
     });
 };
 
-const var fltSettings = Content.getComponent("fltSettings");
-fltSettings.setContentData(Settings.tileData);
+Content.getComponent("fltSettings").setContentData(Settings.tileData);
