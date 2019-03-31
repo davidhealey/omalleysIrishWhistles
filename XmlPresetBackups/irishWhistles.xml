@@ -662,10 +662,6 @@
     <macro name="Macro 7" value="0" midi_cc="-1"/>
     <macro name="Macro 8" value="0" midi_cc="-1"/>
   </macro_controls>
-  <MidiAutomation>
-    <Controller Controller="1" Processor="Interface" MacroIndex="-1" Start="0"
-                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
-                Attribute="imgBG" Inverted="0"/>
-  </MidiAutomation>
+  <MidiAutomation/>
   <MPEData Enabled="0"/>
 </Processor>

@@ -33,7 +33,6 @@ const var pnlPage = [];
 
 btnPage[0] = Content.getComponent("btnPreset0");
 btnPage[1] = Content.getComponent("btnSettings");
-btnPage[2] = Content.getComponent("btnAbout");
 
 for (i = 0; i < btnPage.length; i++)
 {

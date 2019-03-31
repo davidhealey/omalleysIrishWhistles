@@ -26,8 +26,8 @@ namespace Settings
     "Dynamic": false,
     "ColourData":
         {
-            "bgColour": 0xFF035C09,
-            "itemColour1":0xFD001D0E,
+            "bgColour": 0x00,
+            "itemColour1":0xFF035C09,
             "textColour":0xFFF8F800
         },
     "Content": [],
@@ -108,6 +108,22 @@ namespace Settings
             "textColour":0xFFFFFDD1,
             "itemColour1":0xFF00714E
         }
+    });
+    
+    tileData["Content"].push({
+        "Type": "AboutPagePanel",
+        "Title": "About",
+        "Font": "",
+        "FontSize": 14,
+        "ColourData":
+        {
+            "bgColour": 0xFD001D0E,
+            "textColour":0xFFFFFDD1,
+            "itemColour1":0xFFFFE500
+        },
+        "CopyrightNotice": "\u00a9 2019, David Healey",
+        "ShowLicensedEmail": false,
+        "WebsiteURL": "http://librewave.com",
     });
 };
 
