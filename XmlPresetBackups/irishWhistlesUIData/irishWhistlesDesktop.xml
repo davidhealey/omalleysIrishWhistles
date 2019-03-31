@@ -8,8 +8,8 @@
              borderSize="0">
     <Component type="ScriptSlider" id="knbRel" x="92" y="264" mode="Time" max="20000"
                stepSize="1" suffix=" ms" middlePosition="1000" defaultValue="350"
-               showValuePopup="Above" scaleFactor="0.5" processorId="envelopeHandler"
-               parameterId="knbRel" pluginParameterName="Release" isPluginParameter="1"
+               showValuePopup="Above" scaleFactor="0.5" processorId="sustainEnvelope"
+               parameterId="Release" pluginParameterName="Release" isPluginParameter="1"
                parentComponent="pnlInstrument" width="44" height="44" numStrips="127"
                filmstripImage="{PROJECT_FOLDER}knob.png"/>
     <Component type="ScriptSlider" id="knbStacc" x="185" y="264" text="Staccato Gain"
@@ -19,7 +19,7 @@
                height="44" numStrips="127" scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}knob.png"
                isPluginParameter="1" pluginParameterName="Overlay Gain"/>
     <Component type="ScriptButton" id="btnRR" x="101" y="375" width="111" height="14"
-               processorId="sustainRoundRobin" parameterId="Enabled" parentComponent="pnlInstrument"
+               processorId="roundRobinHandler" parameterId="btnEnabled" parentComponent="pnlInstrument"
                scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}Button.png"
                isPluginParameter="1" pluginParameterName="Round Robin"/>
     <Component type="ScriptButton" id="btnBreath" x="101" y="411" width="150"

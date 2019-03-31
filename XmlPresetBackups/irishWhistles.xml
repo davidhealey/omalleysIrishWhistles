@@ -9,7 +9,7 @@
         <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
           <ChildProcessors/>
           <Content>
-            <Control type="ScriptSlider" id="knbRel" value="316"/>
+            <Control type="ScriptSlider" id="knbRel" value="350"/>
             <Control type="ScriptSlider" id="knbStacc" value="1.4901161e-06"/>
             <Control type="ScriptButton" id="btnRR" value="0"/>
             <Control type="ScriptButton" id="btnBreath" value="0"/>
@@ -38,27 +38,12 @@
           </Content>
           <UIData Source="irishWhistlesUIData"/>
         </Processor>
-        <Processor Type="ScriptProcessor" ID="envelopeHandler" Bypassed="0">
-          <ChildProcessors/>
-          <Content>
-            <Control type="ScriptSlider" id="knbAtk" value="5"/>
-            <Control type="ScriptSlider" id="knbRel" value="316"/>
-          </Content>
-          <UIData>
-            <ContentProperties DeviceType="Desktop">
-              <Component type="ScriptSlider" id="knbAtk" x="0" y="0" middlePosition="1000"
-                         stepSize="1" max="20000" suffix=" ms" mode="Time" text="Attack"/>
-              <Component type="ScriptSlider" id="knbRel" x="150" y="0" middlePosition="1000"
-                         stepSize="1" max="20000" suffix=" ms" text="Release" mode="Time"/>
-            </ContentProperties>
-          </UIData>
-        </Processor>
         <Processor Type="ScriptProcessor" ID="velocityShaper" Bypassed="0">
           <ChildProcessors/>
           <Content>
             <Control type="ScriptButton" id="btnDynamics" value="0"/>
             <Control type="ScriptSlider" id="knbCC" value="1"/>
-            <Control type="ScriptTable" id="tblVel" value="102" data="24...............vO...f+....9C...vO"/>
+            <Control type="ScriptTable" id="tblVel" value="72" data="24...............vO...f+....9C...vO"/>
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">
@@ -93,6 +78,17 @@
                          stepSize="1" min="-100" max="100" suffix="ct" text="Fine Tune"/>
               <Component type="ScriptSlider" id="knbCoarse" x="150" y="0" middlePosition="0"
                          stepSize="1" min="-12" max="12" suffix="st" text="Coarse Tune"/>
+            </ContentProperties>
+          </UIData>
+        </Processor>
+        <Processor Type="ScriptProcessor" ID="roundRobinHandler" Bypassed="0">
+          <ChildProcessors/>
+          <Content>
+            <Control type="ScriptButton" id="btnEnabled" value="0"/>
+          </Content>
+          <UIData>
+            <ContentProperties DeviceType="Desktop">
+              <Component type="ScriptButton" id="btnEnabled" x="0" y="0" text="Enabled"/>
             </ContentProperties>
           </UIData>
         </Processor>
@@ -238,7 +234,7 @@
                 <Processor Type="MidiMuter" ID="sustainMuter" Bypassed="0">
                   <ChildProcessors/>
                   <Content>
-                    <Control type="ScriptButton" id="ignoreButton" value="0"/>
+                    <Control type="ScriptButton" id="ignoreButton" value="1"/>
                     <Control type="ScriptButton" id="fixStuckNotes" value="1"/>
                   </Content>
                 </Processor>
@@ -350,7 +346,7 @@
                 <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
                   <ChildProcessors>
                     <Processor Type="TableEnvelope" ID="sustainEnvelope" Bypassed="0" Monophonic="0"
-                               Retrigger="1" Intensity="1" Attack="150" Release="316" AttackTableData="24...............vO...f+....9C...pO"
+                               Retrigger="1" Intensity="1" Attack="150" Release="350" AttackTableData="24...............vO...f+....9C...pO"
                                ReleaseTableData="24..........9C...vO...f+........LxO">
                       <ChildProcessors>
                         <Processor Type="ModulatorChain" ID="AttackTime Modulation" Bypassed="0"
@@ -554,7 +550,7 @@
                     <Control type="ScriptButton" id="fixStuckNotes" value="1"/>
                   </Content>
                 </Processor>
-                <Processor Type="ScriptProcessor" ID="staccatoVelocityFilter" Bypassed="0">
+                <Processor Type="ScriptProcessor" ID="staccatoVelocityFilter" Bypassed="1">
                   <ChildProcessors/>
                   <Content>
                     <Control type="ScriptSlider" id="knbTheshold" value="70"/>
@@ -563,6 +559,17 @@
                     <ContentProperties DeviceType="Desktop">
                       <Component type="ScriptSlider" id="knbTheshold" x="0" y="0" stepSize="1"
                                  min="1" max="127"/>
+                    </ContentProperties>
+                  </UIData>
+                </Processor>
+                <Processor Type="ScriptProcessor" ID="staccatoRoundRobin" Bypassed="0">
+                  <ChildProcessors/>
+                  <Content>
+                    <Control type="ScriptButton" id="btnEnable" value="0"/>
+                  </Content>
+                  <UIData>
+                    <ContentProperties DeviceType="Desktop">
+                      <Component type="ScriptButton" id="btnEnable" x="10" y="12" text="Enabled"/>
                     </ContentProperties>
                   </UIData>
                 </Processor>
