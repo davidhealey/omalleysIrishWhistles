@@ -36,6 +36,7 @@ namespace Articulations
     //Scripts
     const var legatoHandler = Synth.getMidiProcessor("legato");
     const var staccatoVelocityFilter = Synth.getMidiProcessor("staccatoVelocityFilter");
+    const var staccatoLegatoFilter = Synth.getMidiProcessor("legatoFilter");
     
     //Functions
     inline function getKSIndex(note)
@@ -60,6 +61,7 @@ namespace Articulations
                     muter.transition.setAttribute(muter.transition.ignoreButton, 0);
                     legatoHandler.setAttribute(legatoHandler.btnMute, 0);
                     staccatoVelocityFilter.setBypassed(false);
+                    staccatoLegatoFilter.setBypassed(false);
                     envelope.staccato.setAttribute(envelope.staccato.Attack, 200);
                 break;
         
@@ -74,6 +76,7 @@ namespace Articulations
                     muter.sustain.setAttribute(muter.sustain.ignoreButton, 1);
                     muter.staccato.setAttribute(muter.staccato.ignoreButton, 0);
                     staccatoVelocityFilter.setBypassed(true);
+                    staccatoLegatoFilter.setBypassed(true);
                     envelope.staccato.setAttribute(envelope.staccato.Attack, 200);
                 break;
             }

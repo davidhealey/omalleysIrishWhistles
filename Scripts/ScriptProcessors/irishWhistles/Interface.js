@@ -108,6 +108,7 @@ inline function onbtnCCControl(control, value)
 
 //Preset handling
 const var rangeFilter = Synth.getMidiProcessor("rangeFilter");
+const var sustainRoundRobin = Synth.getMidiProcessor("sustainRoundRobin");
 
 //Get samplers
 const var samplerIds = Synth.getIdList("Sampler");
@@ -143,7 +144,7 @@ inline function oncmbPatchesControl(control, value)
 
     colourKeys(patch);
     loadSampleMaps(patch);
-    setRangeFilter(patch);
+    setRanges(patch);
 
     if(Engine.getCurrentUserPresetName() == "")
         Content.getComponent("lblPreset").set("text", "Default");
@@ -164,12 +165,15 @@ cmbPatches.set("items", patches.join("\n"));
 //Functions
 
 //Set playable range
-inline function setRangeFilter(patch)
+inline function setRanges(patch)
 {
     local range = Manifest.patches[patch].range;
     
     rangeFilter.setAttribute(rangeFilter.knbLow, range[0]);
     rangeFilter.setAttribute(rangeFilter.knbHigh, range[1]);
+    
+    sustainRoundRobin.setAttribute(sustainRoundRobin.knbLowNote, range[0]);
+    sustainRoundRobin.setAttribute(sustainRoundRobin.knbHighNote, range[1]);
 }
 
 inline function colourKeys(patch)
