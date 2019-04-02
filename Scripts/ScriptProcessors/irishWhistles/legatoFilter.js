@@ -1,7 +1,5 @@
 function onNoteOn()
-{
-    Console.print(Synth.isLegatoInterval());
-    
+{    
 	if (Synth.isLegatoInterval())
     {
         Message.ignoreEvent(true);

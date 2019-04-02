@@ -27,11 +27,10 @@
                scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}Button.png"/>
     <Component type="ScriptLabel" id="lblVelocityControl" x="404" y="271" text="Velocity Control"
                parentComponent="pnlInstrument" alignment="left" fontSize="16"
-               fontName="blackCherry" width="90" editable="0" visible="0"/>
+               fontName="blackCherry" width="90" editable="0"/>
     <Component type="ScriptButton" id="btnVelDynamics" x="491" y="277" text="Velocity = Dynamics"
                processorId="velocityShaper" parameterId="btnDynamics" parentComponent="pnlInstrument"
-               scaleFactor="0.5" width="14" height="14" filmstripImage="{PROJECT_FOLDER}Button.png"
-               visible="0"/>
+               scaleFactor="0.5" width="14" height="14" filmstripImage="{PROJECT_FOLDER}Button.png"/>
     <Component type="ScriptSlider" id="knbGain" x="566" y="357" isPluginParameter="1"
                pluginParameterName="Gain" processorId="Simple Gain1" parameterId="Gain"
                mode="Decibel" min="-100" max="3" stepSize="0.1" suffix=" dB"
@@ -74,28 +73,27 @@
                defaultValue="90"/>
     <Component type="ScriptButton" id="btnCC1" x="189" y="175" width="19" height="14"
                parentComponent="pnlInstrument" filmstripImage="{PROJECT_FOLDER}Button.png"
-               scaleFactor="0.5"/>
+               scaleFactor="0.5" saveInPreset="0"/>
     <Component type="ScriptButton" id="btnCC2" x="346" y="175" width="19" height="14"
                parentComponent="pnlInstrument" filmstripImage="{PROJECT_FOLDER}Button.png"
-               scaleFactor="0.5"/>
+               scaleFactor="0.5" saveInPreset="0"/>
     <Component type="ScriptButton" id="btnCC3" x="504" y="175" width="19" height="14"
                parentComponent="pnlInstrument" filmstripImage="{PROJECT_FOLDER}Button.png"
-               scaleFactor="0.5"/>
+               scaleFactor="0.5" saveInPreset="0"/>
     <Component type="ScriptButton" id="btnCC4" x="661" y="175" width="19" height="14"
                parentComponent="pnlInstrument" filmstripImage="{PROJECT_FOLDER}Button.png"
-               scaleFactor="0.5"/>
-    <Component type="ScriptLabel" id="lblParam" x="288" y="271" text="Velocity"
+               scaleFactor="0.5" saveInPreset="0"/>
+    <Component type="ScriptLabel" id="lblParam" x="288" y="271" text="Dynamics"
                parentComponent="pnlInstrument" alignment="left" fontSize="18"
                fontName="blackCherry" width="129" editable="0"/>
     <Component type="ScriptTable" id="tblCC0" x="292" y="304" width="215" height="151"
                parentComponent="pnlInstrument" processorId="Velocity Modulator"
-               customColours="1"/>
+               customColours="1" visible="0"/>
     <Component type="ScriptTable" id="tblCC1" x="292" y="304" width="215" height="151"
                parentComponent="pnlInstrument" processorId="expressionCC" customColours="1"
                visible="0"/>
     <Component type="ScriptTable" id="tblCC2" x="292" y="304" width="215" height="151"
-               parentComponent="pnlInstrument" processorId="dynamicsCC" customColours="1"
-               visible="0"/>
+               parentComponent="pnlInstrument" processorId="dynamicsCC" customColours="1"/>
     <Component type="ScriptTable" id="tblCC3" x="292" y="304" width="215" height="151"
                parentComponent="pnlInstrument" processorId="vibratoLFOIntensity"
                customColours="1" visible="0"/>
@@ -132,6 +130,9 @@
              itemColour2="4294967295" textColour="4294951115" Data="{&#13;&#10;  &quot;KeyWidth&quot;: 16,&#13;&#10;  &quot;DisplayOctaveNumber&quot;: false,&#13;&#10;  &quot;LowKey&quot;: 36,&#13;&#10;  &quot;HiKey&quot;: 127,&#13;&#10;  &quot;CustomGraphics&quot;: false,&#13;&#10;  &quot;DefaultAppearance&quot;: true,&#13;&#10;  &quot;BlackKeyRatio&quot;: 0.69999999,&#13;&#10;  &quot;ToggleMode&quot;: false,&#13;&#10;  &quot;MidiChannel&quot;: 1,&#13;&#10;  &quot;UseVectorGraphics&quot;: false,&#13;&#10;  &quot;UseFlatStyle&quot;: false,&#13;&#10;  &quot;MPEKeyboard&quot;: false,&#13;&#10;  &quot;MPEStartChannel&quot;: 2,&#13;&#10;  &quot;MPEEndChannel&quot;: 16&#13;&#10;}"/>
   <Component type="ScriptButton" id="btnSettings" x="630" y="31" scaleFactor="0.5"
              width="53" height="23" saveInPreset="0" filmstripImage="{PROJECT_FOLDER}settings.png"/>
+  <Component type="ScriptLabel" id="lblPreset" x="301" y="99" text="Default"
+             fontSize="18" fontName="blackCherry" width="196" editable="0"
+             height="24" saveInPreset="0"/>
   <Component type="ScriptButton" id="btnPreset0" x="303" y="100" scaleFactor="0.5"
              filmstripImage="{PROJECT_FOLDER}empty.png" width="192" height="23"
              saveInPreset="0"/>
@@ -141,7 +142,4 @@
   <Component type="ScriptButton" id="btnPreset2" x="500" y="100" scaleFactor="0.5"
              filmstripImage="{PROJECT_FOLDER}empty.png" width="30" height="23"
              saveInPreset="0"/>
-  <Component type="ScriptLabel" id="lblPreset" x="301" y="99" text="Default"
-             fontSize="18" fontName="blackCherry" width="196" editable="0"
-             height="24" saveInPreset="0"/>
 </ContentProperties>
