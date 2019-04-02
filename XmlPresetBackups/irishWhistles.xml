@@ -38,7 +38,7 @@
           <ChildProcessors/>
           <Content>
             <Control type="ScriptButton" id="btnDynamics" value="0"/>
-            <Control type="ScriptTable" id="tblVel" value="64" data="24...............vO...f+....9C...vO"/>
+            <Control type="ScriptTable" id="tblVel" value="102" data="24...............vO...f+....9C...vO"/>
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">
@@ -247,6 +247,17 @@
               <ChildProcessors>
                 <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
                   <ChildProcessors>
+                    <Processor Type="ScriptProcessor" ID="sustainTrueRoundRobin" Bypassed="0">
+                      <ChildProcessors/>
+                      <Content>
+                        <Control type="ScriptButton" id="btnEnable" value="1"/>
+                      </Content>
+                      <UIData>
+                        <ContentProperties DeviceType="Desktop">
+                          <Component type="ScriptButton" id="btnEnable" x="10" y="12" text="Enabled"/>
+                        </ContentProperties>
+                      </UIData>
+                    </Processor>
                     <Processor Type="ScriptProcessor" ID="sustainRoundRobin" Bypassed="0" Script="{EXTERNAL_SCRIPT}{PROJECT_FOLDER}HISE-Scripting-Framework/modules/borrowedSampleRoundRobin.js">
                       <ChildProcessors/>
                       <Content>
@@ -277,13 +288,13 @@
                         <Control type="ScriptButton" id="btnMute" value="0"/>
                         <Control type="ScriptSlider" id="knbOffset" value="150"/>
                         <Control type="ScriptButton" id="btnRetrigger" value="1"/>
-                        <Control type="ScriptSlider" id="knbFadeMin" value="10"/>
-                        <Control type="ScriptSlider" id="knbFadeMax" value="50"/>
-                        <Control type="ScriptSlider" id="knbFadeOut" value="100"/>
+                        <Control type="ScriptSlider" id="knbFadeMin" value="20"/>
+                        <Control type="ScriptSlider" id="knbFadeMax" value="100"/>
+                        <Control type="ScriptSlider" id="knbFadeOut" value="80"/>
                         <Control type="ScriptSlider" id="knbBendTm" value="0"/>
-                        <Control type="ScriptSlider" id="knbBendMin" value="10"/>
-                        <Control type="ScriptSlider" id="knbBendMax" value="50"/>
-                        <Control type="ScriptSlider" id="knbRate" value="8"/>
+                        <Control type="ScriptSlider" id="knbBendMin" value="13"/>
+                        <Control type="ScriptSlider" id="knbBendMax" value="60"/>
+                        <Control type="ScriptSlider" id="knbRate" value="8.9291339"/>
                         <Control type="ScriptButton" id="btnGlideVel" value="1"/>
                         <Control type="ScriptButton" id="btnWholeStep" value="0"/>
                         <Control type="ScriptSlider" id="knbMaxGlide" value="2"/>
@@ -449,6 +460,17 @@
                         <Control type="ScriptButton" id="ignoreButton" value="0"/>
                         <Control type="ScriptButton" id="fixStuckNotes" value="1"/>
                       </Content>
+                    </Processor>
+                    <Processor Type="ScriptProcessor" ID="transitionRoundRobin" Bypassed="0">
+                      <ChildProcessors/>
+                      <Content>
+                        <Control type="ScriptButton" id="btnEnable" value="1"/>
+                      </Content>
+                      <UIData>
+                        <ContentProperties DeviceType="Desktop">
+                          <Component type="ScriptButton" id="btnEnable" x="10" y="12" text="Enabled"/>
+                        </ContentProperties>
+                      </UIData>
                     </Processor>
                     <Processor Type="ScriptProcessor" ID="transitionHandler" Bypassed="0">
                       <ChildProcessors/>
