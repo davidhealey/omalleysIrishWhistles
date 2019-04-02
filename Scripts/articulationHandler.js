@@ -62,7 +62,15 @@ namespace Articulations
                     legatoHandler.setAttribute(legatoHandler.btnMute, 0);
                     staccatoVelocityFilter.setBypassed(false);
                     staccatoLegatoFilter.setBypassed(false);
+                    sustainAttackVelocity.setBypassed(false);
+                    envelope.sustain.setAttribute(envelope.sustain.Attack, 100);
+                    
+                    //Staccato/Overlay envelope
                     envelope.staccato.setAttribute(envelope.staccato.Attack, 200);
+                    envelope.staccato.asTableProcessor().reset(0);
+                    envelope.staccato.asTableProcessor().setTablePoint(0, 0, 0, 0, 0.5);
+                    envelope.staccato.asTableProcessor().setTablePoint(0, 1, 1, 0, 0.4);
+                    envelope.staccato.asTableProcessor().addTablePoint(0, 0.03, 1);
                 break;
         
                 case 1: //Sustain
@@ -70,6 +78,8 @@ namespace Articulations
                     muter.staccato.setAttribute(muter.staccato.ignoreButton, 1);
                     muter.transition.setAttribute(muter.transition.ignoreButton, 1);
                     legatoHandler.setAttribute(legatoHandler.btnMute, 1);
+                    sustainAttackVelocity.setBypassed(true);
+                    envelope.sustain.setAttribute(envelope.sustain.Attack, 10);
                 break;
         
                 case 2: //Staccato
@@ -77,7 +87,10 @@ namespace Articulations
                     muter.staccato.setAttribute(muter.staccato.ignoreButton, 0);
                     staccatoVelocityFilter.setBypassed(true);
                     staccatoLegatoFilter.setBypassed(true);
-                    envelope.staccato.setAttribute(envelope.staccato.Attack, 200);
+                    
+                    //Envelope
+                    envelope.staccato.setAttribute(envelope.staccato.Attack, 2);
+                    envelope.staccato.asTableProcessor().reset(0);
                 break;
             }
         

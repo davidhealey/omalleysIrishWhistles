@@ -38,14 +38,11 @@
           <ChildProcessors/>
           <Content>
             <Control type="ScriptButton" id="btnDynamics" value="0"/>
-            <Control type="ScriptSlider" id="knbCC" value="1"/>
-            <Control type="ScriptTable" id="tblVel" value="32" data="24...............vO...f+....9C...vO"/>
+            <Control type="ScriptTable" id="tblVel" value="64" data="24...............vO...f+....9C...vO"/>
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">
               <Component type="ScriptButton" id="btnDynamics" x="0" y="10" text="Vel = Dynamics"/>
-              <Component type="ScriptSlider" id="knbCC" x="0" y="50" stepSize="1" min="1"
-                         max="127" text="Dynamics CC"/>
               <Component type="ScriptTable" id="tblVel" x="150" y="0" height="95" width="200"/>
             </ContentProperties>
           </UIData>
@@ -335,7 +332,7 @@
                 <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
                   <ChildProcessors>
                     <Processor Type="TableEnvelope" ID="sustainEnvelope" Bypassed="0" Monophonic="0"
-                               Retrigger="1" Intensity="1" Attack="150" Release="350" AttackTableData="24...............vO...f+....9C...pO"
+                               Retrigger="1" Intensity="1" Attack="100" Release="350" AttackTableData="24...............vO...f+....9C..HsO"
                                ReleaseTableData="24..........9C...vO...f+........LxO">
                       <ChildProcessors>
                         <Processor Type="ModulatorChain" ID="AttackTime Modulation" Bypassed="0"
@@ -576,7 +573,7 @@
             <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1">
               <ChildProcessors>
                 <Processor Type="TableEnvelope" ID="staccatoEnvelope" Bypassed="0" Monophonic="0"
-                           Retrigger="1" Intensity="1" Attack="200" Release="500" AttackTableData="36...............vON12C8....9C...vO...f+.........vO"
+                           Retrigger="1" Intensity="1" Attack="200" Release="500" AttackTableData="36...............vOOJb87....9C...vO...f+.....PyLyrO"
                            ReleaseTableData="24..........9C...vO...f+....9C...vO">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="AttackTime Modulation" Bypassed="0"
