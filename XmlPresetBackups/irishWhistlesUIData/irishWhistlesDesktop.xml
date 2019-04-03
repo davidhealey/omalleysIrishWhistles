@@ -29,8 +29,8 @@
                parentComponent="pnlInstrument" alignment="left" fontSize="16"
                fontName="blackCherry" width="90" editable="0"/>
     <Component type="ScriptButton" id="btnVelDynamics" x="491" y="277" text="Velocity = Dynamics"
-               processorId="velocityShaper" parameterId="btnDynamics" parentComponent="pnlInstrument"
-               scaleFactor="0.5" width="14" height="14" filmstripImage="{PROJECT_FOLDER}Button.png"/>
+               parentComponent="pnlInstrument" scaleFactor="0.5" width="14"
+               height="14" filmstripImage="{PROJECT_FOLDER}Button.png"/>
     <Component type="ScriptSlider" id="knbGain" x="566" y="357" isPluginParameter="1"
                pluginParameterName="Gain" processorId="Simple Gain1" parameterId="Gain"
                mode="Decibel" min="-100" max="3" stepSize="0.1" suffix=" dB"
@@ -83,7 +83,7 @@
     <Component type="ScriptButton" id="btnCC4" x="661" y="175" width="19" height="14"
                parentComponent="pnlInstrument" filmstripImage="{PROJECT_FOLDER}Button.png"
                scaleFactor="0.5" saveInPreset="0"/>
-    <Component type="ScriptLabel" id="lblParam" x="288" y="271" text="Dynamics"
+    <Component type="ScriptLabel" id="lblParam" x="288" y="271" text="Velocity"
                parentComponent="pnlInstrument" alignment="left" fontSize="18"
                fontName="blackCherry" width="129" editable="0"/>
     <Component type="ScriptTable" id="tblCC0" x="292" y="304" width="215" height="151"
@@ -117,7 +117,7 @@
                itemColour="4284900966" itemColour2="4294951115" Data="{&#13;&#10;  &quot;Dynamic&quot;: false,&#13;&#10;  &quot;Content&quot;: [&#13;&#10;    {&#13;&#10;      &quot;Type&quot;: &quot;CustomSettings&quot;,&#13;&#10;      &quot;Title&quot;: &quot;Engine&quot;,&#13;&#10;      &quot;StyleData&quot;: {&#13;&#10;      },&#13;&#10;      &quot;Font&quot;: &quot;&quot;,&#13;&#10;      &quot;FontSize&quot;: 14,&#13;&#10;      &quot;LayoutData&quot;: ,&#13;&#10;      &quot;ColourData&quot;: {&#13;&#10;        &quot;bgColour&quot;: &quot;fd001d0e&quot;,&#13;&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;&#13;&#10;      },&#13;&#10;      &quot;Driver&quot;: true,&#13;&#10;      &quot;Device&quot;: true,&#13;&#10;      &quot;Output&quot;: true,&#13;&#10;      &quot;BufferSize&quot;: true,&#13;&#10;      &quot;SampleRate&quot;: true,&#13;&#10;      &quot;GlobalBPM&quot;: true,&#13;&#10;      &quot;StreamingMode&quot;: true,&#13;&#10;      &quot;GraphicRendering&quot;: false,&#13;&#10;      &quot;ScaleFactor&quot;: true,&#13;&#10;      &quot;SustainCC&quot;: false,&#13;&#10;      &quot;VoiceAmountMultiplier&quot;: true,&#13;&#10;      &quot;ClearMidiCC&quot;: true,&#13;&#10;      &quot;SampleLocation&quot;: true,&#13;&#10;      &quot;DebugMode&quot;: false,&#13;&#10;      &quot;ScaleFactorList&quot;: [&#13;&#10;        1,&#13;&#10;        1.25,&#13;&#10;        1.5,&#13;&#10;        2&#13;&#10;      ]&#13;&#10;    },&#13;&#10;    {&#13;&#10;      &quot;Type&quot;: &quot;MidiSources&quot;,&#13;&#10;      &quot;Title&quot;: &quot;MIDI Input&quot;,&#13;&#10;      &quot;StyleData&quot;: {&#13;&#10;      },&#13;&#10;      &quot;Font&quot;: &quot;&quot;,&#13;&#10;      &quot;FontSize&quot;: 14,&#13;&#10;      &quot;LayoutData&quot;: ,&#13;&#10;      &quot;ColourData&quot;: {&#13;&#10;        &quot;bgColour&quot;: &quot;fd001d0e&quot;,&#13;&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;&#13;&#10;      }&#13;&#10;    },&#13;&#10;    {&#13;&#10;      &quot;Type&quot;: &quot;MidiChannelList&quot;,&#13;&#10;      &quot;Title&quot;: &quot;MIDI Channel&quot;,&#13;&#10;      &quot;StyleData&quot;: {&#13;&#10;      },&#13;&#10;      &quot;Font&quot;: &quot;&quot;,&#13;&#10;      &quot;FontSize&quot;: 14,&#13;&#10;      &quot;LayoutData&quot;: ,&#13;&#10;      &quot;ColourData&quot;: {&#13;&#10;        &quot;bgColour&quot;: &quot;fd001d0e&quot;,&#13;&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;&#13;&#10;      }&#13;&#10;    },&#13;&#10;    {&#13;&#10;      &quot;Type&quot;: &quot;MidiLearnPanel&quot;,&#13;&#10;      &quot;Title&quot;: &quot;MIDI Automation&quot;,&#13;&#10;      &quot;StyleData&quot;: {&#13;&#10;      },&#13;&#10;      &quot;Font&quot;: &quot;&quot;,&#13;&#10;      &quot;FontSize&quot;: 14,&#13;&#10;      &quot;LayoutData&quot;: ,&#13;&#10;      &quot;ColourData&quot;: {&#13;&#10;        &quot;bgColour&quot;: &quot;fd001d0e&quot;,&#13;&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;,&#13;&#10;        &quot;itemColour1&quot;: &quot;ff00714e&quot;&#13;&#10;      }&#13;&#10;    },&#13;&#10;    {&#13;&#10;      &quot;Type&quot;: &quot;AboutPagePanel&quot;,&#13;&#10;      &quot;Title&quot;: &quot;About&quot;,&#13;&#10;      &quot;StyleData&quot;: {&#13;&#10;      },&#13;&#10;      &quot;Font&quot;: &quot;&quot;,&#13;&#10;      &quot;FontSize&quot;: 14,&#13;&#10;      &quot;LayoutData&quot;: ,&#13;&#10;      &quot;ColourData&quot;: {&#13;&#10;        &quot;bgColour&quot;: &quot;fd001d0e&quot;,&#13;&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;,&#13;&#10;        &quot;itemColour1&quot;: &quot;ffffe500&quot;&#13;&#10;      },&#13;&#10;      &quot;CopyrightNotice&quot;: &quot;\u00a9 2019, David Healey&quot;,&#13;&#10;      &quot;ShowLicensedEmail&quot;: false,&#13;&#10;      &quot;ShowVersion&quot;: true,&#13;&#10;      &quot;BuildDate&quot;: true,&#13;&#10;      &quot;WebsiteURL&quot;: &quot;http://librewave.com&quot;,&#13;&#10;      &quot;ShowProductName&quot;: true,&#13;&#10;      &quot;UseCustomImage&quot;: false&#13;&#10;    }&#13;&#10;  ],&#13;&#10;  &quot;CurrentTab&quot;: 0&#13;&#10;}"/>
   </Component>
   <Component type="ScriptPanel" id="pnlAdmin" x="8" y="0" width="183" height="121"
-             itemColour="4278190080" itemColour2="4278190080">
+             itemColour="4278190080" itemColour2="4278190080" visible="0">
     <Component type="ScriptComboBox" id="cmbPatches" x="15" y="16" width="150"
                height="30" max="4" items="Bb&#10;c&#10;d&#10;low_d" parentComponent="pnlAdmin"/>
     <Component type="ScriptSlider" id="knbTransition" x="16" y="65" text="Transition Gain"
@@ -130,7 +130,7 @@
              itemColour2="4294967295" textColour="4294951115" Data="{&#13;&#10;  &quot;KeyWidth&quot;: 16,&#13;&#10;  &quot;DisplayOctaveNumber&quot;: false,&#13;&#10;  &quot;LowKey&quot;: 36,&#13;&#10;  &quot;HiKey&quot;: 127,&#13;&#10;  &quot;CustomGraphics&quot;: false,&#13;&#10;  &quot;DefaultAppearance&quot;: true,&#13;&#10;  &quot;BlackKeyRatio&quot;: 0.69999999,&#13;&#10;  &quot;ToggleMode&quot;: false,&#13;&#10;  &quot;MidiChannel&quot;: 1,&#13;&#10;  &quot;UseVectorGraphics&quot;: false,&#13;&#10;  &quot;UseFlatStyle&quot;: false,&#13;&#10;  &quot;MPEKeyboard&quot;: false,&#13;&#10;  &quot;MPEStartChannel&quot;: 2,&#13;&#10;  &quot;MPEEndChannel&quot;: 16&#13;&#10;}"/>
   <Component type="ScriptButton" id="btnSettings" x="630" y="31" scaleFactor="0.5"
              width="53" height="23" saveInPreset="0" filmstripImage="{PROJECT_FOLDER}settings.png"/>
-  <Component type="ScriptLabel" id="lblPreset" x="301" y="99" text="Default"
+  <Component type="ScriptLabel" id="lblPreset" x="301" y="99" text="D Default"
              fontSize="18" fontName="blackCherry" width="196" editable="0"
              height="24" saveInPreset="0"/>
   <Component type="ScriptButton" id="btnPreset0" x="303" y="100" scaleFactor="0.5"
