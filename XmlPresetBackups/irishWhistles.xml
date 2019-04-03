@@ -10,7 +10,7 @@
           <ChildProcessors/>
           <Content>
             <Control type="ScriptSlider" id="knbRel" value="350"/>
-            <Control type="ScriptSlider" id="knbStacc" value="-3"/>
+            <Control type="ScriptSlider" id="knbStacc" value="1.4901161e-06"/>
             <Control type="ScriptButton" id="btnRR" value="1"/>
             <Control type="ScriptButton" id="btnBreath" value="0"/>
             <Control type="ScriptLabel" id="lblVelocityControl" value="Velocity Control"/>
@@ -38,7 +38,7 @@
           <ChildProcessors/>
           <Content>
             <Control type="ScriptButton" id="btnDynamics" value="0"/>
-            <Control type="ScriptTable" id="tblVel" value="102" data="24...............vO...f+....9C...vO"/>
+            <Control type="ScriptTable" id="tblVel" value="71" data="24...............vO...f+....9C...vO"/>
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">
@@ -388,7 +388,7 @@
                 <Processor Type="EffectChain" ID="FX" Bypassed="0">
                   <ChildProcessors>
                     <Processor Type="PolyphonicFilter" ID="Filter2" Bypassed="0" Gain="0" Frequency="20000"
-                               Q="1" Mode="9" Quality="0" BipolarIntensity="0">
+                               Q="1" Mode="9" Quality="2.0992573e+09" BipolarIntensity="0">
                       <ChildProcessors>
                         <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                                    Intensity="1">
@@ -619,8 +619,8 @@
             </Processor>
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
               <ChildProcessors>
-                <Processor Type="SimpleGain" ID="staccatoGain" Bypassed="0" Gain="-3" Delay="0"
-                           Width="100" Balance="0">
+                <Processor Type="SimpleGain" ID="staccatoGain" Bypassed="0" Gain="1.0354387e-06"
+                           Delay="0" Width="100" Balance="0">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -669,16 +669,13 @@
   <MidiAutomation>
     <Controller Controller="1" Processor="Interface" MacroIndex="-1" Start="0"
                 End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
-                Attribute="knbExpression" Inverted="0"/>
-    <Controller Controller="1" Processor="Interface" MacroIndex="-1" Start="0"
-                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
-                Attribute="knbDynamics" Inverted="0"/>
+                Attribute="" Inverted="0"/>
     <Controller Controller="11" Processor="Interface" MacroIndex="-1" Start="0"
                 End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
-                Attribute="knbVibIntensity" Inverted="0"/>
+                Attribute="" Inverted="0"/>
     <Controller Controller="21" Processor="Interface" MacroIndex="-1" Start="0"
                 End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
-                Attribute="knbVibratoRate" Inverted="0"/>
+                Attribute="" Inverted="0"/>
   </MidiAutomation>
   <MPEData Enabled="0"/>
 </Processor>
