@@ -66,6 +66,18 @@ inline function onknbDynamicsControl(control, value)
 
 knbDynamics.setControlCallback(onknbDynamicsControl);
 
+//Velocity controlled dynamics
+const var velocityShaper = Synth.getMidiProcessor("velocityShaper");
+
+inline function onbtnVelDynamicsControl(component, value)
+{
+	velocityShaper.setAttribute(velocityShaper.btnDynamics, value);
+	Content.getComponent("knbDynamics").set("enabled", 1-value);
+};
+
+Content.getComponent("btnVelDynamics").setControlCallback(onbtnVelDynamicsControl);
+
+
 //Curve editors
 const var btnCC = [];
 const var tblCC = [];
@@ -147,7 +159,7 @@ inline function oncmbPatchesControl(control, value)
     setRanges(patch);
 
     if(Engine.getCurrentUserPresetName() == "")
-        Content.getComponent("lblPreset").set("text", "Default");
+        Content.getComponent("lblPreset").set("text", "D Default");
     else
         Content.getComponent("lblPreset").set("text", Engine.getCurrentUserPresetName());
 }
