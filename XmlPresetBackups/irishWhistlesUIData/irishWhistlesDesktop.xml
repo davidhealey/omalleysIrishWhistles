@@ -27,10 +27,10 @@
                scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}Button.png"/>
     <Component type="ScriptLabel" id="lblVelocityControl" x="404" y="271" text="Velocity Control"
                parentComponent="pnlInstrument" alignment="left" fontSize="16"
-               fontName="blackCherry" width="90" editable="0"/>
+               fontName="blackCherry" width="90" editable="0" visible="0"/>
     <Component type="ScriptButton" id="btnVelDynamics" x="491" y="277" text="Velocity = Dynamics"
                parentComponent="pnlInstrument" scaleFactor="0.5" width="14"
-               height="14" filmstripImage="{PROJECT_FOLDER}Button.png"/>
+               height="14" filmstripImage="{PROJECT_FOLDER}Button.png" visible="0"/>
     <Component type="ScriptSlider" id="knbGain" x="566" y="357" isPluginParameter="1"
                pluginParameterName="Gain" processorId="Simple Gain1" parameterId="Gain"
                mode="Decibel" min="-100" max="3" stepSize="0.1" suffix=" dB"
@@ -88,12 +88,13 @@
                fontName="blackCherry" width="129" editable="0"/>
     <Component type="ScriptTable" id="tblCC0" x="292" y="304" width="215" height="151"
                parentComponent="pnlInstrument" processorId="Velocity Modulator"
-               customColours="1" visible="0"/>
+               customColours="1"/>
     <Component type="ScriptTable" id="tblCC1" x="292" y="304" width="215" height="151"
                parentComponent="pnlInstrument" processorId="expressionCC" customColours="1"
                visible="0"/>
     <Component type="ScriptTable" id="tblCC2" x="292" y="304" width="215" height="151"
-               parentComponent="pnlInstrument" processorId="dynamicsCC" customColours="1"/>
+               parentComponent="pnlInstrument" processorId="dynamicsCC" customColours="1"
+               visible="0"/>
     <Component type="ScriptTable" id="tblCC3" x="292" y="304" width="215" height="151"
                parentComponent="pnlInstrument" processorId="vibratoLFOIntensity"
                customColours="1" visible="0"/>
@@ -138,8 +139,8 @@
              saveInPreset="0"/>
   <Component type="ScriptButton" id="btnPreset1" x="271" y="100" scaleFactor="0.5"
              filmstripImage="{PROJECT_FOLDER}empty.png" width="30" height="23"
-             saveInPreset="0"/>
+             saveInPreset="0" isMomentary="1"/>
   <Component type="ScriptButton" id="btnPreset2" x="500" y="100" scaleFactor="0.5"
              filmstripImage="{PROJECT_FOLDER}empty.png" width="30" height="23"
-             saveInPreset="0"/>
+             saveInPreset="0" isMomentary="1"/>
 </ContentProperties>
