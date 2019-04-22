@@ -18,7 +18,7 @@
 namespace Manifest
 {        
     const var ks = [36, 37, 38];
-    const var programs = [1, 2, 40];
+    const var programs = [20, 1, 40];
     
     const var patches = {
         "Bb": {
