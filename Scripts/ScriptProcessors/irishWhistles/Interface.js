@@ -27,6 +27,16 @@ Engine.loadFontAs("{PROJECT_FOLDER}fonts/BLKCHCRY.TTF", "blackCherry");
 
 reg i;
 
+//Value popup styling
+Content.setValuePopupData(
+{
+    "fontName": "Oxygen",
+    "fontSize": 18,
+    "itemColour": 0x95035C09,
+    "itemColour2": 0x95035C09,
+    "borderSize": 0
+});
+
 //Page handler
 const var btnPage = [];
 const var pnlPage = [];
