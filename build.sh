@@ -1,7 +1,7 @@
 # MACOS BUILD SCRIPT
 
-project=Omalleys\ Irish\ Whistles
-xmlFile=irishWhistles
+project=Michaelas\ Harp
+xmlFile=michaelasHarp
 build_aax=0
 build_installer=1
 
