@@ -18,7 +18,6 @@
 Content.makeFrontInterface(800, 580);
 
 include("manifest.js");
-include("articulationHandler.js");
 include("settings.js");
 
 Synth.deferCallbacks(true);
@@ -247,36 +246,17 @@ inline function loadSampleMaps(patch)
     }
 }function onNoteOn()
 {
-    local idx = Articulations.getKSIndex(Message.getNoteNumber());
-
-	if (idx != -1)
-	    Articulations.changeArticulation(idx);
+	
 }
-function onNoteOff()
+ function onNoteOff()
 {
 	
 }
  function onController()
 {
-    //UACC or program change
-	if (Message.getControllerNumber() == 32 || Message.isProgramChange())
-    {
-        local n;
-
-        if (Message.isProgramChange())
-            n = Message.getProgramChangeNumber();
-        else
-            n = Message.getControllerValue();
-
-        //Get articulation index of program/uacc number
-        local idx = Articulations.getProgramIndex(n);
-
-        //Change articulation
-        if (idx != -1)
-            Articulations.changeArticulation(idx);
-    }
+	
 }
-function onTimer()
+ function onTimer()
 {
 	
 }
