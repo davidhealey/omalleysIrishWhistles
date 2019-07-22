@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ProjectSettings>
-  <Name value="Omalleys Irish Whistles"/>
+  <Name value="OMalleys Irish Whistles"/>
   <Version value="1.0.0"/>
-  <Description value=""/>
+  <Description value="Irish Whistle"/>
   <BundleIdentifier value="com.librewave.omalleys-irish-whistles"/>
   <PluginCode value="Abcd"/>
   <EmbedAudioFiles value="Yes"/>
