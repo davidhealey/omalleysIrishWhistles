@@ -3,7 +3,7 @@
 project=OMalleys\ Irish\ Whistles
 version=1.0.0
 xmlFile=irishWhistles
-workspace=/Volumes/SHARED/HISEProjects/sofiawoodwinds
+workspace=/Volumes/SHARED/HISEProjects/Woodwinds/OMalleys\ Irish\ Whistles/HISE
 
 build_standalone=0
 build_plugin=0
