@@ -76,7 +76,7 @@
                saveInPreset="0" parentComponent="pnlInstrument"/>
     <Component type="ScriptButton" id="btnCC2" x="346" y="175" width="19" height="14"
                filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
-               parentComponent="pnlInstrument"/>
+               parentComponent="pnlInstrument" saveInPreset="0"/>
     <Component type="ScriptButton" id="btnCC3" x="504" y="175" width="19" height="14"
                filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
                saveInPreset="0" parentComponent="pnlInstrument"/>
@@ -85,7 +85,7 @@
                saveInPreset="0" parentComponent="pnlInstrument"/>
     <Component type="ScriptLabel" id="lblParam" x="288" y="271" text="Velocity"
                alignment="left" fontSize="18" fontName="blackCherry" width="129"
-               editable="0" parentComponent="pnlInstrument"/>
+               editable="0" parentComponent="pnlInstrument" saveInPreset="0"/>
     <Component type="ScriptTable" id="tblCC0" x="292" y="304" width="215" height="151"
                processorId="Velocity Modulator" customColours="1" parentComponent="pnlInstrument"/>
     <Component type="ScriptTable" id="tblCC1" x="292" y="304" width="215" height="151"

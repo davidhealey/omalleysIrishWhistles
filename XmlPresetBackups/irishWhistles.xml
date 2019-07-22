@@ -10,7 +10,7 @@
           <ChildProcessors/>
           <Content>
             <Control type="ScriptSlider" id="knbRel" value="350"/>
-            <Control type="ScriptSlider" id="knbStacc" value="-4.8999987"/>
+            <Control type="ScriptSlider" id="knbStacc" value="-3"/>
             <Control type="ScriptButton" id="btnRR" value="1"/>
             <Control type="ScriptButton" id="btnBreath" value="0"/>
             <Control type="ScriptLabel" id="lblVelocityControl" value="Velocity Control"/>
@@ -20,11 +20,9 @@
             <Control type="ScriptSlider" id="knbCoarse" value="0"/>
             <Control type="ScriptSlider" id="knbFine" value="0"/>
             <Control type="ScriptSlider" id="knbExpression" value="127"/>
-            <Control type="ScriptSlider" id="knbDynamics" value="127"/>
+            <Control type="ScriptSlider" id="knbDynamics" value="64"/>
             <Control type="ScriptSlider" id="knbVibIntensity" value="0"/>
             <Control type="ScriptSlider" id="knbVibratoRate" value="90"/>
-            <Control type="ScriptButton" id="btnCC2" value="0"/>
-            <Control type="ScriptLabel" id="lblParam" value="Velocity"/>
             <Control type="ScriptTable" id="tblCC0" value="0" data=""/>
             <Control type="ScriptTable" id="tblCC1" value="0" data="24......fnw52C...vO...f+....9C..3rO"/>
             <Control type="ScriptTable" id="tblCC2" value="0" data="36...............vOogI.+veS96C..3rO...f+....9C..jwO"/>
@@ -140,7 +138,7 @@
           <ChildProcessors>
             <Processor Type="MidiController" ID="dynamicsCC" Bypassed="0" Intensity="1"
                        UseTable="1" Inverted="0" ControllerNumber="94" SmoothTime="500"
-                       DefaultValue="127" ControllerTableData="36...............vOogI.+veS96C..3rO...f+....9C..jwO">
+                       DefaultValue="64" ControllerTableData="36...............vOogI.+veS96C..3rO...f+....9C..jwO">
               <ChildProcessors/>
             </Processor>
             <Processor Type="Velocity" ID="Velocity Modulator" Bypassed="0" Intensity="1"
@@ -244,7 +242,7 @@
         <Processor Type="EffectChain" ID="FX" Bypassed="0">
           <ChildProcessors>
             <Processor Type="PolyphonicFilter" ID="Filter1" Bypassed="0" Gain="3" Frequency="7000"
-                       Q="0.60000002" Mode="4" Quality="5.3897062e+08" BipolarIntensity="0">
+                       Q="0.60000002" Mode="4" Quality="0" BipolarIntensity="0">
               <ChildProcessors>
                 <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                            Intensity="1">
@@ -360,7 +358,7 @@
                         <Control type="ScriptButton" id="btnWholeStep" value="0"/>
                         <Control type="ScriptSlider" id="knbMaxGlide" value="2"/>
                         <Control type="ScriptButton" id="btnBc" value="0"/>
-                        <Control type="ScriptSlider" id="knbBreath" value="127"/>
+                        <Control type="ScriptSlider" id="knbBreath" value="64"/>
                         <Control type="ScriptSlider" id="knbThreshold" value="10"/>
                         <Control type="ScriptButton" id="btnBreathVel" value="1"/>
                       </Content>
@@ -413,7 +411,7 @@
                                    Intensity="1">
                           <ChildProcessors>
                             <Processor Type="Velocity" ID="sustainAttackVelocity" Bypassed="0" Intensity="1"
-                                       UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="60......TUU08C.....JQuG9.HhHxC..3qOhdOC+.HhHvC.....hdOC+....9C........f+....9C...vO">
+                                       UseTable="1" Inverted="0" DecibelMode="0" VelocityTableData="60......TUU08C.....JQuG9.HhHxC..3qOrXwB+nv0ivC.....znQC+....9C........f+....9C...vO">
                               <ChildProcessors/>
                             </Processor>
                           </ChildProcessors>
@@ -695,8 +693,8 @@
             </Processor>
             <Processor Type="EffectChain" ID="FX" Bypassed="0">
               <ChildProcessors>
-                <Processor Type="SimpleGain" ID="staccatoGain" Bypassed="0" Gain="-4.8999987"
-                           Delay="0" Width="100" Balance="0">
+                <Processor Type="SimpleGain" ID="staccatoGain" Bypassed="0" Gain="-3" Delay="0"
+                           Width="100" Balance="0">
                   <ChildProcessors>
                     <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
                       <ChildProcessors/>
@@ -745,11 +743,11 @@
   <MidiAutomation>
     <Controller Controller="1" Processor="Interface" MacroIndex="-1" Start="0"
                 End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
-                Attribute="knbExpression" Inverted="0"/>
-    <Controller Controller="1" Processor="Interface" MacroIndex="-1" Start="0"
-                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
                 Attribute="knbDynamics" Inverted="0"/>
     <Controller Controller="11" Processor="Interface" MacroIndex="-1" Start="0"
+                End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
+                Attribute="knbExpression" Inverted="0"/>
+    <Controller Controller="20" Processor="Interface" MacroIndex="-1" Start="0"
                 End="127" FullStart="0" FullEnd="127" Skew="1" Interval="0.01"
                 Attribute="knbVibIntensity" Inverted="0"/>
     <Controller Controller="21" Processor="Interface" MacroIndex="-1" Start="0"
