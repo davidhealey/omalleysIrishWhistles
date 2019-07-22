@@ -1,8 +1,12 @@
 Binaries/
 build/
+Installer/
 Documentation/
 Images/dev
 Presets/
 Samples/
 PooledResources/
-Deliverables/
+GnuLinux Deliverables/
+.st*
+*.sync-conflict
+._build
