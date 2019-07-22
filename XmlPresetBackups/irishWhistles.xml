@@ -513,7 +513,7 @@
                 <channelData enabled="1" level="0" suffix=""/>
               </channels>
             </Processor>
-            <Processor Type="StreamingSampler" ID="transitions" Bypassed="0" Gain="0.50118721"
+            <Processor Type="StreamingSampler" ID="transitions" Bypassed="0" Gain="0.35481343"
                        Balance="0" VoiceLimit="96" KillFadeTime="20" IconColour="0"
                        PreloadSize="4096" BufferSize="2048" VoiceAmount="96" SamplerRepeatMode="3"
                        RRGroupAmount="4" PitchTracking="1" OneShot="0" CrossfadeGroups="0"

@@ -26,8 +26,8 @@ namespace Settings
     "Dynamic": false,
     "ColourData":
         {
-            "bgColour": 0x00,
-            "itemColour1":0xFF035C09,
+            "bgColour": 0xA71D3221,
+            "itemColour1":0xBA2A4F46,
             "textColour":0xFFF8F800
         },
     "Content": [],
@@ -41,7 +41,7 @@ namespace Settings
         },
         "ColourData":
             {
-                "bgColour": 0xFD001D0E,
+                "bgColour": 0xFA1D3221,
                 "textColour":0xFFFFFDD1
             },
         "Font": "",
@@ -78,7 +78,7 @@ namespace Settings
             "Font": "",
             "FontSize": 14,
             "ColourData": {
-                "bgColour": 0xFD001D0E,
+                "bgColour": 0xFA1D3221,
                 "textColour":0xFFFFFDD1
             }
         });
@@ -92,7 +92,7 @@ namespace Settings
         "Font": "",
         "FontSize": 14,
         "ColourData": {
-            "bgColour": 0xFD001D0E,
+            "bgColour": 0xFA1D3221,
             "textColour":0xFFFFFDD1
         }
     });
@@ -104,7 +104,7 @@ namespace Settings
         "FontSize": 14,
         "ColourData":
         {
-            "bgColour": 0xFD001D0E,
+            "bgColour": 0xDA1D3221,
             "textColour":0xFFFFFDD1,
             "itemColour1":0xFF00714E
         }
@@ -117,7 +117,7 @@ namespace Settings
         "FontSize": 14,
         "ColourData":
         {
-            "bgColour": 0xFD001D0E,
+            "bgColour": 0xDA1D3221,
             "textColour":0xFFFFFDD1,
             "itemColour1":0xFFFFE500
         },
