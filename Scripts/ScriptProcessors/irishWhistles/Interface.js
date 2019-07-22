@@ -81,7 +81,6 @@ const var velocityShaper = Synth.getMidiProcessor("velocityShaper");
 inline function onbtnVelDynamicsControl(component, value)
 {
 	velocityShaper.setAttribute(velocityShaper.btnDynamics, value);
-	Content.getComponent("knbDynamics").set("enabled", 1-value);
 };
 
 Content.getComponent("btnVelDynamics").setControlCallback(onbtnVelDynamicsControl);

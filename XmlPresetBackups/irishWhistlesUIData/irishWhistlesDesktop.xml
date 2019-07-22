@@ -130,7 +130,7 @@
              itemColour2="4294967295" textColour="4294951115" Data="{&#13;&#10;  &quot;KeyWidth&quot;: 16,&#13;&#10;  &quot;DisplayOctaveNumber&quot;: false,&#13;&#10;  &quot;LowKey&quot;: 36,&#13;&#10;  &quot;HiKey&quot;: 127,&#13;&#10;  &quot;CustomGraphics&quot;: false,&#13;&#10;  &quot;DefaultAppearance&quot;: true,&#13;&#10;  &quot;BlackKeyRatio&quot;: 0.69999999,&#13;&#10;  &quot;ToggleMode&quot;: false,&#13;&#10;  &quot;MidiChannel&quot;: 1,&#13;&#10;  &quot;UseVectorGraphics&quot;: false,&#13;&#10;  &quot;UseFlatStyle&quot;: false,&#13;&#10;  &quot;MPEKeyboard&quot;: false,&#13;&#10;  &quot;MPEStartChannel&quot;: 2,&#13;&#10;  &quot;MPEEndChannel&quot;: 16&#13;&#10;}"/>
   <Component type="ScriptButton" id="btnSettings" x="630" y="31" scaleFactor="0.5"
              width="53" height="23" saveInPreset="0" filmstripImage="{PROJECT_FOLDER}settings.png"/>
-  <Component type="ScriptLabel" id="lblPreset" x="301" y="99" text="D Default"
+  <Component type="ScriptLabel" id="lblPreset" x="301" y="99" text="D Breath"
              fontSize="18" fontName="blackCherry" width="196" editable="0"
              height="24" saveInPreset="0"/>
   <Component type="ScriptButton" id="btnPreset0" x="303" y="100" scaleFactor="0.5"
