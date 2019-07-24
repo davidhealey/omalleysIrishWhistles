@@ -1,7 +1,6 @@
 Synth.deferCallbacks(true);
 
 const var sustainTrueRoundRobin = Synth.getMidiProcessor("sustainTrueRoundRobin");
-const var sustainRoundRobin = Synth.getMidiProcessor("sustainRoundRobin");
 const var transitionRoundRobin = Synth.getMidiProcessor("transitionRoundRobin");
 const var staccatoRoundRobin = Synth.getMidiProcessor("staccatoRoundRobin");
 const var sustainRandomPitch = Synth.getModulator("sustainRandomPitch");
@@ -17,7 +16,6 @@ inline function onbtnEnabledControl(control, value)
 {
     sustainTrueRoundRobin.setAttribute(sustainTrueRoundRobin.btnEnable, value);
     transitionRoundRobin.setAttribute(transitionRoundRobin.btnEnable, value);
-    sustainRoundRobin.setBypassed(1-value);
     staccatoRoundRobin.setAttribute(staccatoRoundRobin.btnEnable, value);
     sustainRandomPitch.setBypassed(1-value);
     sustainRandomGain.setBypassed(1-value);

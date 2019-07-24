@@ -317,30 +317,6 @@
                         </ContentProperties>
                       </UIData>
                     </Processor>
-                    <Processor Type="ScriptProcessor" ID="sustainRoundRobin" Bypassed="0" Script="{EXTERNAL_SCRIPT}{PROJECT_FOLDER}HISE-Scripting-Framework/modules/borrowedSampleRoundRobin.js">
-                      <ChildProcessors/>
-                      <Content>
-                        <Control type="ScriptSlider" id="knbLowNote" value="74"/>
-                        <Control type="ScriptSlider" id="knbHighNote" value="98"/>
-                        <Control type="ScriptSlider" id="knbResetTime" value="2"/>
-                        <Control type="ScriptSlider" id="knbFineTune" value="0"/>
-                        <Control type="ScriptSlider" id="knbGain" value="0"/>
-                      </Content>
-                      <UIData>
-                        <ContentProperties DeviceType="Desktop">
-                          <Component type="ScriptSlider" id="knbLowNote" x="0" y="0" stepSize="1"
-                                     max="127" text="Low Note"/>
-                          <Component type="ScriptSlider" id="knbHighNote" x="150" y="0" stepSize="1"
-                                     max="127" text="High Note" defaultValue="127"/>
-                          <Component type="ScriptSlider" id="knbResetTime" x="300" y="0" stepSize="1"
-                                     min="1" max="60" text="Reset Time" defaultValue="3"/>
-                          <Component type="ScriptSlider" id="knbFineTune" x="450" y="0" stepSize="1"
-                                     max="50" text="Fine Tune"/>
-                          <Component type="ScriptSlider" id="knbGain" x="600" y="0" stepSize="1" max="3"
-                                     mode="Decibel"/>
-                        </ContentProperties>
-                      </UIData>
-                    </Processor>
                     <Processor Type="ScriptProcessor" ID="legato" Bypassed="0" Script="{EXTERNAL_SCRIPT}{PROJECT_FOLDER}HISE-Scripting-Framework/modules/legato.js">
                       <ChildProcessors/>
                       <Content>
@@ -458,7 +434,7 @@
                 <Processor Type="EffectChain" ID="FX" Bypassed="0">
                   <ChildProcessors>
                     <Processor Type="PolyphonicFilter" ID="Filter2" Bypassed="0" Gain="0" Frequency="20000"
-                               Q="1" Mode="9" Quality="0" BipolarIntensity="0">
+                               Q="1" Mode="9" Quality="1" BipolarIntensity="0">
                       <ChildProcessors>
                         <Processor Type="ModulatorChain" ID="Frequency Modulation" Bypassed="0"
                                    Intensity="1">
