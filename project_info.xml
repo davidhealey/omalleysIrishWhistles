@@ -2,7 +2,7 @@
 
 <ProjectSettings>
   <Name value="OMalleys Irish Whistles"/>
-  <Version value="1.1.1"/>
+  <Version value="1.0.0"/>
   <Description value="Irish Whistle"/>
   <BundleIdentifier value="com.librewave.omalleys-irish-whistles"/>
   <PluginCode value="Abcd"/>
