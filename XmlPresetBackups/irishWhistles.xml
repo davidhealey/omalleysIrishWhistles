@@ -80,7 +80,7 @@
             </ContentProperties>
           </UIData>
         </Processor>
-        <Processor Type="ScriptProcessor" ID="roundRobinHandler" Bypassed="1">
+        <Processor Type="ScriptProcessor" ID="roundRobinHandler" Bypassed="0">
           <ChildProcessors/>
           <Content>
             <Control type="ScriptButton" id="btnEnabled" value="1"/>

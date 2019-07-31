@@ -3,10 +3,10 @@
 project=OMalleys\ Irish\ Whistles
 version=1.0.0
 xmlFile=irishWhistles
-workspace=/media/john/SHARED/HISEProjects/Woodwinds/OMalleys\ Irish\ Whistles/HISE
+workspace=/media/john/SHARED/HISEProjects/Woodwinds/OMalleys_Irish_Whistles/HISE
 
 build_standalone=0
-build_plugin=0
+build_plugin=1
 build_installer=1
 
 hise_path=/media/john/SHARED/HISE/projects/standalone/Builds/LinuxMakefile/build/HISE\ Standalone
@@ -17,6 +17,7 @@ makeself=/media/john/SHARED/makeself
 package="$workspace"/Packaging/GNU/temp
 mkdir -p "$package"
 
+mkdir -p "$workspace"/Binaries
 cd "$workspace"/Binaries
 
 # STEP 1: BUILDING THE BINARIES
@@ -58,6 +59,7 @@ if (($build_installer==1))
 then
   echo "Build Installer"
 
+  mkdir -p "$workspace"/Installer
   cp "$workspace"/License.txt "$package"
   cp "$workspace"/Packaging/GNU/GNUInstaller.sh "$package"
 

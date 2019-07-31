@@ -2,7 +2,7 @@
 
 set project=OMalleys\ Irish\ Whistles
 set xmlFile=irishWhistles
-set workspace=D:\HISEProjects\Woodwinds\OMalleys Irish Whistles\HISE
+set workspace=D:\HISEProjects\Woodwinds\OMalleys_Irish_Whistles\HISE
 
 set build_standalone=1
 set build_plugin=1
@@ -64,3 +64,4 @@ if %build_installer%==1 (
 )
 
 :end
+cmd /k

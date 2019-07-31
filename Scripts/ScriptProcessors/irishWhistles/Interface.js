@@ -128,7 +128,6 @@ inline function onbtnCCControl(control, value)
 
 //Preset handling
 const var rangeFilter = Synth.getMidiProcessor("rangeFilter");
-const var sustainRoundRobin = Synth.getMidiProcessor("sustainRoundRobin");
 
 //Get samplers
 const var samplerIds = Synth.getIdList("Sampler");
@@ -191,9 +190,6 @@ inline function setRanges(patch)
     
     rangeFilter.setAttribute(rangeFilter.knbLow, range[0]);
     rangeFilter.setAttribute(rangeFilter.knbHigh, range[1]);
-    
-    sustainRoundRobin.setAttribute(sustainRoundRobin.knbLowNote, range[0]);
-    sustainRoundRobin.setAttribute(sustainRoundRobin.knbHighNote, range[1]);
 }
 
 inline function colourKeys(patch)

@@ -447,7 +447,7 @@
 				<key>CONCLUSION_ACTION</key>
 				<integer>0</integer>
 				<key>IDENTIFIER</key>
-				<string>com.librewave.pkg.SofiaWoodwindsStandalone</string>
+				<string>com.librewave.pkg.OmalleysIrishWhistlesStandalone</string>
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
@@ -955,11 +955,11 @@
 				<key>CONCLUSION_ACTION</key>
 				<integer>0</integer>
 				<key>IDENTIFIER</key>
-				<string>com.librewave.pkg.SofiaWoodwindsAU</string>
+				<string>com.librewave.pkg.OMalleys Irish Whistles AU</string>
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>SofiaWoodwinds AU</string>
+				<string>OmalleysIrishWhistles AU</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>VERSION</key>
@@ -1463,7 +1463,7 @@
 				<key>CONCLUSION_ACTION</key>
 				<integer>0</integer>
 				<key>IDENTIFIER</key>
-				<string>com.libreWave.pkg.SofiaWoodwinds</string>
+				<string>com.libreWave.pkg.OmalleysIrishWhistles</string>
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
