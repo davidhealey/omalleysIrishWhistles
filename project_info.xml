@@ -19,4 +19,7 @@
   <AAXCategoryFX value="AAX_ePlugInCategory_Modulation"/>
   <SupportMonoFX value="No"/>
   <UseRawFrontend value="No"/>
+  <EmbedImageFiles value="Yes"/>
+  <ExtraDefinitionsLinux value=""/>
+  <VST3Support value="No"/>
 </ProjectSettings>

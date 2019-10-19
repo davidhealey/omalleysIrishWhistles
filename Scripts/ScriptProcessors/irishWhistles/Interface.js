@@ -239,7 +239,16 @@ inline function loadSampleMaps(patch)
         childSynths[id].asSampler().loadSampleMap("empty"); //Load empty sample map for this sampler
       }
     }
-}function onNoteOn()
+}
+
+//URL button
+inline function onbtnURLControl(component, value)
+{
+	Engine.openWebsite("https://librewave.com");
+};
+
+Content.getComponent("btnURL").setControlCallback(onbtnURLControl);
+function onNoteOn()
 {
 	
 }
