@@ -43,7 +43,7 @@
           <ChildProcessors/>
           <Content>
             <Control type="ScriptButton" id="btnDynamics" value="0"/>
-            <Control type="ScriptTable" id="tblVel" value="77" data=""/>
+            <Control type="ScriptTable" id="tblVel" value="58" data=""/>
           </Content>
           <UIData>
             <ContentProperties DeviceType="Desktop">

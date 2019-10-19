@@ -76,7 +76,7 @@
                saveInPreset="0" parentComponent="pnlInstrument"/>
     <Component type="ScriptButton" id="btnCC2" x="346" y="175" width="19" height="14"
                filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
-               parentComponent="pnlInstrument" saveInPreset="0"/>
+               parentComponent="pnlInstrument" saveInPreset="0" bgColour="4281422382"/>
     <Component type="ScriptButton" id="btnCC3" x="504" y="175" width="19" height="14"
                filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
                saveInPreset="0" parentComponent="pnlInstrument"/>
@@ -145,4 +145,13 @@
              saveInPreset="0" isMomentary="1"/>
   <Component type="ScriptButton" id="btnURL" x="335" y="474" filmstripImage="{PROJECT_FOLDER}empty.png"
              saveInPreset="0"/>
+  <Component type="ScriptPanel" id="btnDocs" x="141" y="36" width="25" height="25"
+             allowCallbacks="Clicks &amp; Hover" bgColour="4283137350" itemColour="3996209710"/>
+  <Component type="ScriptPanel" id="pnlDocs" x="10" y="91" width="780" height="382"
+             bgColour="4015414341" visible="0">
+    <Component type="ScriptFloatingTile" id="fltDocs" x="5" y="5" width="775"
+               height="377" parentComponent="pnlDocs" ContentType="MarkdownPanel"
+               bgColour="0" itemColour="4294966442" itemColour2="4285563024"
+               Data="{&#13;&#10;  &quot;ShowBack&quot;: false,&#13;&#10;  &quot;ShowSearch&quot;: false,&#13;&#10;  &quot;ShowToc&quot;: true,&#13;&#10;  &quot;BoldFontName&quot;: &quot;&quot;,&#13;&#10;  &quot;FixTocWidth&quot;: 250,&#13;&#10;  &quot;StartURL&quot;: &quot;/&quot;,&#13;&#10;  &quot;ServerUpdateURL&quot;: &quot;&quot;&#13;&#10;}"/>
+  </Component>
 </ContentProperties>

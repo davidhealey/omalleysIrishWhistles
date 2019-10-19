@@ -19,6 +19,7 @@ Content.makeFrontInterface(800, 580);
 
 include("manifest.js");
 include("settings.js");
+include("HISE-Scripting-Framework/libraries/paths.js");
 
 Synth.deferCallbacks(true);
 
@@ -248,6 +249,49 @@ inline function onbtnURLControl(component, value)
 };
 
 Content.getComponent("btnURL").setControlCallback(onbtnURLControl);
+
+//Docs button
+const var btnDocs = Content.getComponent("btnDocs");
+
+btnDocs.setPaintRoutine(function(g)
+{   
+    this.data.hover ? g.setColour(this.get("bgColour")) : g.setColour(this.get("itemColour"));
+    g.fillPath(Paths.fontawesome.solid["question-circle"], [0, 0, this.getWidth(), this.getHeight()]);
+});
+
+btnDocs.setMouseCallback(function(e)
+{
+    if (e.mouseUp)
+    {
+        this.setValue(1-this.getValue());
+        this.changed();
+    }
+    else
+    {
+        this.data.hover = e.hover;
+        this.repaint();
+    }
+});
+
+btnDocs.setControlCallback(onbtnDocsControl);
+inline function onbtnDocsControl(component, value)
+{
+	pnlDocs.showControl(value);
+};
+
+//Docs panel
+const var pnlDocs = Content.getComponent("pnlDocs");
+
+pnlDocs.setPaintRoutine(function(g)
+{
+    g.fillAll(this.get("bgColour"));
+    g.setColour(0xFF222222);
+    g.fillRect([0, 0, 255, this.getHeight()]);
+});
+
+
+
+
 function onNoteOn()
 {
 	
