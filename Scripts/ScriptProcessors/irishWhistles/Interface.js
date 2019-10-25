@@ -253,34 +253,16 @@ Content.getComponent("btnURL").setControlCallback(onbtnURLControl);
 //Docs button
 const var btnDocs = Content.getComponent("btnDocs");
 
-btnDocs.setPaintRoutine(function(g)
-{   
-    this.data.hover ? g.setColour(this.get("bgColour")) : g.setColour(this.get("itemColour"));
-    g.fillPath(Paths.fontawesome.solid["question-circle"], [0, 0, this.getWidth(), this.getHeight()]);
-});
-
-btnDocs.setMouseCallback(function(e)
-{
-    if (e.mouseUp)
-    {
-        this.setValue(1-this.getValue());
-        this.changed();
-    }
-    else
-    {
-        this.data.hover = e.hover;
-        this.repaint();
-    }
-});
-
 btnDocs.setControlCallback(onbtnDocsControl);
 inline function onbtnDocsControl(component, value)
 {
-	pnlDocs.showControl(value);
+    if (!value) pnlDocs.showAsPopup(true);
+    component.setValue(1);
 };
 
 //Docs panel
 const var pnlDocs = Content.getComponent("pnlDocs");
+pnlDocs.setIsModalPopup(true);
 
 pnlDocs.setPaintRoutine(function(g)
 {

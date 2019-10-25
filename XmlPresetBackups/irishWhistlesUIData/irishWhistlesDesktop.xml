@@ -4,8 +4,8 @@
   <Component type="ScriptImage" id="imgBG" x="0" y="0" width="800" height="580"
              scale="0.5" fileName="{PROJECT_FOLDER}Background.png"/>
   <Component type="ScriptPanel" id="pnlInstrument" x="0" y="0" width="800"
-             height="580" itemColour="0" itemColour2="0" bgColour="0" textColour="0"
-             borderSize="0">
+             height="580" itemColour="0" itemColour2="0" bgColour="3793959976"
+             textColour="0" borderSize="0">
     <Component type="ScriptSlider" id="knbRel" x="92" y="264" mode="Time" max="20000"
                stepSize="1" suffix=" ms" middlePosition="1000" defaultValue="350"
                showValuePopup="Above" scaleFactor="0.5" processorId="sustainEnvelope"
@@ -25,10 +25,11 @@
     <Component type="ScriptButton" id="btnBreath" x="101" y="411" width="150"
                height="14" processorId="legato" parameterId="btnBc" scaleFactor="0.5"
                filmstripImage="{PROJECT_FOLDER}Button.png" parentComponent="pnlInstrument"/>
-    <Component type="ScriptLabel" id="lblVelocityControl" x="404" y="271" text="Velocity Control"
+    <Component type="ScriptLabel" id="lblVelocityControl" x="390" y="289" text="Velocity Control"
                alignment="left" fontSize="16" fontName="blackCherry" width="90"
-               editable="0" parentComponent="pnlInstrument" visible="0"/>
-    <Component type="ScriptButton" id="btnVelDynamics" x="491" y="277" text="Velocity = Dynamics"
+               editable="0" parentComponent="pnlInstrument" textColour="4278190080"
+               height="25" visible="0"/>
+    <Component type="ScriptButton" id="btnVelDynamics" x="479" y="293" text="Velocity = Dynamics"
                scaleFactor="0.5" width="14" height="14" filmstripImage="{PROJECT_FOLDER}Button.png"
                parentComponent="pnlInstrument" visible="0"/>
     <Component type="ScriptSlider" id="knbGain" x="566" y="357" isPluginParameter="1"
@@ -83,22 +84,27 @@
     <Component type="ScriptButton" id="btnCC4" x="661" y="175" width="19" height="14"
                filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
                saveInPreset="0" parentComponent="pnlInstrument"/>
-    <Component type="ScriptLabel" id="lblParam" x="288" y="271" text="Velocity"
-               alignment="left" fontSize="18" fontName="blackCherry" width="129"
-               editable="0" parentComponent="pnlInstrument"/>
-    <Component type="ScriptTable" id="tblCC0" x="292" y="304" width="215" height="151"
-               processorId="Velocity Modulator" customColours="1" parentComponent="pnlInstrument"/>
-    <Component type="ScriptTable" id="tblCC1" x="292" y="304" width="215" height="151"
+    <Component type="ScriptLabel" id="lblParam" x="303" y="289" text="Velocity"
+               alignment="left" fontSize="20" fontName="blackCherry" width="129"
+               editable="0" parentComponent="pnlInstrument" height="25" textColour="4278190080"/>
+    <Component type="ScriptTable" id="tblCC0" x="303" y="313" width="193" height="130"
+               processorId="Velocity Modulator" customColours="1" parentComponent="pnlInstrument"
+               itemColour="3753159302" bgColour="8747102" itemColour2="4294956889"/>
+    <Component type="ScriptTable" id="tblCC1" x="303" y="313" width="193" height="130"
                processorId="expressionCC" customColours="1" parentComponent="pnlInstrument"
+               itemColour="3753159302" bgColour="8747102" itemColour2="4294956889"
                visible="0"/>
-    <Component type="ScriptTable" id="tblCC2" x="292" y="304" width="215" height="151"
+    <Component type="ScriptTable" id="tblCC2" x="303" y="313" width="193" height="130"
                processorId="dynamicsCC" customColours="1" parentComponent="pnlInstrument"
+               itemColour="3753159302" bgColour="8747102" itemColour2="4294956889"
                visible="0"/>
-    <Component type="ScriptTable" id="tblCC3" x="292" y="304" width="215" height="151"
+    <Component type="ScriptTable" id="tblCC3" x="303" y="313" width="193" height="130"
                processorId="vibratoLFOIntensity" customColours="1" parentComponent="pnlInstrument"
+               itemColour="3753159302" bgColour="8747102" itemColour2="4294956889"
                visible="0"/>
-    <Component type="ScriptTable" id="tblCC4" x="292" y="304" width="215" height="151"
+    <Component type="ScriptTable" id="tblCC4" x="303" y="313" width="193" height="130"
                processorId="vibratoLFORate" customColours="1" parentComponent="pnlInstrument"
+               itemColour="3753159302" bgColour="8747102" itemColour2="4294956889"
                visible="0"/>
   </Component>
   <Component type="ScriptPanel" id="pnlPage0" x="0" y="0" width="800" height="580"
@@ -145,10 +151,11 @@
              saveInPreset="0" isMomentary="1"/>
   <Component type="ScriptButton" id="btnURL" x="335" y="474" filmstripImage="{PROJECT_FOLDER}empty.png"
              saveInPreset="0"/>
-  <Component type="ScriptPanel" id="btnDocs" x="141" y="36" width="25" height="25"
-             allowCallbacks="Clicks &amp; Hover" bgColour="4283137350" itemColour="3996209710"/>
+  <Component type="ScriptButton" id="btnDocs" x="673" y="92" width="53" height="28"
+             scaleFactor=".5" filmstripImage="{PROJECT_FOLDER}Help.png" saveInPreset="0"
+             isMomentary="1" defaultValue="1"/>
   <Component type="ScriptPanel" id="pnlDocs" x="10" y="91" width="780" height="382"
-             bgColour="4015414341" visible="0">
+             bgColour="4015414341" isPopupPanel="1">
     <Component type="ScriptFloatingTile" id="fltDocs" x="5" y="5" width="775"
                height="377" parentComponent="pnlDocs" ContentType="MarkdownPanel"
                bgColour="0" itemColour="4294966442" itemColour2="4285563024"
