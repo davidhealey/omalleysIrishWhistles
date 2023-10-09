@@ -11,13 +11,11 @@ tblVel.set("height", 95);
 tblVel.set("width", 200);
 tblVel.connectToOtherTable("Velocity Modulator", 0);function onNoteOn()
 {
-	Message.setVelocity(Math.max(1, 127 * tblVel.getTableValue(Message.getVelocity()))); //Scale velocity using table
+	Message.setVelocity(Math.max(1, 127 * tblVel.getTableValue(Message.getVelocity() / 127))); //Scale velocity using table
 
 	//Send velocity to dynamics CC if button enabled
 	if (btnDynamics.getValue())
-    {
         dynamicsCC.setAttribute(dynamicsCC.DefaultValue, Message.getVelocity());
-    }
 }
 function onNoteOff()
 {

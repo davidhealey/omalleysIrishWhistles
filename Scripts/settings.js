@@ -15,7 +15,7 @@
     along with this file. If not, see <http://www.gnu.org/licenses/>.
 */
 
-namespace Settings
+namespace UserSettings
 {
     const var isPlugin = Engine.isPlugin();
 
@@ -26,7 +26,7 @@ namespace Settings
     "Dynamic": false,
     "ColourData":
         {
-            "bgColour": 0xA71D3221,
+            "bgColour": 0xDA1D3221,
             "itemColour1":0xBA2A4F46,
             "textColour":0xFFF8F800
         },
@@ -127,4 +127,4 @@ namespace Settings
     });
 };
 
-Content.getComponent("fltSettings").setContentData(Settings.tileData);
+Content.getComponent("fltSettings").setContentData(UserSettings.tileData);

@@ -8,10 +8,10 @@ workspace=/Volumes/SHARED/HISEProjects/Woodwinds/OMalleys_Irish_Whistles/HISE
 build_standalone=1
 build_plugin=1
 build_installer=1
-clean_project=0
+clean_project=1
 
-hise_path=/Volumes/SHARED/HISE/projects/standalone/Builds/MacOSX/build/Release/HISE.app/Contents/MacOS/HISE
-projucer_path=/Volumes/SHARED/HISE/tools/projucer/Projucer.app/Contents/MacOS/Projucer
+hise_path=/Volumes/HISE/HISE/projects/standalone/Builds/MacOSX/build/Release/HISE.app/Contents/MacOS/HISE
+projucer_path=/Volumes/HISE/HISE/tools/projucer/Projucer.app/Contents/MacOS/Projucer
 PACKAGES_BUILD=/usr/local/bin/packagesbuild
 
 cd "$workspace"

@@ -4,8 +4,20 @@ Installer/
 Images/dev
 Presets/
 Samples/
+Packaging/
 PooledResources/
+Documentation/
 GnuLinux Deliverables/
 .st*
 *.sync-conflict
 ._build
+Compiled/
+*build
+*dev
+*.hxi
+*.hxp
+*.hr*
+*.ch*
+.DS_Store
+user_info.xml
+*.lwz

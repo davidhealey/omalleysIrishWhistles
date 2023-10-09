@@ -197,7 +197,7 @@ inline function colourKeys(patch)
 {
     local range = Manifest.patches[patch].range;
 
-    for (i = 0; i < 127; i++)
+    for (i = 0; i < 128; i++)
     {
         if (i >= range[0] && i <= range[1])
         {

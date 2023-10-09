@@ -1,163 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ContentProperties DeviceType="Desktop">
-  <Component type="ScriptImage" id="imgBG" x="0" y="0" width="800" height="580"
+  <Component type="ScriptImage" id="imgBG" x="0.0" y="0.0" width="800.0" height="580.0"
              scale="0.5" fileName="{PROJECT_FOLDER}Background.png"/>
-  <Component type="ScriptPanel" id="pnlInstrument" x="0" y="0" width="800"
-             height="580" itemColour="0" itemColour2="0" bgColour="3793959976"
-             textColour="0" borderSize="0">
-    <Component type="ScriptSlider" id="knbRel" x="92" y="264" mode="Time" max="20000"
-               stepSize="1" suffix=" ms" middlePosition="1000" defaultValue="350"
-               showValuePopup="Above" scaleFactor="0.5" processorId="sustainEnvelope"
-               parameterId="Release" pluginParameterName="Release" isPluginParameter="1"
-               width="44" height="44" numStrips="127" filmstripImage="{PROJECT_FOLDER}knob.png"
-               parentComponent="pnlInstrument"/>
-    <Component type="ScriptSlider" id="knbStacc" x="185" y="264" text="Staccato Gain"
-               mode="Decibel" suffix=" dB" middlePosition="-18" min="-100" max="3"
-               stepSize="0.1" showValuePopup="Above" processorId="staccatoGain"
-               parameterId="Gain" width="44" height="44" numStrips="127" scaleFactor="0.5"
-               filmstripImage="{PROJECT_FOLDER}knob.png" isPluginParameter="1"
-               pluginParameterName="Overlay Gain" parentComponent="pnlInstrument"/>
-    <Component type="ScriptButton" id="btnRR" x="101" y="375" width="111" height="14"
-               processorId="roundRobinHandler" parameterId="btnEnabled" scaleFactor="0.5"
-               filmstripImage="{PROJECT_FOLDER}Button.png" isPluginParameter="1"
-               pluginParameterName="Round Robin" parentComponent="pnlInstrument"/>
-    <Component type="ScriptButton" id="btnBreath" x="101" y="411" width="150"
-               height="14" processorId="legato" parameterId="btnBc" scaleFactor="0.5"
+  <Component type="ScriptPanel" id="pnlInstrument" x="0.0" y="0.0" width="800.0"
+             height="580.0" itemColour="0" itemColour2="0" bgColour="3793959976"
+             textColour="0" borderSize="0.0">
+    <Component type="ScriptSlider" id="knbRel" x="92.0" y="264.0" mode="Time"
+               max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="350.0" showValuePopup="Above" scaleFactor="0.5"
+               processorId="sustainEnvelope" parameterId="Release" pluginParameterName="Release"
+               isPluginParameter="1" width="44.0" height="44.0" numStrips="127.0"
+               filmstripImage="{PROJECT_FOLDER}knob.png" parentComponent="pnlInstrument"/>
+    <Component type="ScriptSlider" id="knbStacc" x="185.0" y="264.0" text="Staccato Gain"
+               mode="Decibel" suffix=" dB" middlePosition="-18.0" min="-100.0"
+               max="3.0" stepSize="0.1000000014901161" showValuePopup="Above"
+               processorId="staccatoGain" parameterId="Gain" width="44.0" height="44.0"
+               numStrips="127.0" scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}knob.png"
+               isPluginParameter="1" pluginParameterName="Overlay Gain" parentComponent="pnlInstrument"/>
+    <Component type="ScriptButton" id="btnRR" x="101.0" y="375.0" width="111.0"
+               height="14.0" processorId="roundRobinHandler" parameterId="btnEnabled"
+               scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}Button.png"
+               isPluginParameter="1" pluginParameterName="Round Robin" parentComponent="pnlInstrument"/>
+    <Component type="ScriptButton" id="btnBreath" x="101.0" y="411.0" width="150.0"
+               height="14.0" processorId="legato" parameterId="btnBc" scaleFactor="0.5"
                filmstripImage="{PROJECT_FOLDER}Button.png" parentComponent="pnlInstrument"/>
-    <Component type="ScriptLabel" id="lblVelocityControl" x="390" y="289" text="Velocity Control"
-               alignment="left" fontSize="16" fontName="blackCherry" width="90"
-               editable="0" parentComponent="pnlInstrument" textColour="4278190080"
-               height="25" visible="0"/>
-    <Component type="ScriptButton" id="btnVelDynamics" x="479" y="293" text="Velocity = Dynamics"
-               scaleFactor="0.5" width="14" height="14" filmstripImage="{PROJECT_FOLDER}Button.png"
+    <Component type="ScriptLabel" id="lblVelocityControl" x="390.0" y="289.0"
+               text="Velocity Control" alignment="left" fontSize="16.0" fontName="blackCherry"
+               width="90.0" editable="0" parentComponent="pnlInstrument" textColour="4278190080"
+               height="25.0" visible="0"/>
+    <Component type="ScriptButton" id="btnVelDynamics" x="479.0" y="293.0" text="Velocity = Dynamics"
+               scaleFactor="0.5" width="14.0" height="14.0" filmstripImage="{PROJECT_FOLDER}Button.png"
                parentComponent="pnlInstrument" visible="0"/>
-    <Component type="ScriptSlider" id="knbGain" x="566" y="357" isPluginParameter="1"
+    <Component type="ScriptSlider" id="knbGain" x="566.0" y="357.0" isPluginParameter="1"
                pluginParameterName="Gain" processorId="Simple Gain1" parameterId="Gain"
-               mode="Decibel" min="-100" max="3" stepSize="0.1" suffix=" dB"
-               middlePosition="-18" defaultValue="-3" width="44" height="44"
-               numStrips="127" scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}knob.png"
+               mode="Decibel" min="-100.0" max="3.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" defaultValue="-3.0" width="44.0"
+               height="44.0" numStrips="127.0" scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}knob.png"
                showValuePopup="Above" parentComponent="pnlInstrument"/>
-    <Component type="ScriptSlider" id="knbPan" x="566" y="264" processorId="Simple Gain1"
-               parameterId="Balance" mode="Pan" min="-100" max="100" stepSize="1"
-               suffix="L" middlePosition="0" isPluginParameter="1" pluginParameterName="Pan"
-               width="44" height="44" scaleFactor="0.5" numStrips="127" filmstripImage="{PROJECT_FOLDER}pan.png"
-               showValuePopup="Above" parentComponent="pnlInstrument"/>
-    <Component type="ScriptSlider" id="knbCoarse" x="659" y="264" pluginParameterName="Coarse Tune"
-               isPluginParameter="1" processorId="tuner" parameterId="knbCoarse"
-               min="-12" max="12" middlePosition="0" stepSize="1" suffix=" st"
-               showValuePopup="Above" width="44" height="44" scaleFactor="0.5"
-               numStrips="127" filmstripImage="{PROJECT_FOLDER}pan.png" parentComponent="pnlInstrument"/>
-    <Component type="ScriptSlider" id="knbFine" x="659" y="357" pluginParameterName="Fine Tune"
-               isPluginParameter="1" processorId="tuner" parameterId="knbFine"
-               max="100" min="-100" stepSize="1" middlePosition="0" showValuePopup="Above"
-               suffix=" ct" width="44" height="44" scaleFactor="0.5" numStrips="127"
-               filmstripImage="{PROJECT_FOLDER}pan.png" parentComponent="pnlInstrument"/>
-    <Component type="ScriptSlider" id="knbExpression" x="138" y="146" max="127"
-               text="Expression" stepSize="1" processorId="expressionCC" parameterId="DefaultValue"
-               isPluginParameter="1" pluginParameterName="Expression" width="44"
-               height="44" numStrips="127" scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}knob.png"
-               defaultValue="127" parentComponent="pnlInstrument"/>
-    <Component type="ScriptSlider" id="knbDynamics" x="295" y="146" max="127"
-               text="Dynamics" stepSize="1" isPluginParameter="1" pluginParameterName="Dynamics"
-               width="44" height="44" numStrips="127" scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}knob.png"
-               defaultValue="127" parentComponent="pnlInstrument"/>
-    <Component type="ScriptSlider" id="knbVibIntensity" x="453" y="146" max="127"
-               text="Vibrato Intensity" stepSize="1" isPluginParameter="1" pluginParameterName="Vibrato Intensity"
-               processorId="vibratoLFOIntensity" parameterId="DefaultValue"
-               width="44" height="44" numStrips="127" scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}knob.png"
+    <Component type="ScriptSlider" id="knbPan" x="566.0" y="264.0" processorId="Simple Gain1"
+               parameterId="Balance" mode="Pan" min="-100.0" max="100.0" stepSize="1.0"
+               suffix="L" middlePosition="0.0" isPluginParameter="1" pluginParameterName="Pan"
+               width="44.0" height="44.0" scaleFactor="0.5" numStrips="127.0"
+               filmstripImage="{PROJECT_FOLDER}pan.png" showValuePopup="Above"
                parentComponent="pnlInstrument"/>
-    <Component type="ScriptSlider" id="knbVibratoRate" x="610" y="146" max="127"
-               text="Vibrato Rate" stepSize="1" processorId="vibratoLFORate"
+    <Component type="ScriptSlider" id="knbCoarse" x="659.0" y="264.0" pluginParameterName="Coarse Tune"
+               isPluginParameter="1" processorId="tuner" parameterId="knbCoarse"
+               min="-12.0" max="12.0" middlePosition="0.0" stepSize="1.0" suffix=" st"
+               showValuePopup="Above" width="44.0" height="44.0" scaleFactor="0.5"
+               numStrips="127.0" filmstripImage="{PROJECT_FOLDER}pan.png" parentComponent="pnlInstrument"/>
+    <Component type="ScriptSlider" id="knbFine" x="659.0" y="357.0" pluginParameterName="Fine Tune"
+               isPluginParameter="1" processorId="tuner" parameterId="knbFine"
+               max="100.0" min="-100.0" stepSize="1.0" middlePosition="0.0"
+               showValuePopup="Above" suffix=" ct" width="44.0" height="44.0"
+               scaleFactor="0.5" numStrips="127.0" filmstripImage="{PROJECT_FOLDER}pan.png"
+               parentComponent="pnlInstrument"/>
+    <Component type="ScriptSlider" id="knbExpression" x="138.0" y="146.0" max="127.0"
+               text="Expression" stepSize="1.0" processorId="expressionCC" parameterId="DefaultValue"
+               isPluginParameter="1" pluginParameterName="Expression" width="44.0"
+               height="44.0" numStrips="127.0" scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}knob.png"
+               defaultValue="127.0" parentComponent="pnlInstrument"/>
+    <Component type="ScriptSlider" id="knbDynamics" x="295.0" y="146.0" max="127.0"
+               text="Dynamics" stepSize="1.0" isPluginParameter="1" pluginParameterName="Dynamics"
+               width="44.0" height="44.0" numStrips="127.0" scaleFactor="0.5"
+               filmstripImage="{PROJECT_FOLDER}knob.png" defaultValue="127.0"
+               parentComponent="pnlInstrument"/>
+    <Component type="ScriptSlider" id="knbVibIntensity" x="453.0" y="146.0"
+               max="127.0" text="Vibrato Intensity" stepSize="1.0" isPluginParameter="1"
+               pluginParameterName="Vibrato Intensity" processorId="vibratoLFOIntensity"
+               parameterId="DefaultValue" width="44.0" height="44.0" numStrips="127.0"
+               scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}knob.png" parentComponent="pnlInstrument"/>
+    <Component type="ScriptSlider" id="knbVibratoRate" x="610.0" y="146.0" max="127.0"
+               text="Vibrato Rate" stepSize="1.0" processorId="vibratoLFORate"
                parameterId="DefaultValue" isPluginParameter="1" pluginParameterName="Vibrato Rate"
-               width="44" height="44" numStrips="127" scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}knob.png"
-               defaultValue="90" parentComponent="pnlInstrument"/>
-    <Component type="ScriptButton" id="btnCC1" x="189" y="175" width="19" height="14"
-               filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
+               width="44.0" height="44.0" numStrips="127.0" scaleFactor="0.5"
+               filmstripImage="{PROJECT_FOLDER}knob.png" defaultValue="90.0"
+               parentComponent="pnlInstrument"/>
+    <Component type="ScriptButton" id="btnCC1" x="189.0" y="175.0" width="19.0"
+               height="14.0" filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
                saveInPreset="0" parentComponent="pnlInstrument"/>
-    <Component type="ScriptButton" id="btnCC2" x="346" y="175" width="19" height="14"
-               filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
+    <Component type="ScriptButton" id="btnCC2" x="346.0" y="175.0" width="19.0"
+               height="14.0" filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
                parentComponent="pnlInstrument" saveInPreset="0" bgColour="4281422382"/>
-    <Component type="ScriptButton" id="btnCC3" x="504" y="175" width="19" height="14"
-               filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
+    <Component type="ScriptButton" id="btnCC3" x="504.0" y="175.0" width="19.0"
+               height="14.0" filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
                saveInPreset="0" parentComponent="pnlInstrument"/>
-    <Component type="ScriptButton" id="btnCC4" x="661" y="175" width="19" height="14"
-               filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
+    <Component type="ScriptButton" id="btnCC4" x="661.0" y="175.0" width="19.0"
+               height="14.0" filmstripImage="{PROJECT_FOLDER}Button.png" scaleFactor="0.5"
                saveInPreset="0" parentComponent="pnlInstrument"/>
-    <Component type="ScriptLabel" id="lblParam" x="303" y="289" text="Velocity"
-               alignment="left" fontSize="20" fontName="blackCherry" width="129"
-               editable="0" parentComponent="pnlInstrument" height="25" textColour="4278190080"/>
-    <Component type="ScriptTable" id="tblCC0" x="303" y="313" width="193" height="130"
-               processorId="Velocity Modulator" customColours="1" parentComponent="pnlInstrument"
-               itemColour="3753159302" bgColour="8747102" itemColour2="4294956889"/>
-    <Component type="ScriptTable" id="tblCC1" x="303" y="313" width="193" height="130"
-               processorId="expressionCC" customColours="1" parentComponent="pnlInstrument"
-               itemColour="3753159302" bgColour="8747102" itemColour2="4294956889"
+    <Component type="ScriptLabel" id="lblParam" x="303.0" y="289.0" text="Velocity"
+               alignment="left" fontSize="20.0" fontName="blackCherry" width="129.0"
+               editable="0" parentComponent="pnlInstrument" height="25.0" textColour="4278190080"/>
+    <Component type="ScriptTable" id="tblCC0" x="303.0" y="313.0" width="193.0"
+               height="130.0" processorId="Velocity Modulator" customColours="1"
+               parentComponent="pnlInstrument" itemColour="3753159302" bgColour="4278593305"
+               itemColour2="4294956889"/>
+    <Component type="ScriptTable" id="tblCC1" x="303.0" y="313.0" width="193.0"
+               height="130.0" processorId="expressionCC" customColours="1" parentComponent="pnlInstrument"
+               itemColour="3753159302" bgColour="4278593305" itemColour2="4294956889"
                visible="0"/>
-    <Component type="ScriptTable" id="tblCC2" x="303" y="313" width="193" height="130"
-               processorId="dynamicsCC" customColours="1" parentComponent="pnlInstrument"
-               itemColour="3753159302" bgColour="8747102" itemColour2="4294956889"
+    <Component type="ScriptTable" id="tblCC2" x="303.0" y="313.0" width="193.0"
+               height="130.0" processorId="dynamicsCC" customColours="1" parentComponent="pnlInstrument"
+               itemColour="3753159302" bgColour="4278593305" itemColour2="4294956889"
                visible="0"/>
-    <Component type="ScriptTable" id="tblCC3" x="303" y="313" width="193" height="130"
-               processorId="vibratoLFOIntensity" customColours="1" parentComponent="pnlInstrument"
-               itemColour="3753159302" bgColour="8747102" itemColour2="4294956889"
-               visible="0"/>
-    <Component type="ScriptTable" id="tblCC4" x="303" y="313" width="193" height="130"
-               processorId="vibratoLFORate" customColours="1" parentComponent="pnlInstrument"
-               itemColour="3753159302" bgColour="8747102" itemColour2="4294956889"
-               visible="0"/>
+    <Component type="ScriptTable" id="tblCC3" x="303.0" y="313.0" width="193.0"
+               height="130.0" processorId="vibratoLFOIntensity" customColours="1"
+               parentComponent="pnlInstrument" itemColour="3753159302" bgColour="4278593305"
+               itemColour2="4294956889" visible="0"/>
+    <Component type="ScriptTable" id="tblCC4" x="303.0" y="313.0" width="193.0"
+               height="130.0" processorId="vibratoLFORate" customColours="1"
+               parentComponent="pnlInstrument" itemColour="3753159302" bgColour="4278593305"
+               itemColour2="4294956889" visible="0"/>
   </Component>
-  <Component type="ScriptPanel" id="pnlPage0" x="0" y="0" width="800" height="580"
-             bgColour="0" itemColour="0" itemColour2="0" textColour="0" borderSize="0"
-             visible="0">
-    <Component type="ScriptFloatingTile" id="fltPreset" x="109" y="152" width="578"
-               height="290" ContentType="PresetBrowser" bgColour="4078776865"
-               itemColour="4294506496" itemColour2="16711725" Data="{&#13;&#10;  &quot;ShowSaveButton&quot;: true,&#13;&#10;  &quot;ShowFolderButton&quot;: true,&#13;&#10;  &quot;ShowNotes&quot;: false,&#13;&#10;  &quot;ShowEditButtons&quot;: true,&#13;&#10;  &quot;ShowFavoriteIcon&quot;: true,&#13;&#10;  &quot;NumColumns&quot;: 2&#13;&#10;}"
+  <Component type="ScriptPanel" id="pnlPage0" x="0.0" y="0.0" width="800.0"
+             height="580.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0"
+             borderSize="0.0" visible="0">
+    <Component type="ScriptFloatingTile" id="fltPreset" x="109.0" y="152.0"
+               width="578.0" height="290.0" ContentType="PresetBrowser" bgColour="4078776865"
+               itemColour="4294506496" itemColour2="16711725" Data="{&#10;  &quot;ShowSaveButton&quot;: true,&#10;  &quot;ShowFolderButton&quot;: true,&#10;  &quot;ShowNotes&quot;: false,&#10;  &quot;ShowEditButtons&quot;: true,&#10;  &quot;ShowFavoriteIcon&quot;: false,&#10;  &quot;NumColumns&quot;: 2&#10;}"
                parentComponent="pnlPage0" textColour="4294966234"/>
   </Component>
-  <Component type="ScriptPanel" id="pnlPage1" x="109" y="152" width="578"
-             height="290" borderSize="0" itemColour2="4196217377" itemColour="4196217377"
-             bgColour="0" textColour="0" borderRadius="0" visible="0">
-    <Component type="ScriptFloatingTile" id="fltSettings" x="15" y="0" width="548"
-               height="280" parentComponent="pnlPage1" ContentType="Tabs" bgColour="4283519313"
-               itemColour="4284900966" itemColour2="4294951115" Data="{&#13;&#10;  &quot;Dynamic&quot;: false,&#13;&#10;  &quot;Content&quot;: [&#13;&#10;    {&#13;&#10;      &quot;Type&quot;: &quot;CustomSettings&quot;,&#13;&#10;      &quot;Title&quot;: &quot;Engine&quot;,&#13;&#10;      &quot;StyleData&quot;: {&#13;&#10;      },&#13;&#10;      &quot;Font&quot;: &quot;&quot;,&#13;&#10;      &quot;FontSize&quot;: 14.0,&#13;&#10;      &quot;LayoutData&quot;: ,&#13;&#10;      &quot;ColourData&quot;: {&#13;&#10;        &quot;bgColour&quot;: &quot;fa1d3221&quot;,&#13;&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;&#13;&#10;      },&#13;&#10;      &quot;Driver&quot;: true,&#13;&#10;      &quot;Device&quot;: true,&#13;&#10;      &quot;Output&quot;: true,&#13;&#10;      &quot;BufferSize&quot;: true,&#13;&#10;      &quot;SampleRate&quot;: true,&#13;&#10;      &quot;GlobalBPM&quot;: true,&#13;&#10;      &quot;StreamingMode&quot;: true,&#13;&#10;      &quot;ScaleFactor&quot;: true,&#13;&#10;      &quot;VoiceAmountMultiplier&quot;: true,&#13;&#10;      &quot;ClearMidiCC&quot;: true,&#13;&#10;      &quot;SampleLocation&quot;: true,&#13;&#10;      &quot;DebugMode&quot;: false,&#13;&#10;      &quot;ScaleFactorList&quot;: [&#13;&#10;        1,&#13;&#10;        1.25,&#13;&#10;        1.5,&#13;&#10;        2&#13;&#10;      ]&#13;&#10;    },&#13;&#10;    {&#13;&#10;      &quot;Type&quot;: &quot;MidiSources&quot;,&#13;&#10;      &quot;Title&quot;: &quot;MIDI Input&quot;,&#13;&#10;      &quot;StyleData&quot;: {&#13;&#10;      },&#13;&#10;      &quot;Font&quot;: &quot;&quot;,&#13;&#10;      &quot;FontSize&quot;: 14.0,&#13;&#10;      &quot;LayoutData&quot;: ,&#13;&#10;      &quot;ColourData&quot;: {&#13;&#10;        &quot;bgColour&quot;: &quot;fa1d3221&quot;,&#13;&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;&#13;&#10;      }&#13;&#10;    },&#13;&#10;    {&#13;&#10;      &quot;Type&quot;: &quot;MidiChannelList&quot;,&#13;&#10;      &quot;Title&quot;: &quot;MIDI Channel&quot;,&#13;&#10;      &quot;StyleData&quot;: {&#13;&#10;      },&#13;&#10;      &quot;Font&quot;: &quot;&quot;,&#13;&#10;      &quot;FontSize&quot;: 14.0,&#13;&#10;      &quot;LayoutData&quot;: ,&#13;&#10;      &quot;ColourData&quot;: {&#13;&#10;        &quot;bgColour&quot;: &quot;fa1d3221&quot;,&#13;&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;&#13;&#10;      }&#13;&#10;    },&#13;&#10;    {&#13;&#10;      &quot;Type&quot;: &quot;MidiLearnPanel&quot;,&#13;&#10;      &quot;Title&quot;: &quot;MIDI Automation&quot;,&#13;&#10;      &quot;StyleData&quot;: {&#13;&#10;      },&#13;&#10;      &quot;Font&quot;: &quot;&quot;,&#13;&#10;      &quot;FontSize&quot;: 14.0,&#13;&#10;      &quot;LayoutData&quot;: ,&#13;&#10;      &quot;ColourData&quot;: {&#13;&#10;        &quot;bgColour&quot;: &quot;da1d3221&quot;,&#13;&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;,&#13;&#10;        &quot;itemColour1&quot;: &quot;ff00714e&quot;&#13;&#10;      }&#13;&#10;    },&#13;&#10;    {&#13;&#10;      &quot;Type&quot;: &quot;AboutPagePanel&quot;,&#13;&#10;      &quot;Title&quot;: &quot;About&quot;,&#13;&#10;      &quot;StyleData&quot;: {&#13;&#10;      },&#13;&#10;      &quot;Font&quot;: &quot;&quot;,&#13;&#10;      &quot;FontSize&quot;: 14.0,&#13;&#10;      &quot;LayoutData&quot;: ,&#13;&#10;      &quot;ColourData&quot;: {&#13;&#10;        &quot;bgColour&quot;: &quot;da1d3221&quot;,&#13;&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;,&#13;&#10;        &quot;itemColour1&quot;: &quot;ffffe500&quot;&#13;&#10;      },&#13;&#10;      &quot;CopyrightNotice&quot;: &quot;\u00a9 2019, David Healey&quot;,&#13;&#10;      &quot;ShowLicensedEmail&quot;: false,&#13;&#10;      &quot;ShowVersion&quot;: true,&#13;&#10;      &quot;BuildDate&quot;: true,&#13;&#10;      &quot;WebsiteURL&quot;: &quot;http://librewave.com&quot;,&#13;&#10;      &quot;ShowProductName&quot;: true,&#13;&#10;      &quot;UseCustomImage&quot;: false&#13;&#10;    }&#13;&#10;  ],&#13;&#10;  &quot;CurrentTab&quot;: 0&#13;&#10;}"/>
+  <Component type="ScriptPanel" id="pnlPage1" x="109.0" y="152.0" width="578.0"
+             height="290.0" borderSize="0.0" itemColour2="4196217377" itemColour="4196217377"
+             bgColour="0" textColour="0" borderRadius="0.0" visible="0">
+    <Component type="ScriptFloatingTile" id="fltSettings" x="15.0" y="0.0" width="548.0"
+               height="280.0" parentComponent="pnlPage1" ContentType="Tabs"
+               bgColour="4283519313" itemColour="4284900966" itemColour2="0"
+               Data="{&#10;  &quot;Dynamic&quot;: false,&#10;  &quot;Content&quot;: [&#10;    {&#10;      &quot;Type&quot;: &quot;CustomSettings&quot;,&#10;      &quot;Title&quot;: &quot;Engine&quot;,&#10;      &quot;StyleData&quot;: {&#10;      },&#10;      &quot;Font&quot;: &quot;&quot;,&#10;      &quot;FontSize&quot;: 14.0,&#10;      &quot;LayoutData&quot;: ,&#10;      &quot;ColourData&quot;: {&#10;        &quot;bgColour&quot;: &quot;fa1d3221&quot;,&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;&#10;      },&#10;      &quot;Driver&quot;: true,&#10;      &quot;Device&quot;: true,&#10;      &quot;Output&quot;: true,&#10;      &quot;BufferSize&quot;: true,&#10;      &quot;SampleRate&quot;: true,&#10;      &quot;GlobalBPM&quot;: true,&#10;      &quot;StreamingMode&quot;: true,&#10;      &quot;ScaleFactor&quot;: true,&#10;      &quot;VoiceAmountMultiplier&quot;: true,&#10;      &quot;ClearMidiCC&quot;: true,&#10;      &quot;SampleLocation&quot;: true,&#10;      &quot;DebugMode&quot;: false,&#10;      &quot;UseOpenGL&quot;: true,&#10;      &quot;ScaleFactorList&quot;: [&#10;        1,&#10;        1.25,&#10;        1.5,&#10;        2&#10;      ]&#10;    },&#10;    {&#10;      &quot;Type&quot;: &quot;MidiSources&quot;,&#10;      &quot;Title&quot;: &quot;MIDI Input&quot;,&#10;      &quot;StyleData&quot;: {&#10;      },&#10;      &quot;Font&quot;: &quot;&quot;,&#10;      &quot;FontSize&quot;: 14.0,&#10;      &quot;LayoutData&quot;: ,&#10;      &quot;ColourData&quot;: {&#10;        &quot;bgColour&quot;: &quot;fa1d3221&quot;,&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;Type&quot;: &quot;MidiChannelList&quot;,&#10;      &quot;Title&quot;: &quot;MIDI Channel&quot;,&#10;      &quot;StyleData&quot;: {&#10;      },&#10;      &quot;Font&quot;: &quot;&quot;,&#10;      &quot;FontSize&quot;: 14.0,&#10;      &quot;LayoutData&quot;: ,&#10;      &quot;ColourData&quot;: {&#10;        &quot;bgColour&quot;: &quot;fa1d3221&quot;,&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;Type&quot;: &quot;MidiLearnPanel&quot;,&#10;      &quot;Title&quot;: &quot;MIDI Automation&quot;,&#10;      &quot;StyleData&quot;: {&#10;      },&#10;      &quot;Font&quot;: &quot;&quot;,&#10;      &quot;FontSize&quot;: 14.0,&#10;      &quot;LayoutData&quot;: ,&#10;      &quot;ColourData&quot;: {&#10;        &quot;bgColour&quot;: &quot;da1d3221&quot;,&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;,&#10;        &quot;itemColour1&quot;: &quot;ff00714e&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;Type&quot;: &quot;AboutPagePanel&quot;,&#10;      &quot;Title&quot;: &quot;About&quot;,&#10;      &quot;StyleData&quot;: {&#10;      },&#10;      &quot;Font&quot;: &quot;&quot;,&#10;      &quot;FontSize&quot;: 14.0,&#10;      &quot;LayoutData&quot;: ,&#10;      &quot;ColourData&quot;: {&#10;        &quot;bgColour&quot;: &quot;da1d3221&quot;,&#10;        &quot;textColour&quot;: &quot;fffffdd1&quot;,&#10;        &quot;itemColour1&quot;: &quot;ffffe500&quot;&#10;      },&#10;      &quot;CopyrightNotice&quot;: &quot;\u00a9 2019, David Healey&quot;,&#10;      &quot;ShowLicensedEmail&quot;: false,&#10;      &quot;ShowVersion&quot;: true,&#10;      &quot;BuildDate&quot;: true,&#10;      &quot;WebsiteURL&quot;: &quot;http://librewave.com&quot;,&#10;      &quot;ShowProductName&quot;: true,&#10;      &quot;UseCustomImage&quot;: false&#10;    }&#10;  ],&#10;  &quot;CurrentTab&quot;: 0,&#10;  &quot;CycleKeyPress&quot;: &quot;&quot;&#10;}"/>
   </Component>
-  <Component type="ScriptPanel" id="pnlAdmin" x="8" y="0" width="183" height="121"
-             itemColour="4278190080" itemColour2="4278190080" visible="0">
-    <Component type="ScriptComboBox" id="cmbPatches" x="15" y="16" width="150"
-               height="30" max="4" items="Bb&#10;c&#10;d&#10;low_d" parentComponent="pnlAdmin"/>
-    <Component type="ScriptSlider" id="knbTransition" x="16" y="65" text="Transition Gain"
-               mode="Decibel" suffix=" dB" middlePosition="-18" min="-100" max="0"
-               stepSize="0.1" showValuePopup="Below" processorId="transitionHandler"
-               parameterId="knbGain" parentComponent="pnlAdmin"/>
+  <Component type="ScriptPanel" id="pnlAdmin" x="8.0" y="0.0" width="183.0"
+             height="121.0" itemColour="4278190080" itemColour2="4278190080"
+             visible="0">
+    <Component type="ScriptComboBox" id="cmbPatches" x="15.0" y="16.0" width="150.0"
+               height="30.0" max="4" items="Bb&#10;c&#10;d&#10;low_d" parentComponent="pnlAdmin"/>
+    <Component type="ScriptSlider" id="knbTransition" x="16.0" y="65.0" text="Transition Gain"
+               mode="Decibel" suffix=" dB" middlePosition="-18.0" min="-100.0"
+               max="0.0" stepSize="0.1000000014901161" showValuePopup="Below"
+               processorId="transitionHandler" parameterId="knbGain" parentComponent="pnlAdmin"/>
   </Component>
-  <Component type="ScriptFloatingTile" id="fltKeyboard" x="0" y="506" width="800"
-             height="74" ContentType="Keyboard" bgColour="16711680" itemColour="16711680"
-             itemColour2="4294901760" textColour="4294901805" Data="{&#13;&#10;  &quot;KeyWidth&quot;: 15,&#13;&#10;  &quot;DisplayOctaveNumber&quot;: true,&#13;&#10;  &quot;LowKey&quot;: 36,&#13;&#10;  &quot;HiKey&quot;: 127,&#13;&#10;  &quot;CustomGraphics&quot;: false,&#13;&#10;  &quot;DefaultAppearance&quot;: true,&#13;&#10;  &quot;BlackKeyRatio&quot;: 0.69999999,&#13;&#10;  &quot;ToggleMode&quot;: false,&#13;&#10;  &quot;MidiChannel&quot;: 1,&#13;&#10;  &quot;UseVectorGraphics&quot;: true,&#13;&#10;  &quot;UseFlatStyle&quot;: false,&#13;&#10;  &quot;MPEKeyboard&quot;: false,&#13;&#10;  &quot;MPEStartChannel&quot;: 2,&#13;&#10;  &quot;MPEEndChannel&quot;: 16&#13;&#10;}"
+  <Component type="ScriptFloatingTile" id="fltKeyboard" x="0.0" y="506.0"
+             width="800.0" height="74.0" ContentType="Keyboard" bgColour="16711680"
+             itemColour="16711680" itemColour2="4294901760" textColour="4294901805"
+             Data="{&#10;  &quot;KeyWidth&quot;: 15,&#10;  &quot;DisplayOctaveNumber&quot;: true,&#10;  &quot;LowKey&quot;: 24,&#10;  &quot;HiKey&quot;: 126,&#10;  &quot;CustomGraphics&quot;: false,&#10;  &quot;DefaultAppearance&quot;: true,&#10;  &quot;BlackKeyRatio&quot;: 0.69999999,&#10;  &quot;ToggleMode&quot;: false,&#10;  &quot;MidiChannel&quot;: 1,&#10;  &quot;UseVectorGraphics&quot;: true,&#10;  &quot;UseFlatStyle&quot;: false,&#10;  &quot;MPEKeyboard&quot;: false,&#10;  &quot;MPEStartChannel&quot;: 2,&#10;  &quot;MPEEndChannel&quot;: 16&#10;}"
              itemColour3="4294901760"/>
-  <Component type="ScriptButton" id="btnSettings" x="630" y="31" scaleFactor="0.5"
-             width="53" height="23" saveInPreset="0" filmstripImage="{PROJECT_FOLDER}settings.png"/>
-  <Component type="ScriptLabel" id="lblPreset" x="301" y="99" text="D Default"
-             fontSize="18" fontName="blackCherry" width="196" editable="0"
-             height="24"/>
-  <Component type="ScriptButton" id="btnPreset0" x="303" y="100" scaleFactor="0.5"
-             filmstripImage="{PROJECT_FOLDER}empty.png" width="192" height="23"
+  <Component type="ScriptButton" id="btnSettings" x="630.0" y="31.0" scaleFactor="0.5"
+             width="53.0" height="23.0" saveInPreset="0" filmstripImage="{PROJECT_FOLDER}settings.png"/>
+  <Component type="ScriptLabel" id="lblPreset" x="301.0" y="99.0" text="D Default"
+             fontSize="18.0" fontName="blackCherry" width="196.0" editable="0"
+             height="24.0"/>
+  <Component type="ScriptButton" id="btnPreset0" x="303.0" y="100.0" scaleFactor="0.5"
+             filmstripImage="{PROJECT_FOLDER}empty.png" width="192.0" height="23.0"
              saveInPreset="0"/>
-  <Component type="ScriptButton" id="btnPreset1" x="271" y="100" scaleFactor="0.5"
-             filmstripImage="{PROJECT_FOLDER}empty.png" width="30" height="23"
+  <Component type="ScriptButton" id="btnPreset1" x="271.0" y="100.0" scaleFactor="0.5"
+             filmstripImage="{PROJECT_FOLDER}empty.png" width="30.0" height="23.0"
              saveInPreset="0" isMomentary="1"/>
-  <Component type="ScriptButton" id="btnPreset2" x="500" y="100" scaleFactor="0.5"
-             filmstripImage="{PROJECT_FOLDER}empty.png" width="30" height="23"
+  <Component type="ScriptButton" id="btnPreset2" x="500.0" y="100.0" scaleFactor="0.5"
+             filmstripImage="{PROJECT_FOLDER}empty.png" width="30.0" height="23.0"
              saveInPreset="0" isMomentary="1"/>
-  <Component type="ScriptButton" id="btnURL" x="335" y="474" filmstripImage="{PROJECT_FOLDER}empty.png"
+  <Component type="ScriptButton" id="btnURL" x="335.0" y="474.0" filmstripImage="{PROJECT_FOLDER}empty.png"
              saveInPreset="0"/>
-  <Component type="ScriptButton" id="btnDocs" x="673" y="92" width="53" height="28"
-             scaleFactor=".5" filmstripImage="{PROJECT_FOLDER}Help.png" saveInPreset="0"
-             isMomentary="1" defaultValue="1"/>
-  <Component type="ScriptPanel" id="pnlDocs" x="10" y="91" width="780" height="382"
-             bgColour="4015414341" isPopupPanel="1">
-    <Component type="ScriptFloatingTile" id="fltDocs" x="5" y="5" width="775"
-               height="377" parentComponent="pnlDocs" ContentType="MarkdownPanel"
+  <Component type="ScriptButton" id="btnDocs" x="673.0" y="92.0" width="53.0"
+             height="28.0" scaleFactor="0.5" filmstripImage="{PROJECT_FOLDER}Help.png"
+             saveInPreset="0" isMomentary="1" defaultValue="1.0" visible="0"/>
+  <Component type="ScriptPanel" id="pnlDocs" x="10.0" y="91.0" width="780.0"
+             height="382.0" bgColour="4015414341" isPopupPanel="1">
+    <Component type="ScriptFloatingTile" id="fltDocs" x="5.0" y="5.0" width="775.0"
+               height="377.0" parentComponent="pnlDocs" ContentType="MarkdownPanel"
                bgColour="0" itemColour="4294966442" itemColour2="4285563024"
                Data="{&#13;&#10;  &quot;ShowBack&quot;: false,&#13;&#10;  &quot;ShowSearch&quot;: false,&#13;&#10;  &quot;ShowToc&quot;: true,&#13;&#10;  &quot;BoldFontName&quot;: &quot;&quot;,&#13;&#10;  &quot;FixTocWidth&quot;: 250,&#13;&#10;  &quot;StartURL&quot;: &quot;/&quot;,&#13;&#10;  &quot;ServerUpdateURL&quot;: &quot;&quot;&#13;&#10;}"/>
   </Component>

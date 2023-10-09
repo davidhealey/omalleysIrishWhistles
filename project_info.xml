@@ -2,10 +2,10 @@
 
 <ProjectSettings>
   <Name value="OMalleys Irish Whistles"/>
-  <Version value="1.0.0"/>
+  <Version value="1.1.0"/>
   <Description value="Irish Whistle"/>
   <BundleIdentifier value="com.librewave.omalleys-irish-whistles"/>
-  <PluginCode value="Abcd"/>
+  <PluginCode value="Lwiw"/>
   <EmbedAudioFiles value="Yes"/>
   <SupportFullDynamicsHLAC value="1"/>
   <AdditionalDspLibraries value=""/>
@@ -22,4 +22,20 @@
   <EmbedImageFiles value="Yes"/>
   <ExtraDefinitionsLinux value=""/>
   <VST3Support value="No"/>
+  <EnableMidiInputFX value="No"/>
+  <ExpansionType value="Disabled"/>
+  <VST3Category value=""/>
+  <EnableMidiOut value="No"/>
+  <EnableSoundGeneratorsFX value="No"/>
+  <EncryptionKey value=""/>
+  <LinkExpansionsToProject value="No"/>
+  <ReadOnlyFactoryPresets value="No"/>
+  <ForceStereoOutput value="No"/>
+  <AdminPermissions value="No"/>
+  <EmbedUserPresets value="Yes"/>
+  <OverwriteOldUserPresets value="No"/>
+  <EnableGlobalPreprocessor value="No"/>
+  <UseGlobalAppDataFolderWindows value="No"/>
+  <UseGlobalAppDataFolderMacOS value="No"/>
+  <DefaultUserPreset value=""/>
 </ProjectSettings>
